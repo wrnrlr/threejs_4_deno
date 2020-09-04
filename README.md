@@ -1,6 +1,7 @@
-# three 4 deno
+# three.js 4 deno
 
-Intended to be used within a deno workflow. The repository is a revision of the three.js scripts but with adjusted urls and type references.
+Not Ready Yet.
+One day...
 
 ```typescript
 // main.ts
@@ -11,7 +12,7 @@ import { OrbitalControls } from "https://deno.land/x/threejs_4_deno@v120/example
 // use as per normal
 ```
 
-Then later bundle your code for the browser.
+To see your code in action in the browser:
 
 `deno bundle main.ts`
 
