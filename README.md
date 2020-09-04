@@ -6,7 +6,7 @@ Intended to be used within a deno workflow. The repository is a revision of thre
 // main.ts
 import { WebGLRenderer } from "https://deno.land/x/threejs_4_deno@v120/src/Three.js"
 // and/or
-import { OrbitalControls } from https://deno.land/x/threejs_4_deno@v120/examples/jsm/controls/OrbitControls.js"
+import { OrbitalControls } from "https://deno.land/x/threejs_4_deno@v120/examples/jsm/controls/OrbitControls.js"
 
 // use as per normal
 ```
