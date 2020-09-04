@@ -3,11 +3,12 @@
 Intended to be used within a deno workflow. The repository is a revision of three.js but with adjusted urls and only scripts.
 
 ```typescript
-import { ... } from "https://deno.land/x/"
+// main.ts
+import { ... } from "https://deno.land/x/threejs_4_deno"
 
 // use as per normal
 ```
 
 Then later when your ready to bundle your code.
 
-`deno bundle path/to/your/script`
+`deno bundle main.ts`
