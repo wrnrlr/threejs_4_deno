@@ -1,35 +1,7 @@
-const filesToDelete: string[] = [];
-// const filesForExampleModts: string[] = [];
-const UnusedFilesAndFolders = [
-  "./three.js/.github",
-  "./three.js/build",
-  "./three.js/docs",
-  "./three.js/editor",
-  "./three.js/examples/files",
-  "./three.js/examples/fonts",
-  "./three.js/examples/js",
-  "./three.js/examples/models",
-  "./three.js/examples/screenshots",
-  "./three.js/examples/sounds",
-  "./three.js/examples/textures",
-  "./three.js/examples/files.js",
-  "./three.js/examples/main.css",
-  "./three.js/files",
-  "./three.js/test",
-  "./three.js/utils",
-  "./three.js/.editorconfig",
-  "./three.js/.gitattributes",
-  "./three.js/.gitignore",
-  "./three.js/icon.png",
-  "./three.js/package.json",
-  "./three.js/package-lock.json",
-  "./three.js/README.md",
-];
-
 const examplesPath = "three.js/examples/jsm/";
 const srcPath = "three.js/src/";
-
 const pathToNewDir = "three.deno/";
+// const filesForExampleModts: string[] = [];
 
 function loopDirAndMatch(path: string, pattern: RegExp, callBack: Function) {
   for (const dirEntry of Deno.readDirSync(path)) {
@@ -55,15 +27,14 @@ function updateScripts(fileName: string, path: string) {
     return m;
   });
 
-
   // As a simple fix for type errors that would otherwise occur
   // we'll add the following to all .js scripts:
   // `/// <reference lib="dom" />`
   data = data.replace(/^/, `/// <reference lib="dom" />\n`);
-  
+
   // make sure each file references its own types.
   if (!data.includes("<reference types=")) {
-    const fn = fileName.replace(/\.js/g, ".d.ts")
+    const fn = fileName.replace(/\.js/g, ".d.ts");
     if (existsSync(`${path}${fn}`)) {
       data = data.replace(/^/, `/// <reference types="./${fn}" />\n`);
     } else {
@@ -79,9 +50,9 @@ function updateScripts(fileName: string, path: string) {
   // }
 
   // write the new text to the new path
-  const newPath = createNewPath(path)
+  const newPath = createNewPath(path);
 
-  Deno.mkdirSync(newPath, { recursive: true})
+  Deno.mkdirSync(newPath, { recursive: true });
   Deno.writeTextFileSync(`${newPath}${fileName}`, data);
 }
 
@@ -106,15 +77,14 @@ function updateTypescripts(fileName: string, path: string) {
   });
 
   // As a simple fix for type errors that would otherwise occur
-  // we'll add the following to all .d.ts scripts: 
+  // we'll add the following to all .d.ts scripts:
   // `/// <reference lib="dom" />`
   data = data.replace(/^/, `/// <reference lib="dom" />\n`);
-  
 
   // write the new text into the new Dir
-  const newPath = createNewPath(path)
-  
-  Deno.mkdirSync(newPath, { recursive: true})
+  const newPath = createNewPath(path);
+
+  Deno.mkdirSync(newPath, { recursive: true });
   Deno.writeTextFileSync(`${newPath}${fileName}`, data);
 }
 
@@ -131,7 +101,7 @@ function existsSync(path: string): boolean {
 }
 
 function createNewPath(path: string) {
-  return path.replace(/three\.js/g, "three.deno")
+  return path.replace(/three\.js/g, "three.deno");
 }
 
 if (import.meta.main) {
@@ -139,9 +109,14 @@ if (import.meta.main) {
   if (!(existsSync(examplesPath) && existsSync(srcPath))) {
     // otherwise run `git clone --depth=1 https://github.com/mrdoob/three.js.git`
     const p = Deno.run({
-      cmd: ["git", "clone", "--depth=1", "https://github.com/mrdoob/three.js.git"],
+      cmd: [
+        "git",
+        "clone",
+        "--depth=1",
+        "https://github.com/mrdoob/three.js.git",
+      ],
     });
-    await p.status()
+    await p.status();
   }
 
   // ensure that the three.deno directory is empty
@@ -172,6 +147,5 @@ if (import.meta.main) {
   const p = Deno.run({
     cmd: ["deno", "fmt", "--log-level=debug", "three.deno"],
   });
-  await p.status()
-
+  await p.status();
 }
