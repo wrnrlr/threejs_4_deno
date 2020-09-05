@@ -151,12 +151,19 @@ if (import.meta.main) {
   loopDirAndMatch(examplesPath, /\.js(?!on)/g, updateScripts);
   loopDirAndMatch(srcPath, /\.js(?!on)/g, updateScripts);
 
+  // Create the three.deno/examples/jsm/mod.js file
+  let modFile = ""
+  filesForExampleModts.forEach(path => {
+    modFile += `export * from ${path}\n`
+  });
+  Deno.writeTextFileSync(`${pathToNewDir}examples/jsm/mod.ts`, modFile)
+
   // run deno fmt over the three.deno folder
-  console.log("turn on formatting the three.deno folder at the end");
-  // const p = Deno.run({
-  //   cmd: ["deno", "fmt", "three.deno"],
-  // });
-  // await p.status()
+  console.log("formatting the three.deno folder");
+  const p = Deno.run({
+    cmd: ["deno", "fmt", "--log-level=debug", "three.deno"],
+  });
+  await p.status()
 
   // Add types reference to top of src/Three.js [/// <reference types="..." />]
   // If needed, add '/// <reference lib="dom" />' to the top of src/Three.js as well
