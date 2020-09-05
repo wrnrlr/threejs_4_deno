@@ -171,39 +171,4 @@ if (import.meta.main) {
   });
   await p.status()
 
-  // Add types reference to top of src/Three.js [/// <reference types="..." />]
-  // If needed, add '/// <reference lib="dom" />' to the top of src/Three.js as well
-  // let THREEJS = Deno.readTextFileSync("./three.js/src/Three.js");
-  // if (!THREEJS.includes('<reference types="./Three.d.ts"')) {
-  //   THREEJS = THREEJS.replace(
-  //     /^/,
-  //     `/// <reference types="./Three.d.ts" />\n/// <reference lib="dom" />\n`,
-  //   );
-  // }
-  //Deno.writeTextFileSync("./three.js/src/Three.js", THREEJS);
-
-  // update exported types url within src/Three.d.ts
-  // let THREEDTS = Deno.readTextFileSync("./three.js/src/Three.d.ts");
-  // THREEDTS = THREEDTS.replaceAll(/export \* from .+?;/gms, (m) => {
-  //   if (!m.includes(".d.ts")) {
-  //     m = `${m.slice(0, m.length - 2)}.d.ts${m.slice(m.length - 2)}`;
-  //   }
-  //   return m;
-  // });
-  //Deno.writeTextFileSync("./three.js/src/Three.d.ts", THREEDTS);
 }
-
-// Delete extra .html files within the examples folder
-// loopDirAndMatch(examplesPath, /.html/g, addToDeleteList);
-
-// if (filesToDelete.length != 0) {
-//   console.log(`Some .html files were deleted from ${examplesPath}`);
-//   console.log(filesToDelete);
-//   filesToDelete.forEach((path) => {
-//     //Deno.removeSync(path);
-//   });
-// }
-
-// function addToDeleteList(fileName: string, path: string) {
-//   filesToDelete.push(`${path}${fileName}`);
-// }
