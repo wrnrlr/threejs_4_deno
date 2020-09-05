@@ -1,3 +1,4 @@
+/// <reference types="./MeshLambertMaterial.d.ts" />
 import { Material } from "./Material.js";
 import { MultiplyOperation } from "../constants.js";
 import { Color } from "../math/Color.js";

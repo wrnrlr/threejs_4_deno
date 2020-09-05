@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 varying vec3 vViewPosition;
 
 #ifndef FLAT_SHADED

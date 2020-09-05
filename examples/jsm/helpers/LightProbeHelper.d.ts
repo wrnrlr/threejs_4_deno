@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import {
   LightProbe,
   Mesh,

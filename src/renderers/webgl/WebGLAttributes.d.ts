@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { WebGLCapabilities } from "./WebGLCapabilities.d.ts";
 import { BufferAttribute } from "../../core/BufferAttribute.d.ts";
 import { InterleavedBufferAttribute } from "../../core/InterleavedBufferAttribute.d.ts";
@@ -10,7 +11,7 @@ export class WebGLAttributes {
 
   get(attribute: BufferAttribute | InterleavedBufferAttribute): {
     buffer: WebGLBuffer;
-    type: GLenum;
+    type: number;
     bytesPerElement: number;
     version: number;
   };
@@ -19,6 +20,6 @@ export class WebGLAttributes {
 
   update(
     attribute: BufferAttribute | InterleavedBufferAttribute,
-    bufferType: GLenum,
+    bufferType: number,
   ): void;
 }

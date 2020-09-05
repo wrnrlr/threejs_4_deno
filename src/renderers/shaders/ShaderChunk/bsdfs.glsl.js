@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 
 // Analytical approximation of the DFG LUT, one half of the
 // split-sum approximation used in indirect specular lighting.

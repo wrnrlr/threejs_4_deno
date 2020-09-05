@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Camera, EventDispatcher } from "../../../src/Three.d.ts";
 
 export class DeviceOrientationControls extends EventDispatcher {

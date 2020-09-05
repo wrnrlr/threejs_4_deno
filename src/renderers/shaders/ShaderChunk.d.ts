@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 // Renderers / Shaders /////////////////////////////////////////////////////////////////////
 export let ShaderChunk: {
   [name: string]: string;

@@ -1,3 +1,4 @@
+/// <reference types="./InputNode.d.ts" />
 import { TempNode } from "./TempNode.js";
 
 function InputNode(type, params) {

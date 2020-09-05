@@ -1,3 +1,4 @@
+/// <reference types="./CSS3DRenderer.d.ts" />
 import {
   Matrix4,
   Object3D,

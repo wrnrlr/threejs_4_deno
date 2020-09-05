@@ -1,3 +1,4 @@
+/// <reference types="./MD2Character.d.ts" />
 import {
   AnimationMixer,
   Box3,

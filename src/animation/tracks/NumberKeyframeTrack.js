@@ -1,3 +1,4 @@
+/// <reference types="./NumberKeyframeTrack.d.ts" />
 import { KeyframeTrack } from "../KeyframeTrack.js";
 
 /**

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Node } from "../core/Node.d.ts";
 
 export class SwitchNode extends Node {

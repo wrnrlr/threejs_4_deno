@@ -1,3 +1,4 @@
+/// <reference types="./CurveExtras.d.ts" />
 import {
   Curve,
   Vector3,

@@ -1,3 +1,4 @@
+/// <reference types="./NormalMapNode.d.ts" />
 import {
   BackSide,
 } from "../../../../src/Three.js";

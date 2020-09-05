@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import {
   Vector2,
   Scene,

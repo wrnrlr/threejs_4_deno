@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export namespace TypedArrayUtils {
   export function quicksortIP(
     arr: any[],

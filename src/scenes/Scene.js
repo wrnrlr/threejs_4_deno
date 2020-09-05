@@ -1,3 +1,4 @@
+/// <reference types="./Scene.d.ts" />
 import { Object3D } from "../core/Object3D.js";
 
 class Scene extends Object3D {

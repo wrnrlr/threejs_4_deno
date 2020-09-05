@@ -1,3 +1,5 @@
+/// <reference types="./BasicShader.d.ts" />
+
 /**
  * Simple test shader
  */

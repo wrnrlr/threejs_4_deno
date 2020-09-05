@@ -1,3 +1,5 @@
+/// <reference types="./FresnelShader.d.ts" />
+
 /**
  * Based on Nvidia Cg tutorial
  */

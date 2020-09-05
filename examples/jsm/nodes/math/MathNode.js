@@ -1,3 +1,4 @@
+/// <reference types="./MathNode.d.ts" />
 import { TempNode } from "../core/TempNode.js";
 
 function MathNode(a, bOrMethod, cOrMethod, method) {

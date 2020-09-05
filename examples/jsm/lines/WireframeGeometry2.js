@@ -1,3 +1,4 @@
+/// <reference types="./WireframeGeometry2.d.ts" />
 import {
   WireframeGeometry,
 } from "../../../src/Three.js";

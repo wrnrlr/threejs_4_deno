@@ -1,3 +1,4 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 vec3 transformed = vec3( position );
 `;

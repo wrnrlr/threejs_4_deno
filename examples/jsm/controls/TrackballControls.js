@@ -1,3 +1,4 @@
+/// <reference types="./TrackballControls.d.ts" />
 import {
   EventDispatcher,
   MOUSE,

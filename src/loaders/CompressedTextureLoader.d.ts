@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Loader } from "./Loader.d.ts";
 import { LoadingManager } from "./LoadingManager.d.ts";
 import { CompressedTexture } from "./../textures/CompressedTexture.d.ts";

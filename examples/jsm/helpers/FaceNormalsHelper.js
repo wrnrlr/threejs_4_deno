@@ -1,3 +1,4 @@
+/// <reference types="./FaceNormalsHelper.d.ts" />
 import {
   BufferGeometry,
   Float32BufferAttribute,

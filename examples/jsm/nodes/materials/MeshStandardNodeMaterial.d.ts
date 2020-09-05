@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Color } from "../../../../src/math/Color.d.ts";
 import { Texture } from "../../../../src/textures/Texture.d.ts";
 import { CubeTexture } from "../../../../src/textures/CubeTexture.d.ts";

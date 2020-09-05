@@ -1,3 +1,4 @@
+/// <reference types="./ColorNode.d.ts" />
 import { Color } from "../../../../src/Three.js";
 
 import { InputNode } from "../core/InputNode.js";

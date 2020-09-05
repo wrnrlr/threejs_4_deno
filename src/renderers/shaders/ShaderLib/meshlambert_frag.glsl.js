@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 uniform vec3 diffuse;
 uniform vec3 emissive;
 uniform float opacity;

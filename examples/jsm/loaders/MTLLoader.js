@@ -1,3 +1,4 @@
+/// <reference types="./MTLLoader.d.ts" />
 import {
   Color,
   DefaultLoadingManager,

@@ -1,3 +1,4 @@
+/// <reference types="./Clock.d.ts" />
 class Clock {
   constructor(autoStart) {
     this.autoStart = (autoStart !== undefined) ? autoStart : true;

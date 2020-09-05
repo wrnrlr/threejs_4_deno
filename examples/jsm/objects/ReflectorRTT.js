@@ -1,3 +1,5 @@
+/// <reference types="./ReflectorRTT.d.ts" />
+
 import { Reflector } from "../objects/Reflector.js";
 
 var ReflectorRTT = function (geometry, options) {

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Geometry } from "./../core/Geometry.d.ts";
 import { PolyhedronBufferGeometry } from "./PolyhedronGeometry.d.ts";
 

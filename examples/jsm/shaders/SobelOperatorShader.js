@@ -1,3 +1,4 @@
+/// <reference types="./SobelOperatorShader.d.ts" />
 import {
   Vector2,
 } from "../../../src/Three.js";

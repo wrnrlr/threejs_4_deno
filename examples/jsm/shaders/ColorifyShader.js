@@ -1,3 +1,4 @@
+/// <reference types="./ColorifyShader.d.ts" />
 import {
   Color,
 } from "../../../src/Three.js";

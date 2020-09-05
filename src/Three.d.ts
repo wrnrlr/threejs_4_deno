@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export * from "./polyfills.d.ts";
 export * from "./renderers/WebGLMultisampleRenderTarget.d.ts";
 export * from "./renderers/WebGLCubeRenderTarget.d.ts";

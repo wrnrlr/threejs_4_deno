@@ -1,55 +1,76 @@
-import { TempNode } from "../core/TempNode.js";
+// deno-fmt-ignore-file
+import { TempNode } from '../core/TempNode.js';
 
-function SubSlotNode(slots) {
-  TempNode.call(this);
+function SubSlotNode( slots ) {
 
-  this.slots = slots || {};
+	TempNode.call( this );
+
+	this.slots = slots || {};
+
 }
 
-SubSlotNode.prototype = Object.create(TempNode.prototype);
+SubSlotNode.prototype = Object.create( TempNode.prototype );
 SubSlotNode.prototype.constructor = SubSlotNode;
 SubSlotNode.prototype.nodeType = "SubSlot";
 
-SubSlotNode.prototype.getType = function (builder, output) {
-  return output;
+SubSlotNode.prototype.getType = function ( builder, output ) {
+
+	return output;
+
 };
 
-SubSlotNode.prototype.generate = function (builder, output) {
-  if (this.slots[builder.slot]) {
-    return this.slots[builder.slot].build(builder, output);
-  }
+SubSlotNode.prototype.generate = function ( builder, output ) {
 
-  return builder.format("0.0", "f", output);
+	if ( this.slots[ builder.slot ] ) {
+
+		return this.slots[ builder.slot ].build( builder, output );
+
+	}
+
+	return builder.format( '0.0', 'f', output );
+
 };
 
-SubSlotNode.prototype.copy = function (source) {
-  TempNode.prototype.copy.call(this, source);
+SubSlotNode.prototype.copy = function ( source ) {
 
-  for (var prop in source.slots) {
-    this.slots[prop] = source.slots[prop];
-  }
+	TempNode.prototype.copy.call( this, source );
 
-  return this;
+	for ( var prop in source.slots ) {
+
+		this.slots[ prop ] = source.slots[ prop ];
+
+	}
+
+	return this;
+
 };
 
-SubSlotNode.prototype.toJSON = function (meta) {
-  var data = this.getJSONNode(meta);
+SubSlotNode.prototype.toJSON = function ( meta ) {
 
-  if (!data) {
-    data = this.createJSONNode(meta);
+	var data = this.getJSONNode( meta );
 
-    data.slots = {};
+	if ( ! data ) {
 
-    for (var prop in this.slots) {
-      var slot = this.slots[prop];
+		data = this.createJSONNode( meta );
 
-      if (slot) {
-        data.slots[prop] = slot.toJSON(meta).uuid;
-      }
-    }
-  }
+		data.slots = {};
 
-  return data;
+		for ( var prop in this.slots ) {
+
+			var slot = this.slots[ prop ];
+
+			if ( slot ) {
+
+				data.slots[ prop ] = slot.toJSON( meta ).uuid;
+
+			}
+
+		}
+
+	}
+
+	return data;
+
 };
 
 export { SubSlotNode };

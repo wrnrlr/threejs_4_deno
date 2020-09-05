@@ -1,3 +1,4 @@
+/// <reference types="./PDBLoader.d.ts" />
 import {
   BufferGeometry,
   FileLoader,

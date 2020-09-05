@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Matrix4 } from "./Matrix4.d.ts";
 import { Quaternion } from "./Quaternion.d.ts";
 import { Matrix3 } from "./Matrix3.d.ts";

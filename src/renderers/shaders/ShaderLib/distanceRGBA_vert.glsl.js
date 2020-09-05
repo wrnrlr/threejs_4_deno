@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 #define DISTANCE
 
 varying vec3 vWorldPosition;

@@ -1,3 +1,4 @@
+/// <reference types="./Box3Helper.d.ts" />
 import { LineSegments } from "../objects/LineSegments.js";
 import { LineBasicMaterial } from "../materials/LineBasicMaterial.js";
 import { BufferAttribute } from "../core/BufferAttribute.js";

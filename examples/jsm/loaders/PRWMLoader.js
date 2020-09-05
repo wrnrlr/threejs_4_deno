@@ -1,3 +1,4 @@
+/// <reference types="./PRWMLoader.d.ts" />
 import {
   BufferAttribute,
   BufferGeometry,

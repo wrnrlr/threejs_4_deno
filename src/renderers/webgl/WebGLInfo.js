@@ -1,3 +1,4 @@
+/// <reference types="./WebGLInfo.d.ts" />
 function WebGLInfo(gl) {
   const memory = {
     geometries: 0,

@@ -1,10 +1,11 @@
+/// <reference types="./BoxHelper.d.ts" />
 import { Box3 } from "../math/Box3.js";
 import { LineSegments } from "../objects/LineSegments.js";
 import { LineBasicMaterial } from "../materials/LineBasicMaterial.js";
 import { BufferAttribute } from "../core/BufferAttribute.js";
 import { BufferGeometry } from "../core/BufferGeometry.js";
 
-const _box = new Box3();
+const _box = /*@__PURE__*/ new Box3();
 
 class BoxHelper extends LineSegments {
   constructor(object, color = 0xffff00) {

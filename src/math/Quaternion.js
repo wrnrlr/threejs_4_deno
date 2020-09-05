@@ -1,3 +1,4 @@
+/// <reference types="./Quaternion.d.ts" />
 import { MathUtils } from "./MathUtils.js";
 
 class Quaternion {

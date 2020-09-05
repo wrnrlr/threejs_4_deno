@@ -1,8 +1,9 @@
+/// <reference types="./Line3.d.ts" />
 import { Vector3 } from "./Vector3.js";
 import { MathUtils } from "./MathUtils.js";
 
-const _startP = new Vector3();
-const _startEnd = new Vector3();
+const _startP = /*@__PURE__*/ new Vector3();
+const _startEnd = /*@__PURE__*/ new Vector3();
 
 class Line3 {
   constructor(start, end) {

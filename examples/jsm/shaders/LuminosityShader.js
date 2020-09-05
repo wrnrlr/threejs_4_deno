@@ -1,3 +1,5 @@
+/// <reference types="./LuminosityShader.d.ts" />
+
 /**
  * Luminosity
  * http://en.wikipedia.org/wiki/Luminosity

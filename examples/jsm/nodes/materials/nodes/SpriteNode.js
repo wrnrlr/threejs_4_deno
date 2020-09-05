@@ -1,3 +1,4 @@
+/// <reference types="./SpriteNode.d.ts" />
 import {
   UniformsLib,
   UniformsUtils,

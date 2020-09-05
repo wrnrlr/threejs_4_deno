@@ -1,6 +1,7 @@
+/// <reference types="./Box2.d.ts" />
 import { Vector2 } from "./Vector2.js";
 
-const _vector = new Vector2();
+const _vector = /*@__PURE__*/ new Vector2();
 
 class Box2 {
   constructor(min, max) {

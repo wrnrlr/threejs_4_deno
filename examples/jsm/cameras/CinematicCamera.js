@@ -1,3 +1,4 @@
+/// <reference types="./CinematicCamera.d.ts" />
 import {
   LinearFilter,
   Mesh,

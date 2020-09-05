@@ -1,3 +1,4 @@
+/// <reference types="./TGALoader.d.ts" />
 import {
   FileLoader,
   Loader,

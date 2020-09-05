@@ -1,3 +1,4 @@
+/// <reference types="./IcosahedronGeometry.d.ts" />
 import { Geometry } from "../core/Geometry.js";
 import { PolyhedronBufferGeometry } from "./PolyhedronGeometry.js";
 

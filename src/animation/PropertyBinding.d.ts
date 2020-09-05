@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export interface ParseTrackNameResults {
   nodeName: string;
   objectName: string;

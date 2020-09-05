@@ -1,3 +1,4 @@
+/// <reference types="./NodeLib.d.ts" />
 var NodeLib = {
   nodes: {},
   keywords: {},

@@ -1,3 +1,5 @@
+/// <reference types="./TypedGeometryExporter.d.ts" />
+
 var TypedGeometryExporter = function () {};
 
 TypedGeometryExporter.prototype = {

@@ -1,3 +1,4 @@
+/// <reference types="./Uniform.d.ts" />
 class Uniform {
   constructor(value) {
     if (typeof value === "string") {

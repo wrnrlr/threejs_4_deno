@@ -1,3 +1,4 @@
+/// <reference types="./Object3D.d.ts" />
 import { Quaternion } from "../math/Quaternion.js";
 import { Vector3 } from "../math/Vector3.js";
 import { Matrix4 } from "../math/Matrix4.js";
@@ -354,7 +355,7 @@ Object3D.prototype = Object.assign(Object.create(EventDispatcher.prototype), {
       target = new Vector3();
     }
 
-    this.updateMatrixWorld(true);
+    this.updateWorldMatrix(true, false);
 
     return target.setFromMatrixPosition(this.matrixWorld);
   },
@@ -367,7 +368,7 @@ Object3D.prototype = Object.assign(Object.create(EventDispatcher.prototype), {
       target = new Quaternion();
     }
 
-    this.updateMatrixWorld(true);
+    this.updateWorldMatrix(true, false);
 
     this.matrixWorld.decompose(_position, target, _scale);
 
@@ -380,7 +381,7 @@ Object3D.prototype = Object.assign(Object.create(EventDispatcher.prototype), {
       target = new Vector3();
     }
 
-    this.updateMatrixWorld(true);
+    this.updateWorldMatrix(true, false);
 
     this.matrixWorld.decompose(_position, _quaternion, target);
 
@@ -395,7 +396,7 @@ Object3D.prototype = Object.assign(Object.create(EventDispatcher.prototype), {
       target = new Vector3();
     }
 
-    this.updateMatrixWorld(true);
+    this.updateWorldMatrix(true, false);
 
     const e = this.matrixWorld.elements;
 

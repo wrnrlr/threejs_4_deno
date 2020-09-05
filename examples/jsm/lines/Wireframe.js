@@ -1,3 +1,4 @@
+/// <reference types="./Wireframe.d.ts" />
 import {
   InstancedInterleavedBuffer,
   InterleavedBufferAttribute,

@@ -1,3 +1,5 @@
+/// <reference types="./BrightnessContrastShader.d.ts" />
+
 /**
  * Brightness and contrast adjustment
  * https://github.com/evanw/glfx.js

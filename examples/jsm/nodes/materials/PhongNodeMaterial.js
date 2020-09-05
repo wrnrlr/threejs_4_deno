@@ -1,3 +1,4 @@
+/// <reference types="./PhongNodeMaterial.d.ts" />
 import { PhongNode } from "./nodes/PhongNode.js";
 import { NodeMaterial } from "./NodeMaterial.js";
 import { NodeUtils } from "../core/NodeUtils.js";

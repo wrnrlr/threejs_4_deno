@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export interface WebGLCapabilitiesParameters {
   precision?: string;
   logarithmicDepthBuffer?: boolean;

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import {
   Box3,
   Matrix3,

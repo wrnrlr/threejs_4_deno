@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import {
   BufferGeometry,
 } from "../../../src/Three.d.ts";

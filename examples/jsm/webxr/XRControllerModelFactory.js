@@ -1,3 +1,4 @@
+/// <reference types="./XRControllerModelFactory.d.ts" />
 import {
   Mesh,
   MeshBasicMaterial,
@@ -209,7 +210,7 @@ var XRControllerModelFactory = (function () {
               assetPath,
             );
 
-            let cachedAsset =
+            const cachedAsset =
               this._assetCache[controllerModel.motionController.assetUrl];
             if (cachedAsset) {
               scene = cachedAsset.scene.clone();

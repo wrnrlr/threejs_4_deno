@@ -1,3 +1,4 @@
+/// <reference types="./GodRaysShader.d.ts" />
 import {
   Color,
   Vector3,

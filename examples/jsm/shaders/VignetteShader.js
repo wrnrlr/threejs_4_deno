@@ -1,3 +1,5 @@
+/// <reference types="./VignetteShader.d.ts" />
+
 /**
  * Vignette shader
  * based on PaintEffect postprocess from ro.me

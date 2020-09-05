@@ -1,3 +1,4 @@
+/// <reference types="./MorphAnimMesh.d.ts" />
 import {
   AnimationClip,
   AnimationMixer,

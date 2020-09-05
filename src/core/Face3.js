@@ -1,3 +1,4 @@
+/// <reference types="./Face3.d.ts" />
 import { Color } from "../math/Color.js";
 import { Vector3 } from "../math/Vector3.js";
 

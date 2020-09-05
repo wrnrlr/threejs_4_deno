@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Group } from "../../objects/Group.d.ts";
 
 export class WebXRController {

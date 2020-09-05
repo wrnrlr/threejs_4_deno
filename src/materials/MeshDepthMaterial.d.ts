@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { DepthPackingStrategies } from "../constants.d.ts";
 import { MaterialParameters, Material } from "./Material.d.ts";
 import { Texture } from "./../textures/Texture.d.ts";

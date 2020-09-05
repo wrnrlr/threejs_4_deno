@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { BufferAttribute } from "./BufferAttribute.d.ts";
 import { InterleavedBuffer } from "./InterleavedBuffer.d.ts";
 import { Matrix4 } from "./../math/Matrix4.d.ts";

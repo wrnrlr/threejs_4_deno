@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 void main() {
 
 	gl_Position = vec4( position, 1.0 );

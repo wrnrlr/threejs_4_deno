@@ -1,3 +1,4 @@
+/// <reference types="./PointLight.d.ts" />
 import { Light } from "./Light.js";
 import { PointLightShadow } from "./PointLightShadow.js";
 

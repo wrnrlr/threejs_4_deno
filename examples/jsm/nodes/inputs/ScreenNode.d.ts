@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { NodeBuilder } from "../core/NodeBuilder.d.ts";
 import { TextureNode } from "./TextureNode.d.ts";
 import { UVNode } from "../accessors/UVNode.d.ts";

@@ -1,3 +1,4 @@
+/// <reference types="./KMZLoader.d.ts" />
 import {
   FileLoader,
   Group,

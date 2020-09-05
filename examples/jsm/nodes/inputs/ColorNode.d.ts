@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Color } from "../../../../src/Three.d.ts";
 
 import { InputNode } from "../core/InputNode.d.ts";

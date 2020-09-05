@@ -1,3 +1,4 @@
+/// <reference types="./EXRLoader.d.ts" />
 import {
   DataTextureLoader,
   FloatType,

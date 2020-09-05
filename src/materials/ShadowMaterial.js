@@ -1,3 +1,4 @@
+/// <reference types="./ShadowMaterial.d.ts" />
 import { Material } from "./Material.js";
 import { Color } from "../math/Color.js";
 

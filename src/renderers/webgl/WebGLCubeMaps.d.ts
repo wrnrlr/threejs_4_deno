@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { WebGLRenderer } from "../WebGLRenderer.d.ts";
 
 export class WebGLCubeMaps {

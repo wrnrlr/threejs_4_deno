@@ -1,3 +1,4 @@
+/// <reference types="./ObjectLoader.d.ts" />
 import {
   UVMapping,
   CubeReflectionMapping,
@@ -56,14 +57,12 @@ import { FileLoader } from "./FileLoader.js";
 import * as Geometries from "../geometries/Geometries.js";
 import * as Curves from "../extras/curves/Curves.js";
 
-function ObjectLoader(manager) {
-  Loader.call(this, manager);
-}
+class ObjectLoader extends Loader {
+  constructor(manager) {
+    super(manager);
+  }
 
-ObjectLoader.prototype = Object.assign(Object.create(Loader.prototype), {
-  constructor: ObjectLoader,
-
-  load: function (url, onLoad, onProgress, onError) {
+  load(url, onLoad, onProgress, onError) {
     const scope = this;
 
     const path = (this.path === "")
@@ -107,9 +106,9 @@ ObjectLoader.prototype = Object.assign(Object.create(Loader.prototype), {
       onProgress,
       onError,
     );
-  },
+  }
 
-  parse: function (json, onLoad) {
+  parse(json, onLoad) {
     const shapes = this.parseShape(json.shapes);
     const geometries = this.parseGeometries(json.geometries, shapes);
 
@@ -131,9 +130,9 @@ ObjectLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     }
 
     return object;
-  },
+  }
 
-  parseShape: function (json) {
+  parseShape(json) {
     const shapes = {};
 
     if (json !== undefined) {
@@ -145,9 +144,9 @@ ObjectLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     }
 
     return shapes;
-  },
+  }
 
-  parseGeometries: function (json, shapes) {
+  parseGeometries(json, shapes) {
     const geometries = {};
     let geometryShapes;
 
@@ -404,9 +403,9 @@ ObjectLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     }
 
     return geometries;
-  },
+  }
 
-  parseMaterials: function (json, textures) {
+  parseMaterials(json, textures) {
     const cache = {}; // MultiMaterial
     const materials = {};
 
@@ -444,9 +443,9 @@ ObjectLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     }
 
     return materials;
-  },
+  }
 
-  parseAnimations: function (json) {
+  parseAnimations(json) {
     const animations = [];
 
     for (let i = 0; i < json.length; i++) {
@@ -460,9 +459,9 @@ ObjectLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     }
 
     return animations;
-  },
+  }
 
-  parseImages: function (json, onLoad) {
+  parseImages(json, onLoad) {
     const scope = this;
     const images = {};
 
@@ -521,9 +520,9 @@ ObjectLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     }
 
     return images;
-  },
+  }
 
-  parseTextures: function (json, images) {
+  parseTextures(json, images) {
     function parseConstant(value, type) {
       if (typeof value === "number") return value;
 
@@ -606,9 +605,9 @@ ObjectLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     }
 
     return textures;
-  },
+  }
 
-  parseObject: function (data, geometries, materials) {
+  parseObject(data, geometries, materials) {
     let object;
 
     function getGeometry(name) {
@@ -913,8 +912,17 @@ ObjectLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     }
 
     return object;
-  },
-});
+  }
+
+  /* DEPRECATED */
+
+  setTexturePath(value) {
+    console.warn(
+      "THREE.ObjectLoader: .setTexturePath() has been renamed to .setResourcePath().",
+    );
+    return this.setResourcePath(value);
+  }
+}
 
 const TEXTURE_MAPPING = {
   UVMapping: UVMapping,

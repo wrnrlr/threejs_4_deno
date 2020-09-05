@@ -1,3 +1,4 @@
+/// <reference types="./DeviceOrientationControls.d.ts" />
 import {
   Euler,
   EventDispatcher,

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { NodeFrame } from "../core/NodeFrame.d.ts";
 import { FloatNode } from "../inputs/FloatNode.d.ts";
 

@@ -1,3 +1,4 @@
+/// <reference types="./SpriteNodeMaterial.d.ts" />
 import { SpriteNode } from "./nodes/SpriteNode.js";
 import { NodeMaterial } from "./NodeMaterial.js";
 import { NodeUtils } from "../core/NodeUtils.js";

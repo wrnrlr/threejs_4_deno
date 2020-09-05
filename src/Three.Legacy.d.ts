@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Geometry } from "./core/Geometry.d.ts";
 import { Material } from "./materials/Material.d.ts";
 import { Object3D } from "./core/Object3D.d.ts";

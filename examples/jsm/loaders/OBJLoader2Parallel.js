@@ -1,3 +1,4 @@
+/// <reference types="./OBJLoader2Parallel.d.ts" />
 /**
  * Development repository: https://github.com/kaisalmen/WWOBJLoader
  */
@@ -92,7 +93,7 @@ OBJLoader2Parallel.prototype = Object.assign(
 	 * @return {CodeBuilderInstructions}
 	 */
     buildWorkerCode: function () {
-      let codeBuilderInstructions = new CodeBuilderInstructions(
+      const codeBuilderInstructions = new CodeBuilderInstructions(
         true,
         true,
         this.preferJsmWorker,
@@ -103,11 +104,11 @@ OBJLoader2Parallel.prototype = Object.assign(
       }
 
       if (codeBuilderInstructions.isSupportsStandardWorker()) {
-        let objectManipulator = new ObjectManipulator();
-        let defaultWorkerPayloadHandler = new DefaultWorkerPayloadHandler(
+        const objectManipulator = new ObjectManipulator();
+        const defaultWorkerPayloadHandler = new DefaultWorkerPayloadHandler(
           this.parser,
         );
-        let workerRunner = new WorkerRunner({});
+        const workerRunner = new WorkerRunner({});
         codeBuilderInstructions.addCodeFragment(
           CodeSerializer.serializeClass(OBJLoader2Parser, this.parser),
         );
@@ -124,7 +125,7 @@ OBJLoader2Parallel.prototype = Object.assign(
           CodeSerializer.serializeClass(WorkerRunner, workerRunner),
         );
 
-        let startCode = "new " + workerRunner.constructor.name + "( new " +
+        const startCode = "new " + workerRunner.constructor.name + "( new " +
           defaultWorkerPayloadHandler.constructor.name + "( new " +
           this.parser.constructor.name + "() ) );";
         codeBuilderInstructions.addStartCode(startCode);
@@ -137,7 +138,7 @@ OBJLoader2Parallel.prototype = Object.assign(
 	 * See {@link OBJLoader2.load}
 	 */
     load: function (content, onLoad, onFileLoadProgress, onError, onMeshAlter) {
-      let scope = this;
+      const scope = this;
       function interceptOnLoad(object3d, message) {
         if (object3d.name === "OBJLoader2ParallelDummy") {
           if (scope.parser.logging.enabled && scope.parser.logging.debug) {
@@ -175,8 +176,8 @@ OBJLoader2Parallel.prototype = Object.assign(
         if (!this.workerExecutionSupport.isWorkerLoaded(this.preferJsmWorker)) {
           this.workerExecutionSupport.buildWorker(this.buildWorkerCode());
 
-          let scope = this;
-          let scopedOnAssetAvailable = function (payload) {
+          const scope = this;
+          const scopedOnAssetAvailable = function (payload) {
             scope._onAssetAvailable(payload);
           };
 
@@ -215,7 +216,7 @@ OBJLoader2Parallel.prototype = Object.assign(
           },
         );
 
-        let dummy = new Object3D();
+        const dummy = new Object3D();
         dummy.name = "OBJLoader2ParallelDummy";
         return dummy;
       } else {

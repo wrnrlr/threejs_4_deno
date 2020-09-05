@@ -1,13 +1,14 @@
+/// <reference types="./AudioListener.d.ts" />
 import { Vector3 } from "../math/Vector3.js";
 import { Quaternion } from "../math/Quaternion.js";
 import { Clock } from "../core/Clock.js";
 import { Object3D } from "../core/Object3D.js";
 import { AudioContext } from "./AudioContext.js";
 
-const _position = new Vector3();
-const _quaternion = new Quaternion();
-const _scale = new Vector3();
-const _orientation = new Vector3();
+const _position = /*@__PURE__*/ new Vector3();
+const _quaternion = /*@__PURE__*/ new Quaternion();
+const _scale = /*@__PURE__*/ new Vector3();
+const _orientation = /*@__PURE__*/ new Vector3();
 
 class AudioListener extends Object3D {
   constructor() {

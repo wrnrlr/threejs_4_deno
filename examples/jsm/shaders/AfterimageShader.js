@@ -1,3 +1,5 @@
+/// <reference types="./AfterimageShader.d.ts" />
+
 /**
  * Afterimage shader
  * I created this effect inspired by a demo on codepen:

@@ -1,3 +1,4 @@
+/// <reference types="./EventDispatcher.d.ts" />
 /**
  * https://github.com/mrdoob/eventdispatcher.js/
  */

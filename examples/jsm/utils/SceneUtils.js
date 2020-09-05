@@ -1,3 +1,4 @@
+/// <reference types="./SceneUtils.d.ts" />
 import {
   Group,
   Mesh,

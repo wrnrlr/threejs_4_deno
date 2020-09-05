@@ -1,3 +1,4 @@
+/// <reference types="./BlurNode.d.ts" />
 import { Vector2 } from "../../../../src/Three.js";
 
 import { TempNode } from "../core/TempNode.js";

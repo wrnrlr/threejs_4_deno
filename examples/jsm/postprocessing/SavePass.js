@@ -1,3 +1,4 @@
+/// <reference types="./SavePass.d.ts" />
 import {
   LinearFilter,
   RGBFormat,

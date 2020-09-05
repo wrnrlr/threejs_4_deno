@@ -1,3 +1,4 @@
+/// <reference types="./DiscreteInterpolant.d.ts" />
 import { Interpolant } from "../Interpolant.js";
 
 /**

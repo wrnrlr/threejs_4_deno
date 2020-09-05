@@ -1,3 +1,4 @@
+/// <reference types="./3MFLoader.d.ts" />
 import {
   BufferAttribute,
   BufferGeometry,

@@ -1,3 +1,4 @@
+/// <reference types="./NodeBuilder.d.ts" />
 import {
   CubeReflectionMapping,
   CubeRefractionMapping,

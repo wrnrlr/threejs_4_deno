@@ -1,3 +1,4 @@
+/// <reference types="./AmmoPhysics.d.ts" />
 async function AmmoPhysics() {
   if ("Ammo" in window === false) {
     console.error("AmmoPhysics: Couldn't find Ammo.js");

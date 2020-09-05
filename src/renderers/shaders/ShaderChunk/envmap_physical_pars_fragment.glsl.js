@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 #if defined( USE_ENVMAP )
 
 	#ifdef ENVMAP_MODE_REFRACTION

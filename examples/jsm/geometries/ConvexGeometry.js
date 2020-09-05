@@ -1,3 +1,4 @@
+/// <reference types="./ConvexGeometry.d.ts" />
 import {
   BufferGeometry,
   Float32BufferAttribute,

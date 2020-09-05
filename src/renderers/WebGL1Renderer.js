@@ -1,3 +1,4 @@
+/// <reference types="./WebGL1Renderer.d.ts" />
 import { WebGLRenderer } from "./WebGLRenderer.js";
 
 function WebGL1Renderer(parameters) {

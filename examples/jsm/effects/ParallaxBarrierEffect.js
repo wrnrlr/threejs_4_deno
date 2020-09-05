@@ -1,3 +1,4 @@
+/// <reference types="./ParallaxBarrierEffect.d.ts" />
 import {
   LinearFilter,
   Mesh,

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { KeyframeTrack } from "./KeyframeTrack.d.ts";
 import { Bone } from "./../objects/Bone.d.ts";
 import { MorphTarget } from "../core/Geometry.d.ts";

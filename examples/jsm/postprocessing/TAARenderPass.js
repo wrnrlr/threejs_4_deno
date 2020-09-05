@@ -1,3 +1,4 @@
+/// <reference types="./TAARenderPass.d.ts" />
 import {
   WebGLRenderTarget,
 } from "../../../src/Three.js";

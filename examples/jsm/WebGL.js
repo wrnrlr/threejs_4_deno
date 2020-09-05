@@ -1,3 +1,5 @@
+/// <reference types="./WebGL.d.ts" />
+
 var WEBGL = {
   isWebGLAvailable: function () {
     try {

@@ -1,3 +1,4 @@
+/// <reference types="./LightningStrike.d.ts" />
 import {
   BufferGeometry,
   DynamicDrawUsage,

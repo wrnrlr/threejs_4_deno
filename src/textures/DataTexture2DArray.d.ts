@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Texture } from "./Texture.d.ts";
 import { TypedArray } from "../polyfills.d.ts";
 import { TextureFilter } from "../constants.d.ts";

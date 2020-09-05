@@ -1,3 +1,4 @@
+/// <reference types="./FunctionCallNode.d.ts" />
 import { TempNode } from "./TempNode.js";
 
 function FunctionCallNode(func, inputs) {

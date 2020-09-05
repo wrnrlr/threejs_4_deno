@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Vector } from "./../../math/Vector2.d.ts";
 
 // Extras / Core /////////////////////////////////////////////////////////////////////

@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 #if defined( USE_COLOR ) || defined( USE_INSTANCING_COLOR )
 
 	vColor = vec3( 1.0 );

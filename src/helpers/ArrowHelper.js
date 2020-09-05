@@ -1,3 +1,4 @@
+/// <reference types="./ArrowHelper.d.ts" />
 import { Float32BufferAttribute } from "../core/BufferAttribute.js";
 import { BufferGeometry } from "../core/BufferGeometry.js";
 import { Object3D } from "../core/Object3D.js";
@@ -8,7 +9,7 @@ import { Mesh } from "../objects/Mesh.js";
 import { Line } from "../objects/Line.js";
 import { Vector3 } from "../math/Vector3.js";
 
-const _axis = new Vector3();
+const _axis = /*@__PURE__*/ new Vector3();
 let _lineGeometry, _coneGeometry;
 
 class ArrowHelper extends Object3D {

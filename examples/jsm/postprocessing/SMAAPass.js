@@ -1,3 +1,4 @@
+/// <reference types="./SMAAPass.d.ts" />
 import {
   LinearFilter,
   NearestFilter,

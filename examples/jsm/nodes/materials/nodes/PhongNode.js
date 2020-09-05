@@ -1,3 +1,4 @@
+/// <reference types="./PhongNode.d.ts" />
 import {
   UniformsLib,
   UniformsUtils,

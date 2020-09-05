@@ -1,3 +1,4 @@
+/// <reference types="./BypassNode.d.ts" />
 import { Node } from "../core/Node.js";
 
 function BypassNode(code, value) {

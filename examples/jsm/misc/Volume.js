@@ -1,3 +1,4 @@
+/// <reference types="./Volume.d.ts" />
 import {
   Matrix3,
   Matrix4,

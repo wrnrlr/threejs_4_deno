@@ -1,3 +1,4 @@
+/// <reference types="./ImageUtils.d.ts" />
 let _canvas;
 
 const ImageUtils = {

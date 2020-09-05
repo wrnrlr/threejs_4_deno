@@ -1,3 +1,4 @@
+/// <reference types="./UVTransformNode.d.ts" />
 import { ExpressionNode } from "../core/ExpressionNode.js";
 import { Matrix3Node } from "../inputs/Matrix3Node.js";
 import { UVNode } from "../accessors/UVNode.js";

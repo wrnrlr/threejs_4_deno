@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 float roughnessFactor = roughness;
 
 #ifdef USE_ROUGHNESSMAP

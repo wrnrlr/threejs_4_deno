@@ -1,3 +1,4 @@
+/// <reference types="./Cylindrical.d.ts" />
 /**
  * Ref: https://en.wikipedia.org/wiki/Cylindrical_coordinate_system
  */

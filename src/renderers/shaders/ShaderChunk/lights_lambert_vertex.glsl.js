@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 vec3 diffuse = vec3( 1.0 );
 
 GeometricContext geometry;

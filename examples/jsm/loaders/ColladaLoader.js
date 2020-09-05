@@ -1,3 +1,4 @@
+/// <reference types="./ColladaLoader.d.ts" />
 import {
   AmbientLight,
   AnimationClip,

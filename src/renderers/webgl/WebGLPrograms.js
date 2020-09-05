@@ -1,3 +1,4 @@
+/// <reference types="./WebGLPrograms.d.ts" />
 import {
   BackSide,
   DoubleSide,

@@ -1,3 +1,4 @@
+/// <reference types="./TransformControls.d.ts" />
 import {
   BoxBufferGeometry,
   BufferGeometry,
@@ -138,7 +139,6 @@ var TransformControls = function (camera, domElement) {
   defineProperty("eye", eye);
 
   {
-    domElement.addEventListener("touchstart", onTouchStart, false);
     domElement.addEventListener("pointerdown", onPointerDown, false);
     domElement.addEventListener("pointermove", onPointerHover, false);
     scope.domElement.ownerDocument.addEventListener(
@@ -149,7 +149,6 @@ var TransformControls = function (camera, domElement) {
   }
 
   this.dispose = function () {
-    domElement.removeEventListener("touchstart", onTouchStart);
     domElement.removeEventListener("pointerdown", onPointerDown);
     domElement.removeEventListener("pointermove", onPointerHover);
     scope.domElement.ownerDocument.removeEventListener(
@@ -598,6 +597,7 @@ var TransformControls = function (camera, domElement) {
   function onPointerDown(event) {
     if (!scope.enabled) return;
 
+    scope.domElement.style.touchAction = "none"; // disable touch scroll
     scope.domElement.ownerDocument.addEventListener(
       "pointermove",
       onPointerMove,
@@ -617,6 +617,7 @@ var TransformControls = function (camera, domElement) {
   function onPointerUp(event) {
     if (!scope.enabled) return;
 
+    scope.domElement.style.touchAction = "";
     scope.domElement.ownerDocument.removeEventListener(
       "pointermove",
       onPointerMove,
@@ -624,12 +625,6 @@ var TransformControls = function (camera, domElement) {
     );
 
     scope.pointerUp(getPointer(event));
-  }
-
-  function onTouchStart(event) {
-    if (scope.enabled === false) return;
-
-    event.preventDefault(); // prevent scrolling
   }
 
   // TODO: deprecate

@@ -1,3 +1,5 @@
+/// <reference types="./ClearPass.d.ts" />
+
 import { Pass } from "../postprocessing/Pass.js";
 
 var ClearPass = function (clearColor, clearAlpha) {

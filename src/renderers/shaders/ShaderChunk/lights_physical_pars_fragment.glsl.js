@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 struct PhysicalMaterial {
 
 	vec3 diffuseColor;

@@ -1,3 +1,4 @@
+/// <reference types="./ShaderPass.d.ts" />
 import {
   ShaderMaterial,
   UniformsUtils,

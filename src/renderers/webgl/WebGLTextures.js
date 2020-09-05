@@ -1,3 +1,4 @@
+/// <reference types="./WebGLTextures.d.ts" />
 import {
   LinearFilter,
   LinearMipmapLinearFilter,

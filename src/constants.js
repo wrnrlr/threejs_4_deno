@@ -1,4 +1,5 @@
-export const REVISION = "120";
+/// <reference types="./constants.d.ts" />
+export const REVISION = "121dev";
 export const MOUSE = {
   LEFT: 0,
   MIDDLE: 1,

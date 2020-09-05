@@ -1,3 +1,4 @@
+/// <reference types="./TorusKnotGeometry.d.ts" />
 import { Geometry } from "../core/Geometry.js";
 import { BufferGeometry } from "../core/BufferGeometry.js";
 import { Float32BufferAttribute } from "../core/BufferAttribute.js";

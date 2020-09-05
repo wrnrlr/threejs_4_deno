@@ -1,3 +1,4 @@
+/// <reference types="./AudioLoader.d.ts" />
 import { AudioContext } from "../audio/AudioContext.js";
 import { FileLoader } from "./FileLoader.js";
 import { Loader } from "./Loader.js";

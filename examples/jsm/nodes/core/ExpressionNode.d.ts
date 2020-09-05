@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { FunctionNode } from "./FunctionNode.d.ts";
 
 export class ExpressionNode extends FunctionNode {

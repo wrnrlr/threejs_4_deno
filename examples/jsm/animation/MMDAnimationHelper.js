@@ -1,3 +1,4 @@
+/// <reference types="./MMDAnimationHelper.d.ts" />
 import {
   AnimationMixer,
   Object3D,

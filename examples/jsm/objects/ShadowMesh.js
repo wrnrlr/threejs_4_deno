@@ -1,3 +1,4 @@
+/// <reference types="./ShadowMesh.d.ts" />
 import {
   Matrix4,
   Mesh,

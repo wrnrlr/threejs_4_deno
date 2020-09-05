@@ -1,3 +1,4 @@
+/// <reference types="./WebGLAnimation.d.ts" />
 function WebGLAnimation() {
   let context = null;
   let isAnimating = false;

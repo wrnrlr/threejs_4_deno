@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Color } from "./../math/Color.d.ts";
 import { IFog } from "./Fog.d.ts";
 /**

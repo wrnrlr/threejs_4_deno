@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Vector2 } from "../../../../src/Three.d.ts";
 
 import { TempNode } from "../core/TempNode.d.ts";

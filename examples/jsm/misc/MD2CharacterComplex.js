@@ -1,3 +1,4 @@
+/// <reference types="./MD2CharacterComplex.d.ts" />
 import {
   Box3,
   MathUtils,

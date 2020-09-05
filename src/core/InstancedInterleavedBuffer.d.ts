@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { InterleavedBuffer } from "./InterleavedBuffer.d.ts";
 
 /**

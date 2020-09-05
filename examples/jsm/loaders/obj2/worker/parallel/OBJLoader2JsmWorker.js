@@ -1,3 +1,4 @@
+// deno-fmt-ignore-file
 /**
  * Development repository: https://github.com/kaisalmen/WWOBJLoader
  */
@@ -5,8 +6,8 @@
 import { OBJLoader2Parser } from "../../OBJLoader2Parser.js";
 
 import {
-  WorkerRunner,
-  DefaultWorkerPayloadHandler,
+	WorkerRunner,
+	DefaultWorkerPayloadHandler
 } from "./WorkerRunner.js";
 
-new WorkerRunner(new DefaultWorkerPayloadHandler(new OBJLoader2Parser()));
+new WorkerRunner( new DefaultWorkerPayloadHandler( new OBJLoader2Parser() ) );

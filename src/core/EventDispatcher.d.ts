@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 /**
  * Event object.
  */

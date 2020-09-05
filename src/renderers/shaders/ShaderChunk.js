@@ -1,3 +1,4 @@
+/// <reference types="./ShaderChunk.d.ts" />
 import alphamap_fragment from "./ShaderChunk/alphamap_fragment.glsl.js";
 import alphamap_pars_fragment from "./ShaderChunk/alphamap_pars_fragment.glsl.js";
 import alphatest_fragment from "./ShaderChunk/alphatest_fragment.glsl.js";

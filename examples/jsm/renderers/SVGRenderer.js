@@ -1,3 +1,4 @@
+/// <reference types="./SVGRenderer.d.ts" />
 import {
   Box2,
   Camera,

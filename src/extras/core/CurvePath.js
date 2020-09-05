@@ -1,3 +1,4 @@
+/// <reference types="./CurvePath.d.ts" />
 import { Curve } from "./Curve.js";
 import * as Curves from "../curves/Curves.js";
 

@@ -1,3 +1,5 @@
+/// <reference types="./WaterRefractionShader.d.ts" />
+
 var WaterRefractionShader = {
   uniforms: {
     "color": {

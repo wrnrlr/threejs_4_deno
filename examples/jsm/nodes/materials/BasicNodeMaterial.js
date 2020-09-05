@@ -1,3 +1,4 @@
+/// <reference types="./BasicNodeMaterial.d.ts" />
 import { BasicNode } from "./nodes/BasicNode.js";
 import { NodeMaterial } from "./NodeMaterial.js";
 import { NodeUtils } from "../core/NodeUtils.js";

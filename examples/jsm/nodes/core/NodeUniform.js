@@ -1,3 +1,4 @@
+/// <reference types="./NodeUniform.d.ts" />
 function NodeUniform(params) {
   params = params || {};
 

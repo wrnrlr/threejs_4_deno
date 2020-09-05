@@ -1,3 +1,4 @@
+/// <reference types="./PlaneHelper.d.ts" />
 import { Line } from "../objects/Line.js";
 import { Mesh } from "../objects/Mesh.js";
 import { LineBasicMaterial } from "../materials/LineBasicMaterial.js";

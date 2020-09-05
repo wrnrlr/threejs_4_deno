@@ -1,3 +1,4 @@
+/// <reference types="./Fire.d.ts" />
 import {
   Clock,
   Color,

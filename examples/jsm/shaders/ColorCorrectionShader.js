@@ -1,3 +1,4 @@
+/// <reference types="./ColorCorrectionShader.d.ts" />
 import {
   Vector3,
 } from "../../../src/Three.js";

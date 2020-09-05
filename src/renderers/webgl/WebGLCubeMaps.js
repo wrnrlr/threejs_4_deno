@@ -1,3 +1,4 @@
+/// <reference types="./WebGLCubeMaps.d.ts" />
 import {
   CubeReflectionMapping,
   CubeRefractionMapping,

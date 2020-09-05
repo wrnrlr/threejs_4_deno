@@ -1,3 +1,5 @@
+/// <reference types="./SepiaShader.d.ts" />
+
 /**
  * Sepia tone shader
  * based on glfx.js sepia shader

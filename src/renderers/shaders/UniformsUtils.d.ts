@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export function cloneUniforms(uniforms_src: any): any;
 export function mergeUniforms(uniforms: any[]): any;
 

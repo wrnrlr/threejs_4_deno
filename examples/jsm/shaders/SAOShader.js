@@ -1,3 +1,4 @@
+/// <reference types="./SAOShader.d.ts" />
 import {
   Matrix4,
   Vector2,

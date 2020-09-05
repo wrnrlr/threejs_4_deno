@@ -1,3 +1,4 @@
+/// <reference types="./MtlObjBridge.d.ts" />
 /**
  * Development repository: https://github.com/kaisalmen/WWOBJLoader
  */

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export namespace CodeSerializer {
   export function serializeClass(
     targetPrototype: object,

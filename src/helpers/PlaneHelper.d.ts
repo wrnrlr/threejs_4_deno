@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Plane } from "./../math/Plane.d.ts";
 import { LineSegments } from "./../objects/LineSegments.d.ts";
 

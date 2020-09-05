@@ -1,3 +1,4 @@
+/// <reference types="./CondNode.d.ts" />
 import { TempNode } from "../core/TempNode.js";
 
 function CondNode(a, b, op, ifNode, elseNode) {
@@ -18,6 +19,8 @@ CondNode.GREATER = ">";
 CondNode.GREATER_EQUAL = ">=";
 CondNode.LESS = "<";
 CondNode.LESS_EQUAL = "<=";
+CondNode.AND = "&&";
+CondNode.OR = "||";
 
 CondNode.prototype = Object.create(TempNode.prototype);
 CondNode.prototype.constructor = CondNode;

@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 vec4 mvPosition = vec4( transformed, 1.0 );
 
 #ifdef USE_INSTANCING

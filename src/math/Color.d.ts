@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { BufferAttribute } from "./../core/BufferAttribute.d.ts";
 
 export interface HSL {

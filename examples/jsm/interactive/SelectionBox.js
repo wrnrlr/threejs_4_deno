@@ -1,3 +1,4 @@
+/// <reference types="./SelectionBox.d.ts" />
 import {
   Frustum,
   Vector3,

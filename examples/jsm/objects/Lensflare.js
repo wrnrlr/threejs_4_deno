@@ -1,3 +1,4 @@
+/// <reference types="./Lensflare.d.ts" />
 import {
   AdditiveBlending,
   Box2,

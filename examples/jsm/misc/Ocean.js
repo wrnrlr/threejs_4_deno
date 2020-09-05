@@ -1,3 +1,4 @@
+/// <reference types="./Ocean.d.ts" />
 import {
   ClampToEdgeWrapping,
   DataTexture,

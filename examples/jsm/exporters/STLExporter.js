@@ -1,3 +1,4 @@
+/// <reference types="./STLExporter.d.ts" />
 import {
   Geometry,
   Matrix3,

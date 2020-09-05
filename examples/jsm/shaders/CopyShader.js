@@ -1,3 +1,5 @@
+/// <reference types="./CopyShader.d.ts" />
+
 /**
  * Full-screen textured quad shader
  */

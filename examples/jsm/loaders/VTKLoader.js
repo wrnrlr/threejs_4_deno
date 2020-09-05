@@ -1,3 +1,4 @@
+/// <reference types="./VTKLoader.d.ts" />
 import {
   BufferAttribute,
   BufferGeometry,

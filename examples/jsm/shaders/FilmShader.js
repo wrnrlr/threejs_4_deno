@@ -1,3 +1,5 @@
+/// <reference types="./FilmShader.d.ts" />
+
 /**
  * Film grain & scanlines shader
  *

@@ -1,3 +1,4 @@
+/// <reference types="./LuminosityHighPassShader.d.ts" />
 import {
   Color,
 } from "../../../src/Three.js";

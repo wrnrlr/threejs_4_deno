@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import {
   Scene,
 } from "../../../src/Three.d.ts";

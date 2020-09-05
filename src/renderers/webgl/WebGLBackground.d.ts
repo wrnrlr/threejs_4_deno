@@ -1,3 +1,5 @@
+/// <reference lib="dom" />
+
 import { Color } from "../../math/Color.d.ts";
 import { WebGLRenderer } from "../WebGLRenderer.d.ts";
 import { WebGLState } from "./WebGLState.d.ts";

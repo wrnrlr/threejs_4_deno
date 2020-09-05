@@ -1,3 +1,4 @@
+/// <reference types="./LineSegments.d.ts" />
 import { Line } from "./Line.js";
 import { Vector3 } from "../math/Vector3.js";
 import { Float32BufferAttribute } from "../core/BufferAttribute.js";

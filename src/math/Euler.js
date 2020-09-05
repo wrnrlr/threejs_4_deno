@@ -1,3 +1,4 @@
+/// <reference types="./Euler.d.ts" />
 import { Quaternion } from "./Quaternion.js";
 import { Vector3 } from "./Vector3.js";
 import { Matrix4 } from "./Matrix4.js";
@@ -246,7 +247,7 @@ class Euler {
 Euler.DefaultOrder = "XYZ";
 Euler.RotationOrders = ["XYZ", "YZX", "ZXY", "XZY", "YXZ", "ZYX"];
 
-const _matrix = new Matrix4();
-const _quaternion = new Quaternion();
+const _matrix = /*@__PURE__*/ new Matrix4();
+const _quaternion = /*@__PURE__*/ new Quaternion();
 
 export { Euler };

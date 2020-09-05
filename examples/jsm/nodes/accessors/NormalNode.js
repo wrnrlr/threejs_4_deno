@@ -1,3 +1,4 @@
+/// <reference types="./NormalNode.d.ts" />
 import { TempNode } from "../core/TempNode.js";
 import { NodeLib } from "../core/NodeLib.js";
 

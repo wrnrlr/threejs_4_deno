@@ -1,3 +1,4 @@
+/// <reference types="./ColorSpaceNode.d.ts" />
 import {
   GammaEncoding,
   LinearEncoding,

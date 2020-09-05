@@ -1,7 +1,8 @@
+/// <reference types="./Sphere.d.ts" />
 import { Box3 } from "./Box3.js";
 import { Vector3 } from "./Vector3.js";
 
-const _box = new Box3();
+const _box = /*@__PURE__*/ new Box3();
 
 class Sphere {
   constructor(center, radius) {

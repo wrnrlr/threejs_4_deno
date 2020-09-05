@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export class WebGLLights {
   constructor(gl: WebGLRenderingContext, properties: any, info: any);
 

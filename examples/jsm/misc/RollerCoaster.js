@@ -1,3 +1,4 @@
+/// <reference types="./RollerCoaster.d.ts" />
 import {
   BufferAttribute,
   BufferGeometry,

@@ -1,3 +1,4 @@
+/// <reference types="./SubsurfaceScatteringShader.d.ts" />
 import {
   Color,
   ShaderChunk,

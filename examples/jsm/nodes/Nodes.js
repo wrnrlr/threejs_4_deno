@@ -1,3 +1,4 @@
+/// <reference types="./Nodes.d.ts" />
 // TODO: all nodes
 
 // core

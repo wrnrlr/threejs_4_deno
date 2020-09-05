@@ -1,3 +1,4 @@
+/// <reference types="./AnimationAction.d.ts" />
 import {
   WrapAroundEnding,
   ZeroCurvatureEnding,

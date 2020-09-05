@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { TempNode } from "./TempNode.d.ts";
 import { NodeBuilder } from "./NodeBuilder.d.ts";
 

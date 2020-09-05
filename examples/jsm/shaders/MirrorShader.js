@@ -1,3 +1,5 @@
+/// <reference types="./MirrorShader.d.ts" />
+
 /**
  * Mirror Shader
  * Copies half the input to the other half

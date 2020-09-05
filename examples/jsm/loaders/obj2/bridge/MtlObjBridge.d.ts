@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import {
   MTLLoader,
 } from "../../MTLLoader.d.ts";

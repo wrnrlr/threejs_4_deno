@@ -1,3 +1,4 @@
+/// <reference types="./RawNode.d.ts" />
 import { Node } from "../../core/Node.js";
 
 function RawNode(value) {

@@ -1,3 +1,4 @@
+/// <reference types="./NoiseNode.d.ts" />
 import { TempNode } from "../core/TempNode.js";
 import { FunctionNode } from "../core/FunctionNode.js";
 import { UVNode } from "../accessors/UVNode.js";

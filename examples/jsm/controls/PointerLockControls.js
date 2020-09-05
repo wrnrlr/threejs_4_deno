@@ -1,3 +1,4 @@
+/// <reference types="./PointerLockControls.d.ts" />
 import {
   Euler,
   EventDispatcher,

@@ -1,3 +1,5 @@
+/// <reference types="./DOFMipMapShader.d.ts" />
+
 /**
  * Depth-of-field shader using mipmaps
  * - from Matt Handley @applmak

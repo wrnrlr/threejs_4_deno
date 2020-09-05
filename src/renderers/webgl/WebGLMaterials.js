@@ -1,3 +1,4 @@
+/// <reference types="./WebGLMaterials.d.ts" />
 import { BackSide } from "../../constants.js";
 
 function WebGLMaterials(properties) {

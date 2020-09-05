@@ -1,3 +1,4 @@
+/// <reference types="./Path.d.ts" />
 import { Vector2 } from "../../math/Vector2.js";
 import { CurvePath } from "./CurvePath.js";
 import { EllipseCurve } from "../curves/EllipseCurve.js";

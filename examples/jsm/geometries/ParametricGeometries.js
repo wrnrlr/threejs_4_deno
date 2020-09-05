@@ -1,3 +1,4 @@
+/// <reference types="./ParametricGeometries.d.ts" />
 import {
   Curve,
   Geometry,

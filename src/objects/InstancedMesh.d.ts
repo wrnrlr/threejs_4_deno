@@ -1,9 +1,11 @@
+/// <reference lib="dom" />
 import { Geometry } from "./../core/Geometry.d.ts";
 import { BufferGeometry } from "../core/BufferGeometry.d.ts";
 import { Material } from "./../materials/Material.d.ts";
 import { BufferAttribute } from "./../core/BufferAttribute.d.ts";
 import { Mesh } from "./Mesh.d.ts";
 import { Matrix4 } from "./../math/Matrix4.d.ts";
+import { Color } from "./../math/Color.d.ts";
 
 export class InstancedMesh<
   TGeometry extends Geometry | BufferGeometry = Geometry | BufferGeometry,
@@ -21,4 +23,5 @@ export class InstancedMesh<
 
   getMatrixAt(index: number, matrix: Matrix4): void;
   setMatrixAt(index: number, matrix: Matrix4): void;
+  setColorAt(index: number, color: Color): void;
 }

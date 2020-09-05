@@ -1,3 +1,4 @@
+/// <reference types="./NodeMaterial.d.ts" />
 import {
   FrontSide,
   LessEqualDepth,

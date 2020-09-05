@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { PerspectiveCamera } from "./PerspectiveCamera.d.ts";
 import { Camera } from "./Camera.d.ts";
 

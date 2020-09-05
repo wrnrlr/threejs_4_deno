@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Euler } from "./Euler.d.ts";
 import { Matrix3 } from "./Matrix3.d.ts";
 import { Matrix4 } from "./Matrix4.d.ts";
@@ -6,6 +7,7 @@ import { Camera } from "./../cameras/Camera.d.ts";
 import { Spherical } from "./Spherical.d.ts";
 import { Cylindrical } from "./Cylindrical.d.ts";
 import { BufferAttribute } from "./../core/BufferAttribute.d.ts";
+import { InterleavedBufferAttribute } from "./../core/InterleavedBufferAttribute.d.ts";
 import { Vector } from "./Vector2.d.ts";
 /**
  * 3D vector.
@@ -292,7 +294,7 @@ export class Vector3 implements Vector {
   toArray(array: ArrayLike<number>, offset?: number): ArrayLike<number>;
 
   fromBufferAttribute(
-    attribute: BufferAttribute,
+    attribute: BufferAttribute | InterleavedBufferAttribute,
     index: number,
   ): this;
 

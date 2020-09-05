@@ -1,3 +1,4 @@
+/// <reference types="./AssimpLoader.d.ts" />
 import {
   Bone,
   BufferAttribute,

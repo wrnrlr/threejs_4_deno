@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Mapping } from "../constants.d.ts";
 import { Texture } from "../textures/Texture.d.ts";
 

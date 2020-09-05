@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Material } from "../../materials/Material.d.ts";
 import { IFog } from "../../scenes/Fog.d.ts";
 import { WebGLProperties } from "./WebGLProperties.d.ts";

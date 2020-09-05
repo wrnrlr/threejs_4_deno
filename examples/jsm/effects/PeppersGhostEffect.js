@@ -1,3 +1,4 @@
+/// <reference types="./PeppersGhostEffect.d.ts" />
 import {
   PerspectiveCamera,
   Quaternion,

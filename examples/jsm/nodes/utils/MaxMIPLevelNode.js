@@ -1,3 +1,4 @@
+/// <reference types="./MaxMIPLevelNode.d.ts" />
 import { FloatNode } from "../inputs/FloatNode.js";
 
 function MaxMIPLevelNode(texture) {

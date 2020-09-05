@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import {
   Geometry,
   Group,

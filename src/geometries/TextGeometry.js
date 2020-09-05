@@ -1,3 +1,4 @@
+/// <reference types="./TextGeometry.d.ts" />
 import { Geometry } from "../core/Geometry.js";
 import { ExtrudeBufferGeometry } from "./ExtrudeGeometry.js";
 

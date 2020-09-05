@@ -1,3 +1,4 @@
+/// <reference types="./SpecularMIPLevelNode.d.ts" />
 import { TempNode } from "../core/TempNode.js";
 import { FunctionNode } from "../core/FunctionNode.js";
 import { MaxMIPLevelNode } from "./MaxMIPLevelNode.js";

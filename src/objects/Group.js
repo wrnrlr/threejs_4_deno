@@ -1,3 +1,4 @@
+/// <reference types="./Group.d.ts" />
 import { Object3D } from "../core/Object3D.js";
 
 function Group() {

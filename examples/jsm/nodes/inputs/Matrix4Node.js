@@ -1,3 +1,4 @@
+/// <reference types="./Matrix4Node.d.ts" />
 import { Matrix4 } from "../../../../src/Three.js";
 
 import { InputNode } from "../core/InputNode.js";

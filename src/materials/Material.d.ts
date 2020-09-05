@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Plane } from "./../math/Plane.d.ts";
 import { EventDispatcher } from "./../core/EventDispatcher.d.ts";
 import { WebGLRenderer } from "./../renderers/WebGLRenderer.d.ts";

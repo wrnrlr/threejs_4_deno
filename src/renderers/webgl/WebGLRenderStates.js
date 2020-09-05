@@ -1,3 +1,4 @@
+/// <reference types="./WebGLRenderStates.d.ts" />
 import { WebGLLights } from "./WebGLLights.js";
 
 function WebGLRenderState() {

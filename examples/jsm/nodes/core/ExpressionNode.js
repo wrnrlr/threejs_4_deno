@@ -1,3 +1,4 @@
+/// <reference types="./ExpressionNode.d.ts" />
 import { FunctionNode } from "./FunctionNode.js";
 
 function ExpressionNode(src, type, keywords, extensions, includes) {

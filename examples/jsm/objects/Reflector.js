@@ -1,3 +1,4 @@
+/// <reference types="./Reflector.d.ts" />
 import {
   Color,
   LinearFilter,

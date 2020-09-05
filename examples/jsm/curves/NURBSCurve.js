@@ -1,3 +1,4 @@
+/// <reference types="./NURBSCurve.d.ts" />
 import {
   Curve,
   Vector3,

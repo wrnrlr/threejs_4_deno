@@ -1,3 +1,4 @@
+/// <reference types="./XLoader.d.ts" />
 import {
   AnimationClip,
   AnimationMixer,

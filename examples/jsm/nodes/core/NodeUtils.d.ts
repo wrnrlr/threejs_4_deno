@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Node } from "./Node.d.ts";
 
 export namespace NodeUtils {

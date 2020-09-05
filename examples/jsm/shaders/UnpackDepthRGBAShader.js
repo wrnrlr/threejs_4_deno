@@ -1,3 +1,5 @@
+/// <reference types="./UnpackDepthRGBAShader.d.ts" />
+
 /**
  * Unpack RGBA depth shader
  * - show RGBA encoded depth as monochrome color

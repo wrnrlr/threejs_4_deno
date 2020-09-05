@@ -1,3 +1,4 @@
+/// <reference types="./FloatNode.d.ts" />
 import { InputNode } from "../core/InputNode.js";
 
 function FloatNode(value) {

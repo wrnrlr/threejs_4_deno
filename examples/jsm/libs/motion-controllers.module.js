@@ -1,33 +1,34 @@
+// deno-fmt-ignore-file
 /**
  * @webxr-input-profiles/motion-controllers 1.0.0 https://github.com/immersive-web/webxr-input-profiles
  */
 
 const Constants = {
   Handedness: Object.freeze({
-    NONE: "none",
-    LEFT: "left",
-    RIGHT: "right",
+    NONE: 'none',
+    LEFT: 'left',
+    RIGHT: 'right'
   }),
 
   ComponentState: Object.freeze({
-    DEFAULT: "default",
-    TOUCHED: "touched",
-    PRESSED: "pressed",
+    DEFAULT: 'default',
+    TOUCHED: 'touched',
+    PRESSED: 'pressed'
   }),
 
   ComponentProperty: Object.freeze({
-    BUTTON: "button",
-    X_AXIS: "xAxis",
-    Y_AXIS: "yAxis",
-    STATE: "state",
+    BUTTON: 'button',
+    X_AXIS: 'xAxis',
+    Y_AXIS: 'yAxis',
+    STATE: 'state'
   }),
 
   ComponentType: Object.freeze({
-    TRIGGER: "trigger",
-    SQUEEZE: "squeeze",
-    TOUCHPAD: "touchpad",
-    THUMBSTICK: "thumbstick",
-    BUTTON: "button",
+    TRIGGER: 'trigger',
+    SQUEEZE: 'squeeze',
+    TOUCHPAD: 'touchpad',
+    THUMBSTICK: 'thumbstick',
+    BUTTON: 'button'
   }),
 
   ButtonTouchThreshold: 0.05,
@@ -35,9 +36,9 @@ const Constants = {
   AxisTouchThreshold: 0.1,
 
   VisualResponseProperty: Object.freeze({
-    TRANSFORM: "transform",
-    VISIBILITY: "visibility",
-  }),
+    TRANSFORM: 'transform',
+    VISIBILITY: 'visibility'
+  })
 };
 
 /**
@@ -55,28 +56,21 @@ async function fetchJsonFile(path) {
 
 async function fetchProfilesList(basePath) {
   if (!basePath) {
-    throw new Error("No basePath supplied");
+    throw new Error('No basePath supplied');
   }
 
-  const profileListFileName = "profilesList.json";
-  const profilesList = await fetchJsonFile(
-    `${basePath}/${profileListFileName}`,
-  );
+  const profileListFileName = 'profilesList.json';
+  const profilesList = await fetchJsonFile(`${basePath}/${profileListFileName}`);
   return profilesList;
 }
 
-async function fetchProfile(
-  xrInputSource,
-  basePath,
-  defaultProfile = null,
-  getAssetPath = true,
-) {
+async function fetchProfile(xrInputSource, basePath, defaultProfile = null, getAssetPath = true) {
   if (!xrInputSource) {
-    throw new Error("No xrInputSource supplied");
+    throw new Error('No xrInputSource supplied');
   }
 
   if (!basePath) {
-    throw new Error("No basePath supplied");
+    throw new Error('No basePath supplied');
   }
 
   // Get the list of profiles
@@ -90,7 +84,7 @@ async function fetchProfile(
       match = {
         profileId,
         profilePath: `${basePath}/${supportedProfile.path}`,
-        deprecated: !!supportedProfile.deprecated,
+        deprecated: !!supportedProfile.deprecated
       };
     }
     return !!match;
@@ -98,20 +92,18 @@ async function fetchProfile(
 
   if (!match) {
     if (!defaultProfile) {
-      throw new Error("No matching profile name found");
+      throw new Error('No matching profile name found');
     }
 
     const supportedProfile = supportedProfilesList[defaultProfile];
     if (!supportedProfile) {
-      throw new Error(
-        `No matching profile name found and default profile "${defaultProfile}" missing.`,
-      );
+      throw new Error(`No matching profile name found and default profile "${defaultProfile}" missing.`);
     }
 
     match = {
       profileId: defaultProfile,
       profilePath: `${basePath}/${supportedProfile.path}`,
-      deprecated: !!supportedProfile.deprecated,
+      deprecated: !!supportedProfile.deprecated
     };
   }
 
@@ -120,19 +112,19 @@ async function fetchProfile(
   let assetPath;
   if (getAssetPath) {
     let layout;
-    if (xrInputSource.handedness === "any") {
+    if (xrInputSource.handedness === 'any') {
       layout = profile.layouts[Object.keys(profile.layouts)[0]];
     } else {
       layout = profile.layouts[xrInputSource.handedness];
     }
     if (!layout) {
       throw new Error(
-        `No matching handedness, ${xrInputSource.handedness}, in profile ${match.profileId}`,
+        `No matching handedness, ${xrInputSource.handedness}, in profile ${match.profileId}`
       );
     }
 
     if (layout.assetPath) {
-      assetPath = match.profilePath.replace("profile.json", layout.assetPath);
+      assetPath = match.profilePath.replace('profile.json', layout.assetPath);
     }
   }
 
@@ -144,7 +136,7 @@ const defaultComponentValues = {
   xAxis: 0,
   yAxis: 0,
   button: 0,
-  state: Constants.ComponentState.DEFAULT,
+  state: Constants.ComponentState.DEFAULT
 };
 
 /**
@@ -172,7 +164,7 @@ function normalizeAxes(x = 0, y = 0) {
   // from (0, 0) to (0.5, 0.5). The circle's radius scales from 1 to be 0.5.
   const result = {
     normalizedXAxis: (xAxis * 0.5) + 0.5,
-    normalizedYAxis: (yAxis * 0.5) + 0.5,
+    normalizedYAxis: (yAxis * 0.5) + 0.5
   };
   return result;
 }
@@ -211,10 +203,7 @@ class VisualResponse {
    * @param {string} state - The component's active state
    */
   updateFromComponent({
-    xAxis,
-    yAxis,
-    button,
-    state,
+    xAxis, yAxis, button, state
   }) {
     const { normalizedXAxis, normalizedYAxis } = normalizeAxes(xAxis, yAxis);
     switch (this.componentProperty) {
@@ -228,18 +217,14 @@ class VisualResponse {
         this.value = (this.states.includes(state)) ? button : 0;
         break;
       case Constants.ComponentProperty.STATE:
-        if (
-          this.valueNodeProperty === Constants.VisualResponseProperty.VISIBILITY
-        ) {
+        if (this.valueNodeProperty === Constants.VisualResponseProperty.VISIBILITY) {
           this.value = (this.states.includes(state));
         } else {
           this.value = this.states.includes(state) ? 1.0 : 0.0;
         }
         break;
       default:
-        throw new Error(
-          `Unexpected visualResponse componentProperty ${this.componentProperty}`,
-        );
+        throw new Error(`Unexpected visualResponse componentProperty ${this.componentProperty}`);
     }
   }
 }
@@ -250,14 +235,12 @@ class Component {
    * @param {Object} componentDescription - Description of the component to be created
    */
   constructor(componentId, componentDescription) {
-    if (
-      !componentId ||
-      !componentDescription ||
-      !componentDescription.visualResponses ||
-      !componentDescription.gamepadIndices ||
-      Object.keys(componentDescription.gamepadIndices).length === 0
-    ) {
-      throw new Error("Invalid arguments supplied");
+    if (!componentId
+     || !componentDescription
+     || !componentDescription.visualResponses
+     || !componentDescription.gamepadIndices
+     || Object.keys(componentDescription.gamepadIndices).length === 0) {
+      throw new Error('Invalid arguments supplied');
     }
 
     this.id = componentId;
@@ -267,26 +250,19 @@ class Component {
 
     // Build all the visual responses for this component
     this.visualResponses = {};
-    Object.keys(componentDescription.visualResponses).forEach(
-      (responseName) => {
-        const visualResponse = new VisualResponse(
-          componentDescription.visualResponses[responseName],
-        );
-        this.visualResponses[responseName] = visualResponse;
-      },
-    );
+    Object.keys(componentDescription.visualResponses).forEach((responseName) => {
+      const visualResponse = new VisualResponse(componentDescription.visualResponses[responseName]);
+      this.visualResponses[responseName] = visualResponse;
+    });
 
     // Set default values
-    this.gamepadIndices = Object.assign(
-      {},
-      componentDescription.gamepadIndices,
-    );
+    this.gamepadIndices = Object.assign({}, componentDescription.gamepadIndices);
 
     this.values = {
       state: Constants.ComponentState.DEFAULT,
       button: (this.gamepadIndices.button !== undefined) ? 0 : undefined,
       xAxis: (this.gamepadIndices.xAxis !== undefined) ? 0 : undefined,
-      yAxis: (this.gamepadIndices.yAxis !== undefined) ? 0 : undefined,
+      yAxis: (this.gamepadIndices.yAxis !== undefined) ? 0 : undefined
     };
   }
 
@@ -304,10 +280,8 @@ class Component {
     this.values.state = Constants.ComponentState.DEFAULT;
 
     // Get and normalize button
-    if (
-      this.gamepadIndices.button !== undefined &&
-      gamepad.buttons.length > this.gamepadIndices.button
-    ) {
+    if (this.gamepadIndices.button !== undefined
+        && gamepad.buttons.length > this.gamepadIndices.button) {
       const gamepadButton = gamepad.buttons[this.gamepadIndices.button];
       this.values.button = gamepadButton.value;
       this.values.button = (this.values.button < 0) ? 0 : this.values.button;
@@ -316,46 +290,35 @@ class Component {
       // Set the state based on the button
       if (gamepadButton.pressed || this.values.button === 1) {
         this.values.state = Constants.ComponentState.PRESSED;
-      } else if (
-        gamepadButton.touched ||
-        this.values.button > Constants.ButtonTouchThreshold
-      ) {
+      } else if (gamepadButton.touched || this.values.button > Constants.ButtonTouchThreshold) {
         this.values.state = Constants.ComponentState.TOUCHED;
       }
     }
 
     // Get and normalize x axis value
-    if (
-      this.gamepadIndices.xAxis !== undefined &&
-      gamepad.axes.length > this.gamepadIndices.xAxis
-    ) {
+    if (this.gamepadIndices.xAxis !== undefined
+        && gamepad.axes.length > this.gamepadIndices.xAxis) {
       this.values.xAxis = gamepad.axes[this.gamepadIndices.xAxis];
       this.values.xAxis = (this.values.xAxis < -1) ? -1 : this.values.xAxis;
       this.values.xAxis = (this.values.xAxis > 1) ? 1 : this.values.xAxis;
 
       // If the state is still default, check if the xAxis makes it touched
-      if (
-        this.values.state === Constants.ComponentState.DEFAULT &&
-        Math.abs(this.values.xAxis) > Constants.AxisTouchThreshold
-      ) {
+      if (this.values.state === Constants.ComponentState.DEFAULT
+        && Math.abs(this.values.xAxis) > Constants.AxisTouchThreshold) {
         this.values.state = Constants.ComponentState.TOUCHED;
       }
     }
 
     // Get and normalize Y axis value
-    if (
-      this.gamepadIndices.yAxis !== undefined &&
-      gamepad.axes.length > this.gamepadIndices.yAxis
-    ) {
+    if (this.gamepadIndices.yAxis !== undefined
+        && gamepad.axes.length > this.gamepadIndices.yAxis) {
       this.values.yAxis = gamepad.axes[this.gamepadIndices.yAxis];
       this.values.yAxis = (this.values.yAxis < -1) ? -1 : this.values.yAxis;
       this.values.yAxis = (this.values.yAxis > 1) ? 1 : this.values.yAxis;
 
       // If the state is still default, check if the yAxis makes it touched
-      if (
-        this.values.state === Constants.ComponentState.DEFAULT &&
-        Math.abs(this.values.yAxis) > Constants.AxisTouchThreshold
-      ) {
+      if (this.values.state === Constants.ComponentState.DEFAULT
+        && Math.abs(this.values.yAxis) > Constants.AxisTouchThreshold) {
         this.values.state = Constants.ComponentState.TOUCHED;
       }
     }
@@ -380,11 +343,11 @@ class MotionController {
    */
   constructor(xrInputSource, profile, assetUrl) {
     if (!xrInputSource) {
-      throw new Error("No xrInputSource supplied");
+      throw new Error('No xrInputSource supplied');
     }
 
     if (!profile) {
-      throw new Error("No profile supplied");
+      throw new Error('No profile supplied');
     }
 
     this.xrInputSource = xrInputSource;
@@ -395,12 +358,8 @@ class MotionController {
     this.layoutDescription = profile.layouts[xrInputSource.handedness];
     this.components = {};
     Object.keys(this.layoutDescription.components).forEach((componentId) => {
-      const componentDescription =
-        this.layoutDescription.components[componentId];
-      this.components[componentId] = new Component(
-        componentId,
-        componentDescription,
-      );
+      const componentDescription = this.layoutDescription.components[componentId];
+      this.components[componentId] = new Component(componentId, componentDescription);
     });
 
     // Initialize components based on current gamepad state

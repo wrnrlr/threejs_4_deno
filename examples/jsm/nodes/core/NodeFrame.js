@@ -1,3 +1,4 @@
+/// <reference types="./NodeFrame.d.ts" />
 function NodeFrame(time) {
   this.time = time !== undefined ? time : 0;
 

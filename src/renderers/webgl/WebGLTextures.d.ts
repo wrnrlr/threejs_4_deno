@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { WebGLExtensions } from "./WebGLExtensions.d.ts";
 import { WebGLState } from "./WebGLState.d.ts";
 import { WebGLProperties } from "./WebGLProperties.d.ts";

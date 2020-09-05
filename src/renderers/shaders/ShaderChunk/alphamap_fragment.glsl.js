@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 #ifdef USE_ALPHAMAP
 
 	diffuseColor.a *= texture2D( alphaMap, vUv ).g;

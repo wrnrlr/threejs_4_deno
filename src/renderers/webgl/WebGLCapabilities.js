@@ -1,3 +1,4 @@
+/// <reference types="./WebGLCapabilities.d.ts" />
 function WebGLCapabilities(gl, extensions, parameters) {
   let maxAnisotropy;
 

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 // core
 
 export * from "./core/Node.d.ts";

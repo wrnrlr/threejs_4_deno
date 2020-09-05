@@ -1,3 +1,4 @@
+/// <reference types="./JoinNode.d.ts" />
 import { TempNode } from "../core/TempNode.js";
 import { NodeUtils } from "../core/NodeUtils.js";
 

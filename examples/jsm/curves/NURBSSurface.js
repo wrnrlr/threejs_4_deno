@@ -1,3 +1,4 @@
+/// <reference types="./NURBSSurface.d.ts" />
 import {
   Vector4,
 } from "../../../src/Three.js";

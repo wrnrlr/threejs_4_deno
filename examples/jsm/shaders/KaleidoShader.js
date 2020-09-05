@@ -1,3 +1,5 @@
+/// <reference types="./KaleidoShader.d.ts" />
+
 /**
  * Kaleidoscope Shader
  * Radial reflection around center point

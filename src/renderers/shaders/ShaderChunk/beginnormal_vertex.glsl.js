@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 vec3 objectNormal = vec3( normal );
 
 #ifdef USE_TANGENT

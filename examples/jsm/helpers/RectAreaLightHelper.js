@@ -1,3 +1,4 @@
+/// <reference types="./RectAreaLightHelper.d.ts" />
 import {
   BackSide,
   BufferGeometry,

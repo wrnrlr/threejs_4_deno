@@ -1,3 +1,4 @@
+/// <reference types="./AnimationClip.d.ts" />
 import { AnimationUtils } from "./AnimationUtils.js";
 import { KeyframeTrack } from "./KeyframeTrack.js";
 import { BooleanKeyframeTrack } from "./tracks/BooleanKeyframeTrack.js";

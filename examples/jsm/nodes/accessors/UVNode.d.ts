@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.d.ts";
 
 export class UVNode extends TempNode {

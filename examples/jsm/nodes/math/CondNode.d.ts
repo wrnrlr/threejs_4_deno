@@ -1,15 +1,16 @@
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.d.ts";
 import { NodeBuilder } from "../core/NodeBuilder.d.ts";
 import { Node } from "../core/Node.d.ts";
 
 export class CondNode extends TempNode {
-  constructor(a: Node, b: Node, op: string, ifNode: Node, elseNode: Node);
+  constructor(a: Node, b: Node, op: string, ifNode?: Node, elseNode?: Node);
 
   a: Node;
   b: Node;
   op: string;
-  ifNode: Node;
-  elseNode: Node;
+  ifNode: Node | undefined;
+  elseNode: Node | undefined;
   nodeType: string;
 
   getCondType(builder: NodeBuilder): string;
@@ -21,4 +22,6 @@ export class CondNode extends TempNode {
   static GREATER_EQUAL: string;
   static LESS: string;
   static LESS_EQUAL: string;
+  static AND: string;
+  static OR: string;
 }

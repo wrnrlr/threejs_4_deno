@@ -1,3 +1,4 @@
+/// <reference types="./KTXLoader.d.ts" />
 import {
   CompressedTextureLoader,
 } from "../../../src/Three.js";

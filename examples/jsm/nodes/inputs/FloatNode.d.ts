@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { InputNode } from "../core/InputNode.d.ts";
 import { NodeBuilder } from "../core/NodeBuilder.d.ts";
 

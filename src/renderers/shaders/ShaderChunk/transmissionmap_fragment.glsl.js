@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 #ifdef USE_TRANSMISSIONMAP
 
 	totalTransmission *= texture2D( transmissionMap, vUv ).r;

@@ -1,3 +1,4 @@
+/// <reference types="./TTFLoader.d.ts" />
 import {
   FileLoader,
   Loader,

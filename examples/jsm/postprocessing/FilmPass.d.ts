@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import {
   ShaderMaterial,
 } from "../../../src/Three.d.ts";

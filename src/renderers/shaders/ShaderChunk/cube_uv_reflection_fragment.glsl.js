@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 #ifdef ENVMAP_TYPE_CUBE_UV
 
 	#define cubeUV_maxMipLevel 8.0

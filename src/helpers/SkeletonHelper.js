@@ -1,3 +1,4 @@
+/// <reference types="./SkeletonHelper.d.ts" />
 import { LineSegments } from "../objects/LineSegments.js";
 import { Matrix4 } from "../math/Matrix4.js";
 import { LineBasicMaterial } from "../materials/LineBasicMaterial.js";
@@ -6,9 +7,9 @@ import { Vector3 } from "../math/Vector3.js";
 import { BufferGeometry } from "../core/BufferGeometry.js";
 import { Float32BufferAttribute } from "../core/BufferAttribute.js";
 
-const _vector = new Vector3();
-const _boneMatrix = new Matrix4();
-const _matrixWorldInv = new Matrix4();
+const _vector = /*@__PURE__*/ new Vector3();
+const _boneMatrix = /*@__PURE__*/ new Matrix4();
+const _matrixWorldInv = /*@__PURE__*/ new Matrix4();
 
 class SkeletonHelper extends LineSegments {
   constructor(object) {

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Shape } from "./Shape.d.ts";
 
 export class Font {

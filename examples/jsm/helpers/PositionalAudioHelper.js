@@ -1,3 +1,4 @@
+/// <reference types="./PositionalAudioHelper.d.ts" />
 import {
   BufferGeometry,
   BufferAttribute,

@@ -1,3 +1,4 @@
+/// <reference types="./VolumeSlice.d.ts" />
 import {
   ClampToEdgeWrapping,
   DoubleSide,

@@ -1,3 +1,4 @@
+/// <reference types="./RGBELoader.d.ts" />
 import {
   DataTextureLoader,
   FloatType,

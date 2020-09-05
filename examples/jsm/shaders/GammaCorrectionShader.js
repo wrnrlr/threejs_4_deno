@@ -1,3 +1,5 @@
+/// <reference types="./GammaCorrectionShader.d.ts" />
+
 /**
  * Gamma Correction Shader
  * http://en.wikipedia.org/wiki/gamma_correction

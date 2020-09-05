@@ -1,3 +1,4 @@
+/// <reference types="./AnaglyphEffect.d.ts" />
 import {
   LinearFilter,
   Matrix3,

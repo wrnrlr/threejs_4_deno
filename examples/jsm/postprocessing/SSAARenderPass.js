@@ -1,3 +1,4 @@
+/// <reference types="./SSAARenderPass.d.ts" />
 import {
   AdditiveBlending,
   LinearFilter,

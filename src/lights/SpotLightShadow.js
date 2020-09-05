@@ -1,3 +1,4 @@
+/// <reference types="./SpotLightShadow.d.ts" />
 import { LightShadow } from "./LightShadow.js";
 import { MathUtils } from "../math/MathUtils.js";
 import { PerspectiveCamera } from "../cameras/PerspectiveCamera.js";

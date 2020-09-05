@@ -1,3 +1,4 @@
+/// <reference types="./WebGLShader.d.ts" />
 function WebGLShader(gl, type, string) {
   const shader = gl.createShader(type);
 

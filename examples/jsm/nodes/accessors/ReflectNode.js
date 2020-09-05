@@ -1,3 +1,4 @@
+/// <reference types="./ReflectNode.d.ts" />
 import { TempNode } from "../core/TempNode.js";
 import { PositionNode } from "./PositionNode.js";
 import { NormalNode } from "./NormalNode.js";

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.d.ts";
 import { Matrix4Node } from "./Matrix4Node.d.ts";
 import { OperatorNode } from "../math/OperatorNode.d.ts";

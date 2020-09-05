@@ -1,3 +1,4 @@
+/// <reference types="./StandardNode.d.ts" />
 import {
   UniformsLib,
   UniformsUtils,

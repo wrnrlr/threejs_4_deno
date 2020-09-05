@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export namespace Interpolations {
   export function CatmullRom(
     t: number,

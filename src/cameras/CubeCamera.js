@@ -1,3 +1,4 @@
+/// <reference types="./CubeCamera.d.ts" />
 import { Object3D } from "../core/Object3D.js";
 import { Vector3 } from "../math/Vector3.js";
 import { PerspectiveCamera } from "./PerspectiveCamera.js";

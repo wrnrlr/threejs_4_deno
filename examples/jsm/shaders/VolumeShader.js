@@ -1,3 +1,4 @@
+/// <reference types="./VolumeShader.d.ts" />
 import {
   Vector2,
   Vector3,

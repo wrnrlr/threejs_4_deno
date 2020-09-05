@@ -1,3 +1,4 @@
+/// <reference types="./StringKeyframeTrack.d.ts" />
 import { InterpolateDiscrete } from "../../constants.js";
 import { KeyframeTrack } from "../KeyframeTrack.js";
 

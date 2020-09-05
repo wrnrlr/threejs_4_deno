@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { KeyframeTrack } from "./../KeyframeTrack.d.ts";
 
 export class BooleanKeyframeTrack extends KeyframeTrack {

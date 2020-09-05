@@ -1,3 +1,5 @@
+/// <reference types="./RenderPass.d.ts" />
+
 import { Pass } from "../postprocessing/Pass.js";
 
 var RenderPass = function (

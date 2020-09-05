@@ -1,3 +1,4 @@
+/// <reference types="./OperatorNode.d.ts" />
 import { TempNode } from "../core/TempNode.js";
 
 function OperatorNode(a, b, op) {

@@ -1,3 +1,5 @@
+/// <reference types="./SimplexNoise.d.ts" />
+
 // Ported from Stefan Gustavson's java implementation
 // http://staffwww.itn.liu.se/~stegu/simplexnoise/simplexnoise.pdf
 // Read Stefan's excellent paper for details on how this code works.

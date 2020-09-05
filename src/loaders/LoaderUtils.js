@@ -1,3 +1,4 @@
+/// <reference types="./LoaderUtils.d.ts" />
 const LoaderUtils = {
   decodeText: function (array) {
     if (typeof TextDecoder !== "undefined") {

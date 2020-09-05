@@ -1,3 +1,4 @@
+/// <reference types="./MeshStandardNodeMaterial.d.ts" />
 import { MeshStandardNode } from "./nodes/MeshStandardNode.js";
 import { NodeMaterial } from "./NodeMaterial.js";
 import { NodeUtils } from "../core/NodeUtils.js";

@@ -1,3 +1,4 @@
+/// <reference types="./BloomPass.d.ts" />
 import {
   AdditiveBlending,
   LinearFilter,

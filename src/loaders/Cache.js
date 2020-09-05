@@ -1,3 +1,4 @@
+/// <reference types="./Cache.d.ts" />
 const Cache = {
   enabled: false,
 

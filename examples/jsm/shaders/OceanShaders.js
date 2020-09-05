@@ -1,3 +1,4 @@
+/// <reference types="./OceanShaders.d.ts" />
 import {
   Vector2,
 } from "../../../src/Three.js";

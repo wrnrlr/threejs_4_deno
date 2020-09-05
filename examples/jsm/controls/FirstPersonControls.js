@@ -1,3 +1,4 @@
+/// <reference types="./FirstPersonControls.d.ts" />
 import {
   MathUtils,
   Spherical,

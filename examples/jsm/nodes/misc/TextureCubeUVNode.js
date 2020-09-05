@@ -1,3 +1,4 @@
+/// <reference types="./TextureCubeUVNode.d.ts" />
 import { TempNode } from "../core/TempNode.js";
 import { ConstNode } from "../core/ConstNode.js";
 import { StructNode } from "../core/StructNode.js";

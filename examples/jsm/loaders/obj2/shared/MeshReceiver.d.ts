@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import {
   Mesh,
 } from "../../../../../src/Three.d.ts";

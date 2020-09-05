@@ -1,3 +1,4 @@
+/// <reference types="./CompressedTexture.d.ts" />
 import { Texture } from "./Texture.js";
 
 function CompressedTexture(

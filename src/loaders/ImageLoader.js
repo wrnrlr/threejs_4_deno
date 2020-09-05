@@ -1,3 +1,4 @@
+/// <reference types="./ImageLoader.d.ts" />
 import { Cache } from "./Cache.js";
 import { Loader } from "./Loader.js";
 

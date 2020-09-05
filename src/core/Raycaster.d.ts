@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Vector3 } from "./../math/Vector3.d.ts";
 import { Face3 } from "./Face3.d.ts";
 import { Object3D } from "./Object3D.d.ts";

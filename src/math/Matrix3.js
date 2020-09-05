@@ -1,3 +1,4 @@
+/// <reference types="./Matrix3.d.ts" />
 class Matrix3 {
   constructor() {
     Object.defineProperty(this, "isMatrix3", { value: true });

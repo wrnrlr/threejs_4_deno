@@ -1,3 +1,5 @@
+/// <reference types="./BokehShader.d.ts" />
+
 /**
  * Depth-of-field shader with bokeh
  * ported from GLSL shader by Martins Upitis

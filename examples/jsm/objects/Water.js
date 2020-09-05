@@ -1,3 +1,4 @@
+/// <reference types="./Water.d.ts" />
 import {
   Color,
   FrontSide,

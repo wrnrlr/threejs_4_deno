@@ -1,3 +1,4 @@
+/// <reference types="./NURBSUtils.d.ts" />
 import {
   Vector3,
   Vector4,

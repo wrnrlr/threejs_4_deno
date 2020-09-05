@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 #ifdef DITHERING
 
 	gl_FragColor.rgb = dithering( gl_FragColor.rgb );

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { LineSegments } from "./../objects/LineSegments.d.ts";
 
 export class AxesHelper extends LineSegments {

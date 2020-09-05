@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Audio } from "./Audio.d.ts";
 
 export class AudioAnalyser {

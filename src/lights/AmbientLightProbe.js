@@ -1,3 +1,4 @@
+/// <reference types="./AmbientLightProbe.d.ts" />
 import { Color } from "../math/Color.js";
 import { LightProbe } from "./LightProbe.js";
 

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { ExpressionNode } from "../core/ExpressionNode.d.ts";
 import { Matrix3Node } from "../inputs/Matrix3Node.d.ts";
 import { UVNode } from "../accessors/UVNode.d.ts";

@@ -1,3 +1,4 @@
+/// <reference types="./MMDExporter.d.ts" />
 import {
   Matrix4,
   Quaternion,

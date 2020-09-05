@@ -1,3 +1,4 @@
+/// <reference types="./SkeletonUtils.d.ts" />
 import {
   AnimationClip,
   AnimationMixer,

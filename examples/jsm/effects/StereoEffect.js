@@ -1,3 +1,4 @@
+/// <reference types="./StereoEffect.d.ts" />
 import {
   StereoCamera,
   Vector2,

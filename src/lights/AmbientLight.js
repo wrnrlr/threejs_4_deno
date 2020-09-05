@@ -1,3 +1,4 @@
+/// <reference types="./AmbientLight.d.ts" />
 import { Light } from "./Light.js";
 
 function AmbientLight(color, intensity) {

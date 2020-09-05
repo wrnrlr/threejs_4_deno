@@ -1,3 +1,4 @@
+/// <reference types="./AnimationLoader.d.ts" />
 import { AnimationClip } from "../animation/AnimationClip.js";
 import { FileLoader } from "./FileLoader.js";
 import { Loader } from "./Loader.js";

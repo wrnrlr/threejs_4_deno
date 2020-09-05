@@ -1,3 +1,4 @@
+/// <reference types="./MeshStandardNode.d.ts" />
 import {
   Color,
   Vector2,

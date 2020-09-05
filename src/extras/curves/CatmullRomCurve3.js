@@ -1,3 +1,4 @@
+/// <reference types="./CatmullRomCurve3.d.ts" />
 import { Vector3 } from "../../math/Vector3.js";
 import { Curve } from "../core/Curve.js";
 

@@ -1,3 +1,4 @@
+/// <reference types="./MarchingCubes.d.ts" />
 import {
   BufferAttribute,
   BufferGeometry,

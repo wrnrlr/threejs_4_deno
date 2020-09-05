@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Vector2 } from "./../../math/Vector2.d.ts";
 import { Path } from "./Path.d.ts";
 import { ExtrudeGeometry } from "./../../geometries/ExtrudeGeometry.d.ts";

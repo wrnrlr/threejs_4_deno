@@ -1,3 +1,4 @@
+/// <reference types="./WebGLObjects.d.ts" />
 function WebGLObjects(gl, geometries, attributes, info) {
   let updateMap = new WeakMap();
 

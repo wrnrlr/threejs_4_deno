@@ -1,3 +1,4 @@
+/// <reference types="./WebGLBackground.d.ts" />
 import {
   BackSide,
   FrontSide,

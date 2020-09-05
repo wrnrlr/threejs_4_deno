@@ -1,12 +1,9 @@
-import init from "./scene.js";
+// deno-fmt-ignore-file
+import init from './scene.js';
 
-self.onmessage = function (message) {
-  var data = message.data;
-  init(
-    data.drawingSurface,
-    data.width,
-    data.height,
-    data.pixelRatio,
-    data.path,
-  );
+self.onmessage = function ( message ) {
+
+	var data = message.data;
+	init( data.drawingSurface, data.width, data.height, data.pixelRatio, data.path );
+
 };

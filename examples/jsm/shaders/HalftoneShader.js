@@ -1,3 +1,5 @@
+/// <reference types="./HalftoneShader.d.ts" />
+
 /**
  * RGB Halftone shader for three.js.
  *	NOTE:

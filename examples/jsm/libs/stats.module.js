@@ -1,3 +1,4 @@
+/// <reference types="./stats.module.d.ts" />
 var Stats = function () {
   var mode = 0;
 

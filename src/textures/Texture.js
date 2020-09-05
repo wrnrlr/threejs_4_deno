@@ -1,3 +1,4 @@
+/// <reference types="./Texture.d.ts" />
 import { EventDispatcher } from "../core/EventDispatcher.js";
 import {
   MirroredRepeatWrapping,

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import {
   WebGLRenderer,
 } from "../../../src/Three.d.ts";

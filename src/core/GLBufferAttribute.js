@@ -1,3 +1,4 @@
+/// <reference types="./GLBufferAttribute.d.ts" />
 /**
  * @author raub / https://github.com/raub
  */

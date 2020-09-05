@@ -1,3 +1,4 @@
+/// <reference types="./Gyroscope.d.ts" />
 import {
   Object3D,
   Quaternion,

@@ -1,3 +1,4 @@
+/// <reference types="./Font.d.ts" />
 import { ShapePath } from "./ShapePath.js";
 
 function Font(data) {

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Node } from "../core/Node.d.ts";
 import { NodeMaterial } from "./NodeMaterial.d.ts";
 

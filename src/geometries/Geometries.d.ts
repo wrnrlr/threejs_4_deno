@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export * from "./WireframeGeometry.d.ts";
 export * from "./ParametricGeometry.d.ts";
 export * from "./TetrahedronGeometry.d.ts";

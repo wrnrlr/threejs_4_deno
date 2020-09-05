@@ -1,3 +1,4 @@
+/// <reference types="./Bone.d.ts" />
 import { Object3D } from "../core/Object3D.js";
 
 function Bone() {

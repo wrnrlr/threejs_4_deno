@@ -1,3 +1,4 @@
+/// <reference types="./WebGLShadowMap.d.ts" />
 import {
   FrontSide,
   BackSide,

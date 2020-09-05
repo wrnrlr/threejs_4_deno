@@ -1,3 +1,4 @@
+/// <reference types="./LoadingManager.d.ts" />
 function LoadingManager(onLoad, onProgress, onError) {
   const scope = this;
 

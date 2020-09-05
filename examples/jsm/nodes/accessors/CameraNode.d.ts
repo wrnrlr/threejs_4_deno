@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Camera } from "../../../../src/Three.d.ts";
 
 import { NodeFrame } from "../core/NodeFrame.d.ts";

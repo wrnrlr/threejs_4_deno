@@ -1,3 +1,4 @@
+/// <reference types="./LuminanceNode.d.ts" />
 import { TempNode } from "../core/TempNode.js";
 import { ConstNode } from "../core/ConstNode.js";
 import { FunctionNode } from "../core/FunctionNode.js";

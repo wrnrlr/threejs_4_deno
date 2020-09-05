@@ -1,3 +1,5 @@
+/// <reference types="./LineGeometry.d.ts" />
+
 import { LineSegmentsGeometry } from "../lines/LineSegmentsGeometry.js";
 
 var LineGeometry = function () {

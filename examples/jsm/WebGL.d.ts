@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export namespace WEBGL {
   export function isWebGLAvailable(): boolean;
   export function isWebGL2Available(): boolean;

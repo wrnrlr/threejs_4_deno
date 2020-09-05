@@ -1,3 +1,5 @@
+/// <reference types="./TypedArrayUtils.d.ts" />
+
 var TypedArrayUtils = {};
 
 /**

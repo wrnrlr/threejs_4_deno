@@ -1,3 +1,4 @@
+/// <reference types="./Spherical.d.ts" />
 /**
  * Ref: https://en.wikipedia.org/wiki/Spherical_coordinate_system
  *

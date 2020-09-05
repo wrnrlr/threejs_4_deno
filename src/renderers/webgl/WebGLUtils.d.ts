@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export class WebGLUtils {
   constructor(
     gl: WebGLRenderingContext | WebGL2RenderingContext,

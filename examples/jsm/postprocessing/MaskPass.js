@@ -1,3 +1,5 @@
+/// <reference types="./MaskPass.d.ts" />
+
 import { Pass } from "../postprocessing/Pass.js";
 
 var MaskPass = function (scene, camera) {

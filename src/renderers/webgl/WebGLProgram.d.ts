@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { WebGLRenderer } from "./../WebGLRenderer.d.ts";
 import { WebGLShader } from "./WebGLShader.d.ts";
 import { WebGLUniforms } from "./WebGLUniforms.d.ts";

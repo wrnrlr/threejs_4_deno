@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Vector2 } from "./../math/Vector2.d.ts";
 import { Raycaster } from "./../core/Raycaster.d.ts";
 import { Object3D } from "./../core/Object3D.d.ts";

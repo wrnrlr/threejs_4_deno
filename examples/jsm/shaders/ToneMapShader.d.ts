@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import {
   Uniform,
 } from "../../../src/Three.d.ts";

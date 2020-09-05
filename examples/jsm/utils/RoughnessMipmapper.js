@@ -1,3 +1,4 @@
+/// <reference types="./RoughnessMipmapper.d.ts" />
 /**
  * This class generates custom mipmaps for a roughness map by encoding the lost variation in the
  * normal map mip levels as increased roughness in the corresponding roughness mip levels. This

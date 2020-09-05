@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 // log handlers
 export function warn(message?: any, ...optionalParams: any[]): void;
 export function error(message?: any, ...optionalParams: any[]): void;

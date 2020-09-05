@@ -1,3 +1,5 @@
+/// <reference types="./BlendShader.d.ts" />
+
 /**
  * Blend two textures
  */

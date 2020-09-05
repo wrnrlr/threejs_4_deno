@@ -1,3 +1,4 @@
+/// <reference types="./CCDIKSolver.d.ts" />
 import {
   BufferAttribute,
   BufferGeometry,

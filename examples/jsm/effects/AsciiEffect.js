@@ -1,3 +1,5 @@
+/// <reference types="./AsciiEffect.d.ts" />
+
 /**
  * Ascii generation is based on http://www.nihilogic.dk/labs/jsascii/
  * Maybe more about this later with a blog post at http://lab4games.net/zz85/blog

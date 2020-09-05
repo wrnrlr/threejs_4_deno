@@ -1,3 +1,4 @@
+/// <reference types="./PCDLoader.d.ts" />
 import {
   BufferGeometry,
   FileLoader,

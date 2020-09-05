@@ -1,3 +1,4 @@
+/// <reference types="./VectorKeyframeTrack.d.ts" />
 import { KeyframeTrack } from "../KeyframeTrack.js";
 
 /**

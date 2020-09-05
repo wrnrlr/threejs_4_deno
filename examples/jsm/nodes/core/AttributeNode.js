@@ -1,3 +1,4 @@
+/// <reference types="./AttributeNode.d.ts" />
 import { Node } from "./Node.js";
 
 function AttributeNode(name, type) {

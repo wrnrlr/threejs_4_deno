@@ -1,3 +1,5 @@
+/// <reference types="./HorizontalBlurShader.d.ts" />
+
 /**
  * Two pass Gaussian blur filter (horizontal and vertical blur shaders)
  * - described in http://www.gamerendering.com/2008/10/11/gaussian-blur-filter-shader/

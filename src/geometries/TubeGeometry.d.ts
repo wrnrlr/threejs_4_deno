@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Curve } from "./../extras/core/Curve.d.ts";
 import { Vector3 } from "./../math/Vector3.d.ts";
 import { Geometry } from "./../core/Geometry.d.ts";

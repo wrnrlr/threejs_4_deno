@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 declare interface Stats {
   REVISION: number;
   dom: HTMLDivElement;

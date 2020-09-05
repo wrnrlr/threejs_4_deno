@@ -1,3 +1,4 @@
+/// <reference types="./WebGLProperties.d.ts" />
 function WebGLProperties() {
   let properties = new WeakMap();
 

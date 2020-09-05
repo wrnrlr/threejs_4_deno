@@ -1,3 +1,4 @@
+/// <reference types="./MMDLoader.d.ts" />
 import {
   AddOperation,
   AnimationClip,

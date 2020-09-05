@@ -1,3 +1,4 @@
+/// <reference types="./LineDashedMaterial.d.ts" />
 import { LineBasicMaterial } from "./LineBasicMaterial.js";
 
 /**

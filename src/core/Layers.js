@@ -1,3 +1,4 @@
+/// <reference types="./Layers.d.ts" />
 class Layers {
   constructor() {
     this.mask = 1 | 0;

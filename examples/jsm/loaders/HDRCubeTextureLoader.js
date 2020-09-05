@@ -1,3 +1,4 @@
+/// <reference types="./HDRCubeTextureLoader.d.ts" />
 import {
   CubeTexture,
   DataTexture,

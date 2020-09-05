@@ -1,3 +1,4 @@
+/// <reference types="./AnimationClipCreator.d.ts" />
 import {
   AnimationClip,
   BooleanKeyframeTrack,

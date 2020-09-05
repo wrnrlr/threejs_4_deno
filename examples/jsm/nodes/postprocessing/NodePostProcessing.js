@@ -1,3 +1,4 @@
+/// <reference types="./NodePostProcessing.d.ts" />
 import {
   LinearFilter,
   Mesh,

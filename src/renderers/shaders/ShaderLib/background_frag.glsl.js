@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 uniform sampler2D t2D;
 
 varying vec2 vUv;

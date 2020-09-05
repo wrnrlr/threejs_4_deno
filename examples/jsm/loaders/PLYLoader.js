@@ -1,3 +1,4 @@
+/// <reference types="./PLYLoader.d.ts" />
 import {
   BufferGeometry,
   FileLoader,

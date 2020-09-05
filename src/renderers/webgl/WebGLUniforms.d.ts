@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { WebGLProgram } from "./WebGLProgram.d.ts";
 import { WebGLTextures } from "./WebGLTextures.d.ts";
 

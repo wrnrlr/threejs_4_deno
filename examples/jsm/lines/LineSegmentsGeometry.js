@@ -1,3 +1,4 @@
+/// <reference types="./LineSegmentsGeometry.d.ts" />
 import {
   Box3,
   Float32BufferAttribute,

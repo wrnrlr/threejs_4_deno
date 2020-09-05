@@ -1,3 +1,4 @@
+/// <reference types="./ArrayCamera.d.ts" />
 import { PerspectiveCamera } from "./PerspectiveCamera.js";
 
 function ArrayCamera(array) {

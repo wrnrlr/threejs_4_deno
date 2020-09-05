@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Color } from "./../math/Color.d.ts";
 import { Light } from "./Light.d.ts";
 

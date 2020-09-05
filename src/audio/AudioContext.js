@@ -1,3 +1,4 @@
+/// <reference types="./AudioContext.d.ts" />
 let _context;
 
 const AudioContext = {

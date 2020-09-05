@@ -1,3 +1,4 @@
+/// <reference types="./NRRDLoader.d.ts" />
 import {
   FileLoader,
   Loader,

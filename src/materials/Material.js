@@ -1,3 +1,4 @@
+/// <reference types="./Material.d.ts" />
 import { EventDispatcher } from "../core/EventDispatcher.js";
 import {
   FrontSide,

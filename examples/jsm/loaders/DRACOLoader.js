@@ -1,3 +1,4 @@
+/// <reference types="./DRACOLoader.d.ts" />
 import {
   BufferAttribute,
   BufferGeometry,

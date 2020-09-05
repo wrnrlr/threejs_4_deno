@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export class SimplexNoise {
   constructor(r?: object);
   dot(g: number[], x: number, y: number): number;

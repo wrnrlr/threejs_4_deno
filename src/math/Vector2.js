@@ -1,3 +1,4 @@
+/// <reference types="./Vector2.d.ts" />
 class Vector2 {
   constructor(x = 0, y = 0) {
     Object.defineProperty(this, "isVector2", { value: true });

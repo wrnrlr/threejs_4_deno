@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 float getShadowMask() {
 
 	float shadow = 1.0;

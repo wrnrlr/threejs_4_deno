@@ -1,3 +1,4 @@
+/// <reference types="./LightProbe.d.ts" />
 import { SphericalHarmonics3 } from "../math/SphericalHarmonics3.js";
 import { Light } from "./Light.js";
 

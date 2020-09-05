@@ -1,3 +1,4 @@
+/// <reference types="./BoxLineGeometry.d.ts" />
 import {
   BufferGeometry,
   Float32BufferAttribute,

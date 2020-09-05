@@ -1,3 +1,4 @@
+/// <reference types="./LineSegments2.d.ts" />
 import {
   InstancedInterleavedBuffer,
   InterleavedBufferAttribute,
@@ -12,16 +13,14 @@ import { LineSegmentsGeometry } from "../lines/LineSegmentsGeometry.js";
 import { LineMaterial } from "../lines/LineMaterial.js";
 
 var LineSegments2 = function (geometry, material) {
-  Mesh.call(this);
+  if (geometry === undefined) geometry = new LineSegmentsGeometry();
+  if (material === undefined) {
+    material = new LineMaterial({ color: Math.random() * 0xffffff });
+  }
+
+  Mesh.call(this, geometry, material);
 
   this.type = "LineSegments2";
-
-  this.geometry = geometry !== undefined
-    ? geometry
-    : new LineSegmentsGeometry();
-  this.material = material !== undefined
-    ? material
-    : new LineMaterial({ color: Math.random() * 0xffffff });
 };
 
 LineSegments2.prototype = Object.assign(Object.create(Mesh.prototype), {

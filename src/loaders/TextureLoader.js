@@ -1,3 +1,4 @@
+/// <reference types="./TextureLoader.d.ts" />
 import { RGBAFormat, RGBFormat } from "../constants.js";
 import { ImageLoader } from "./ImageLoader.js";
 import { Texture } from "../textures/Texture.js";

@@ -1,3 +1,4 @@
+/// <reference types="./OBJLoader.d.ts" />
 import {
   BufferGeometry,
   FileLoader,

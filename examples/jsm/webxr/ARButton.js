@@ -1,3 +1,4 @@
+/// <reference types="./ARButton.d.ts" />
 var ARButton = {
   createButton: function (renderer, sessionInit = {}) {
     function showStartAR(/*device*/) {

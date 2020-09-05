@@ -1,3 +1,4 @@
+/// <reference types="./WebGLGeometries.d.ts" />
 import {
   Uint16BufferAttribute,
   Uint32BufferAttribute,

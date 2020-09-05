@@ -1,3 +1,4 @@
+/// <reference types="./AnimationUtils.d.ts" />
 import { Quaternion } from "../math/Quaternion.js";
 import { AdditiveAnimationBlendMode } from "../constants.js";
 

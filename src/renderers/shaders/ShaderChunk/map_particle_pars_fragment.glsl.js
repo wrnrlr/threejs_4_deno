@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 #if defined( USE_MAP ) || defined( USE_ALPHAMAP )
 
 	uniform mat3 uvTransform;

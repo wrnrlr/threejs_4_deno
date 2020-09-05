@@ -1,3 +1,4 @@
+/// <reference types="./SphericalHarmonics3.d.ts" />
 import { Vector3 } from "./Vector3.js";
 
 /**

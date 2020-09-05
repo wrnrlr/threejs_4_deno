@@ -1,3 +1,4 @@
+/// <reference types="./BasicNode.d.ts" />
 import { Node } from "../../core/Node.js";
 import { ColorNode } from "../../inputs/ColorNode.js";
 

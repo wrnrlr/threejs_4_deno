@@ -1,3 +1,4 @@
+/// <reference types="./RTTNode.d.ts" />
 import {
   Mesh,
   OrthographicCamera,

@@ -1,3 +1,4 @@
+/// <reference types="./WebGLCubeRenderTarget.d.ts" />
 import {
   BackSide,
   LinearFilter,

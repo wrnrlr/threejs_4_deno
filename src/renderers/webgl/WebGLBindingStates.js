@@ -1,4 +1,5 @@
-﻿function WebGLBindingStates(gl, extensions, attributes, capabilities) {
+/// <reference types="./WebGLBindingStates.d.ts" />
+function WebGLBindingStates(gl, extensions, attributes, capabilities) {
   const maxVertexAttributes = gl.getParameter(gl.MAX_VERTEX_ATTRIBS);
 
   const extension = capabilities.isWebGL2

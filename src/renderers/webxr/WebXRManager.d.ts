@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Group } from "../../objects/Group.d.ts";
 import { Camera } from "../../cameras/Camera.d.ts";
 

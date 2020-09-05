@@ -1,3 +1,4 @@
+/// <reference types="./LatheGeometry.d.ts" />
 import { Geometry } from "../core/Geometry.js";
 import { Float32BufferAttribute } from "../core/BufferAttribute.js";
 import { BufferGeometry } from "../core/BufferGeometry.js";

@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Geometry } from "./../core/Geometry.d.ts";
 import { BufferGeometry } from "../core/BufferGeometry.d.ts";
 

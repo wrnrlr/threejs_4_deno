@@ -1,3 +1,4 @@
+/// <reference types="./QuaternionKeyframeTrack.d.ts" />
 import { InterpolateLinear } from "../../constants.js";
 import { KeyframeTrack } from "../KeyframeTrack.js";
 import { QuaternionLinearInterpolant } from "../../math/interpolants/QuaternionLinearInterpolant.js";

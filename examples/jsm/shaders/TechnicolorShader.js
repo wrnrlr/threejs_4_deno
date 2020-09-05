@@ -1,3 +1,5 @@
+/// <reference types="./TechnicolorShader.d.ts" />
+
 /**
  * Technicolor Shader
  * Simulates the look of the two-strip technicolor process popular in early 20th century films.

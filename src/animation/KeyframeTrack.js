@@ -1,3 +1,4 @@
+/// <reference types="./KeyframeTrack.d.ts" />
 import {
   InterpolateLinear,
   InterpolateSmooth,

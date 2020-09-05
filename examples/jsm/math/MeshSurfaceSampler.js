@@ -1,3 +1,4 @@
+/// <reference types="./MeshSurfaceSampler.d.ts" />
 import {
   Triangle,
 } from "../../../src/Three.js";

@@ -1,3 +1,4 @@
+/// <reference types="./AudioAnalyser.d.ts" />
 class AudioAnalyser {
   constructor(audio, fftSize) {
     this.analyser = audio.context.createAnalyser();

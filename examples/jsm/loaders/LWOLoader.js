@@ -1,3 +1,4 @@
+/// <reference types="./LWOLoader.d.ts" />
 /**
  * @version 1.1.1
  *

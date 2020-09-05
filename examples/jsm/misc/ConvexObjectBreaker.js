@@ -1,3 +1,4 @@
+/// <reference types="./ConvexObjectBreaker.d.ts" />
 import {
   Line3,
   Mesh,

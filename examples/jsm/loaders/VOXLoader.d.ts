@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import {
   Loader,
   LoadingManager,
@@ -8,9 +9,9 @@ export class VOXLoader extends Loader {
 
   load(
     url: string,
-    onLoad: (chunks: Array) => void,
+    onLoad: (chunks: Array<object>) => void,
     onProgress?: (event: ProgressEvent) => void,
     onError?: (event: ErrorEvent) => void,
   ): void;
-  parse(data: ArrayBuffer): Array;
+  parse(data: ArrayBuffer): Array<object>;
 }

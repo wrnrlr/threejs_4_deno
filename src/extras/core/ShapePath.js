@@ -1,3 +1,4 @@
+/// <reference types="./ShapePath.d.ts" />
 import { Color } from "../../math/Color.js";
 import { Path } from "./Path.js";
 import { Shape } from "./Shape.js";

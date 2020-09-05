@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { Sphere } from "./../math/Sphere.d.ts";
 import { Geometry } from "./../core/Geometry.d.ts";
 import { BufferGeometry } from "./../core/BufferGeometry.d.ts";

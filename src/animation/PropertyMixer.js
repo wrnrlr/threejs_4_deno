@@ -1,3 +1,4 @@
+/// <reference types="./PropertyMixer.d.ts" />
 import { Quaternion } from "../math/Quaternion.js";
 
 function PropertyMixer(binding, typeName, valueSize) {

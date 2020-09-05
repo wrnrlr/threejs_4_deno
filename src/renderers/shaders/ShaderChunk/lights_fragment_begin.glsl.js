@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 /**
  * This is a template that can be used to light a material, it uses pluggable
  * RenderEquations (RE)for specific lighting scenarios.

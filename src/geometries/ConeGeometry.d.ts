@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { CylinderGeometry } from "./CylinderGeometry.d.ts";
 import { CylinderBufferGeometry } from "./CylinderGeometry.d.ts";
 

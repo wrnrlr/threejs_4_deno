@@ -1,3 +1,4 @@
+/// <reference types="./PerspectiveCamera.d.ts" />
 import { Camera } from "./Camera.js";
 import { Object3D } from "../core/Object3D.js";
 import { MathUtils } from "../math/MathUtils.js";

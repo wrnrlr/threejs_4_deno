@@ -1,3 +1,4 @@
+/// <reference types="./DataTextureLoader.d.ts" />
 import {
   LinearFilter,
   LinearMipmapLinearFilter,

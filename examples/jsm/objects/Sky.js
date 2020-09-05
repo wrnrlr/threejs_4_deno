@@ -1,3 +1,4 @@
+/// <reference types="./Sky.d.ts" />
 import {
   BackSide,
   BoxBufferGeometry,

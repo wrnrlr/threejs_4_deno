@@ -1,3 +1,4 @@
+/// <reference types="./TessellateModifier.d.ts" />
 import {
   Face3,
 } from "../../../src/Three.js";

@@ -1,3 +1,4 @@
+/// <reference types="./TDSLoader.d.ts" />
 import {
   AdditiveBlending,
   BufferGeometry,

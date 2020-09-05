@@ -1,3 +1,4 @@
+/// <reference types="./EffectComposer.d.ts" />
 import {
   Clock,
   LinearFilter,

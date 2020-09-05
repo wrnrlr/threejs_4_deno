@@ -1,3 +1,4 @@
+/// <reference types="./OBJExporter.d.ts" />
 import {
   BufferGeometry,
   Geometry,

@@ -1,3 +1,4 @@
+/// <reference types="./FilmPass.d.ts" />
 import {
   ShaderMaterial,
   UniformsUtils,

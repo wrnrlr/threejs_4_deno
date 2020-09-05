@@ -1,3 +1,4 @@
+/// <reference types="./DirectGeometry.d.ts" />
 import { Vector2 } from "../math/Vector2.js";
 
 class DirectGeometry {

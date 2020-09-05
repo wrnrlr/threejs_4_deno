@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 #ifdef USE_MORPHNORMALS
 
 	// morphTargetBaseInfluence is set based on BufferGeometry.morphTargetsRelative value:

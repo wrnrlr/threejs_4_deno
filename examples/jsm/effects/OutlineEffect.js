@@ -1,3 +1,4 @@
+/// <reference types="./OutlineEffect.d.ts" />
 import {
   BackSide,
   Color,

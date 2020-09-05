@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 export abstract class Interpolant {
   constructor(
     parameterPositions: any,

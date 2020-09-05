@@ -1,3 +1,4 @@
+/// <reference types="./Line.d.ts" />
 import { Sphere } from "../math/Sphere.js";
 import { Ray } from "../math/Ray.js";
 import { Matrix4 } from "../math/Matrix4.js";

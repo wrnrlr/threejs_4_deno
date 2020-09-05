@@ -1,3 +1,4 @@
+/// <reference types="./BufferGeometryUtils.d.ts" />
 import {
   BufferAttribute,
   BufferGeometry,

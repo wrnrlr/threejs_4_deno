@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { LoadingManager } from "./LoadingManager.d.ts";
 
 /**

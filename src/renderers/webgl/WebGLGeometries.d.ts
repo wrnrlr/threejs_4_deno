@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { WebGLAttributes } from "./WebGLAttributes.d.ts";
 import { WebGLInfo } from "./WebGLInfo.d.ts";
 import { BufferAttribute } from "../../core/BufferAttribute.d.ts";

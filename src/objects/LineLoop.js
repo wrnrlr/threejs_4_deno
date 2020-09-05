@@ -1,3 +1,4 @@
+/// <reference types="./LineLoop.d.ts" />
 import { Line } from "./Line.js";
 
 function LineLoop(geometry, material) {

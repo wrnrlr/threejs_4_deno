@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { ShaderPass } from "../../postprocessing/ShaderPass.d.ts";
 import { ScreenNode } from "../inputs/ScreenNode.d.ts";
 

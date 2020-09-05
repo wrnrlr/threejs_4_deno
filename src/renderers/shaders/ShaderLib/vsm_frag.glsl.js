@@ -1,4 +1,5 @@
-export default /* glsl */ `
+// deno-fmt-ignore-file
+export default /* glsl */`
 uniform sampler2D shadow_pass;
 uniform vec2 resolution;
 uniform float radius;

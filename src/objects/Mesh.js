@@ -1,3 +1,4 @@
+/// <reference types="./Mesh.d.ts" />
 import { Vector3 } from "../math/Vector3.js";
 import { Vector2 } from "../math/Vector2.js";
 import { Sphere } from "../math/Sphere.js";

@@ -1,3 +1,4 @@
+/// <reference types="./Projector.d.ts" />
 import {
   BackSide,
   Box3,

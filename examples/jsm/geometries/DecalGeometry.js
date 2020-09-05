@@ -1,3 +1,4 @@
+/// <reference types="./DecalGeometry.d.ts" />
 import {
   BufferGeometry,
   Float32BufferAttribute,

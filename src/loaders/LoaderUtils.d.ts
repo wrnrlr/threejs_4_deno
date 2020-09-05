@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { TypedArray } from "../polyfills.d.ts";
 
 export class LoaderUtils {

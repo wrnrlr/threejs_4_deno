@@ -1,3 +1,4 @@
+/// <reference types="./VertexNormalsHelper.d.ts" />
 import {
   BufferGeometry,
   Float32BufferAttribute,

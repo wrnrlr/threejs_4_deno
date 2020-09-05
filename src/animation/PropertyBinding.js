@@ -1,3 +1,4 @@
+/// <reference types="./PropertyBinding.d.ts" />
 // Characters [].:/ are reserved for track binding syntax.
 const _RESERVED_CHARS_RE = "\\[\\]\\.:\\/";
 const _reservedRe = new RegExp("[" + _RESERVED_CHARS_RE + "]", "g");

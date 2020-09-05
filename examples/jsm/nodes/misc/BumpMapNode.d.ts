@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.d.ts";
 import { FloatNode } from "../inputs/FloatNode.d.ts";
 import { FunctionNode } from "../core/FunctionNode.d.ts";

@@ -1,3 +1,4 @@
+/// <reference types="./WebGLState.d.ts" />
 import {
   NotEqualDepth,
   GreaterDepth,

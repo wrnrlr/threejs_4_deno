@@ -1,3 +1,4 @@
+/// <reference types="./StereoCamera.d.ts" />
 import { Matrix4 } from "../math/Matrix4.js";
 import { MathUtils } from "../math/MathUtils.js";
 import { PerspectiveCamera } from "./PerspectiveCamera.js";

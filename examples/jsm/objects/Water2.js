@@ -1,3 +1,4 @@
+/// <reference types="./Water2.d.ts" />
 import {
   Clock,
   Color,

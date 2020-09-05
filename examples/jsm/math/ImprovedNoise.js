@@ -1,3 +1,5 @@
+/// <reference types="./ImprovedNoise.d.ts" />
+
 // http://mrl.nyu.edu/~perlin/noise/
 
 var ImprovedNoise = function () {

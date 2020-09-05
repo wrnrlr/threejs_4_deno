@@ -1,3 +1,4 @@
+/// <reference types="./ColladaExporter.d.ts" />
 import {
   BufferGeometry,
   Color,
