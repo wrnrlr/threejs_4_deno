@@ -29,7 +29,7 @@ const UnusedFilesAndFolders = [
   "./three.js/README.md",
 ];
 
-const examplesPath = "three.js/examples/";
+const examplesPath = "three.js/examples/jsm/";
 const srcPath = "three.js/src/";
 
 const pathToNewDir = "three.deno/";
@@ -48,10 +48,6 @@ function loopDirAndMatch(path: string, pattern: RegExp, callBack: Function) {
   }
 }
 
-function addToDeleteList(fileName: string, path: string) {
-  filesToDelete.push(`${path}${fileName}`);
-}
-
 function updateScripts(fileName: string, path: string) {
   // update .js script imports with deno appropriate urls
   let data = Deno.readTextFileSync(`${path}${fileName}`);
@@ -63,17 +59,27 @@ function updateScripts(fileName: string, path: string) {
   });
 
   // make sure each file references its own types.
-  // make relative path url
-  console.log(path, fileName);
-  // if (!data.includes('<reference types="./Three.d.ts"')) {
-  //   data = data.replace(
-  //     /^/,
-  //     `/// <reference types="./Three.d.ts" />\n/// <reference lib="dom" />\n`,
-  //   );
-  // }
+  if (!data.includes("<reference types=")) {
+    const fn = fileName.replace(/\.js/g, ".d.ts")
+    if (existsSync(`${path}${fn}`)) {
+      data = data.replace(/^/, `/// <reference types="./${fn}" />\n`);
+    } else {
+      // because it doesn't have its own types it's best to tell the deno's formatter to ignore it
+      // includes folders like libs and ShaderChunk/glsl.js files
+      data = data.replace(/^/, `// deno-fmt-ignore-file\n`);
+    }
+  }
 
-  // write the new text to the same path
-  //Deno.writeTextFileSync(path, data);
+  // if from the examples folder add to list for examples/mod.ts file
+  if (path.includes("examples/jsm")) {
+    filesForExampleModts.push(`"\.${path.split("three.js/examples/jsm")[1]}${fileName}"`);
+  }
+
+  // write the new text to the new path
+  const newPath = createNewPath(path)
+
+  Deno.mkdirSync(newPath, { recursive: true})
+  Deno.writeTextFileSync(`${newPath}${fileName}`, data);
 }
 
 function updateTypescripts(fileName: string, path: string) {
@@ -96,8 +102,11 @@ function updateTypescripts(fileName: string, path: string) {
     return m;
   });
 
-  // write the new text to the same path
-  //Deno.writeTextFileSync(path, data);
+  // write the new text into the new Dir
+  const newPath = createNewPath(path)
+  
+  Deno.mkdirSync(newPath, { recursive: true})
+  Deno.writeTextFileSync(`${newPath}${fileName}`, data);
 }
 
 function existsSync(path: string): boolean {
@@ -112,59 +121,76 @@ function existsSync(path: string): boolean {
   }
 }
 
+function createNewPath(path: string) {
+  return path.replace(/three\.js/g, "three.deno")
+}
+
 if (import.meta.main) {
-  // ensure that the three.js directory is there
-  // existsSync(examplesPath)
-  // existsSync(srcPath)
-
-  // otherwise run git clone --depth=1 
-
-  // ensure that the three.deno directory is empty
-  // https://deno.land/std@0.68.0/fs/empty_dir.ts
-
-  // Delete the folders/files we're not using
-  UnusedFilesAndFolders.forEach((path) => {
-    if (existsSync(path)) {
-      //Deno.removeSync(path, { recursive: true });
-    }
-  });
-
-  // Delete extra .html files within the examples folder
-  loopDirAndMatch(examplesPath, /.html/g, addToDeleteList);
-
-  if (filesToDelete.length != 0) {
-    console.log(`Some .html files were deleted from ${examplesPath}`);
-    console.log(filesToDelete);
-    filesToDelete.forEach((path) => {
-      //Deno.removeSync(path);
+  // ensure that the three.js directories that we care about are there
+  if (!(existsSync(examplesPath) && existsSync(srcPath))) {
+    // otherwise run `git clone --depth=1 https://github.com/mrdoob/three.js.git`
+    const p = Deno.run({
+      cmd: ["git", "clone", "--depth=1", "https://github.com/mrdoob/three.js.git"],
     });
+    await p.status()
   }
 
-  // Update .d.ts urls in remaining folders
-  loopDirAndMatch(examplesPath, /.d.ts/g, updateTypescripts);
-  loopDirAndMatch(srcPath, /.d.ts/g, updateTypescripts);
+  // ensure that the three.deno directory is empty
+  if (existsSync(pathToNewDir)) {
+    Deno.removeSync(pathToNewDir, { recursive: true });
+    Deno.mkdirSync(pathToNewDir);
+  } else {
+    Deno.mkdirSync(pathToNewDir);
+  }
 
-  // Update .js urls in the examples folder
-  loopDirAndMatch(examplesPath, /.js/g, updateScripts);
+  // Update .d.ts urls
+  loopDirAndMatch(examplesPath, /\.d\.ts/g, updateTypescripts);
+  loopDirAndMatch(srcPath, /\.d\.ts/g, updateTypescripts);
+
+  // Update .js urls and add type references i.e. /// <reference types="..." />
+  loopDirAndMatch(examplesPath, /\.js(?!on)/g, updateScripts);
+  loopDirAndMatch(srcPath, /\.js(?!on)/g, updateScripts);
+
+  // run deno fmt over the three.deno folder
+  console.log("turn on formatting the three.deno folder at the end");
+  // const p = Deno.run({
+  //   cmd: ["deno", "fmt", "three.deno"],
+  // });
+  // await p.status()
 
   // Add types reference to top of src/Three.js [/// <reference types="..." />]
   // If needed, add '/// <reference lib="dom" />' to the top of src/Three.js as well
-  let THREEJS = Deno.readTextFileSync("./three.js/src/Three.js");
-  if (!THREEJS.includes('<reference types="./Three.d.ts"')) {
-    THREEJS = THREEJS.replace(
-      /^/,
-      `/// <reference types="./Three.d.ts" />\n/// <reference lib="dom" />\n`,
-    );
-  }
+  // let THREEJS = Deno.readTextFileSync("./three.js/src/Three.js");
+  // if (!THREEJS.includes('<reference types="./Three.d.ts"')) {
+  //   THREEJS = THREEJS.replace(
+  //     /^/,
+  //     `/// <reference types="./Three.d.ts" />\n/// <reference lib="dom" />\n`,
+  //   );
+  // }
   //Deno.writeTextFileSync("./three.js/src/Three.js", THREEJS);
 
   // update exported types url within src/Three.d.ts
-  let THREEDTS = Deno.readTextFileSync("./three.js/src/Three.d.ts");
-  THREEDTS = THREEDTS.replaceAll(/export \* from .+?;/gms, (m) => {
-    if (!m.includes(".d.ts")) {
-      m = `${m.slice(0, m.length - 2)}.d.ts${m.slice(m.length - 2)}`;
-    }
-    return m;
-  });
+  // let THREEDTS = Deno.readTextFileSync("./three.js/src/Three.d.ts");
+  // THREEDTS = THREEDTS.replaceAll(/export \* from .+?;/gms, (m) => {
+  //   if (!m.includes(".d.ts")) {
+  //     m = `${m.slice(0, m.length - 2)}.d.ts${m.slice(m.length - 2)}`;
+  //   }
+  //   return m;
+  // });
   //Deno.writeTextFileSync("./three.js/src/Three.d.ts", THREEDTS);
 }
+
+// Delete extra .html files within the examples folder
+// loopDirAndMatch(examplesPath, /.html/g, addToDeleteList);
+
+// if (filesToDelete.length != 0) {
+//   console.log(`Some .html files were deleted from ${examplesPath}`);
+//   console.log(filesToDelete);
+//   filesToDelete.forEach((path) => {
+//     //Deno.removeSync(path);
+//   });
+// }
+
+// function addToDeleteList(fileName: string, path: string) {
+//   filesToDelete.push(`${path}${fileName}`);
+// }
