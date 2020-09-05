@@ -1,4 +1,5 @@
 /// <reference types="./UnrealBloomPass.d.ts" />
+/// <reference lib="dom" />
 import {
   AdditiveBlending,
   Color,

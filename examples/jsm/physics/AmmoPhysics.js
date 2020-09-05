@@ -1,4 +1,5 @@
 /// <reference types="./AmmoPhysics.d.ts" />
+/// <reference lib="dom" />
 async function AmmoPhysics() {
   if ("Ammo" in window === false) {
     console.error("AmmoPhysics: Couldn't find Ammo.js");

@@ -1,4 +1,5 @@
 /// <reference types="./FloatNode.d.ts" />
+/// <reference lib="dom" />
 import { InputNode } from "../core/InputNode.js";
 
 function FloatNode(value) {

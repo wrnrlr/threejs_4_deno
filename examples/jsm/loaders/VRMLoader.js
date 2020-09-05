@@ -1,4 +1,5 @@
 /// <reference types="./VRMLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   Loader,
 } from "../../../src/Three.js";

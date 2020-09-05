@@ -1,4 +1,5 @@
 /// <reference types="./OrbitControls.d.ts" />
+/// <reference lib="dom" />
 import {
   EventDispatcher,
   MOUSE,

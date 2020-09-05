@@ -1,4 +1,5 @@
 /// <reference types="./Volume.d.ts" />
+/// <reference lib="dom" />
 import {
   Matrix3,
   Matrix4,

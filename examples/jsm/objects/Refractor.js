@@ -1,4 +1,5 @@
 /// <reference types="./Refractor.d.ts" />
+/// <reference lib="dom" />
 import {
   Color,
   LinearFilter,

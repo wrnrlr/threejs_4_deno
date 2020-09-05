@@ -1,4 +1,5 @@
 /// <reference types="./BlendShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Blend two textures

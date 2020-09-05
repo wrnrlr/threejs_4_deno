@@ -1,4 +1,5 @@
 /// <reference types="./ImageUtils.d.ts" />
+/// <reference lib="dom" />
 let _canvas;
 
 const ImageUtils = {

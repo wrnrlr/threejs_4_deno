@@ -1,4 +1,5 @@
 /// <reference types="./MathNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.js";
 
 function MathNode(a, bOrMethod, cOrMethod, method) {

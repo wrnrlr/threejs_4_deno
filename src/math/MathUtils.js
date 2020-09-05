@@ -1,4 +1,5 @@
 /// <reference types="./MathUtils.d.ts" />
+/// <reference lib="dom" />
 const _lut = [];
 
 for (let i = 0; i < 256; i++) {

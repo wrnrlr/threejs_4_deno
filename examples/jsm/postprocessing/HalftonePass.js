@@ -1,4 +1,5 @@
 /// <reference types="./HalftonePass.d.ts" />
+/// <reference lib="dom" />
 import {
   ShaderMaterial,
   UniformsUtils,

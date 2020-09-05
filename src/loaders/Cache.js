@@ -1,4 +1,5 @@
 /// <reference types="./Cache.d.ts" />
+/// <reference lib="dom" />
 const Cache = {
   enabled: false,
 

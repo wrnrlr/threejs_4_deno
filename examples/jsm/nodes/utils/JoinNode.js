@@ -1,4 +1,5 @@
 /// <reference types="./JoinNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.js";
 import { NodeUtils } from "../core/NodeUtils.js";
 

@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import { GPUPrimitiveTopology, GPUIndexFormat, GPUTextureFormat, GPUCompareFunction, GPUFrontFace, GPUCullMode, GPUVertexFormat } from './constants.js';
 import { FrontSide, BackSide, DoubleSide } from '../../../../src/Three.js';
 

@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 export default /* glsl */`
 vec3 diffuse = vec3( 1.0 );
 

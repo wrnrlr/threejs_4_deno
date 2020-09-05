@@ -1,4 +1,5 @@
 /// <reference types="./Material.d.ts" />
+/// <reference lib="dom" />
 import { EventDispatcher } from "../core/EventDispatcher.js";
 import {
   FrontSide,

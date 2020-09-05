@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import { GPUTextureFormat, GPUAddressMode, GPUFilterMode } from './constants.js';
 import { Texture, NearestFilter, NearestMipmapNearestFilter, NearestMipmapLinearFilter, RepeatWrapping, MirroredRepeatWrapping, FloatType, HalfFloatType } from '../../../../src/Three.js';
 

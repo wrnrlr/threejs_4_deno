@@ -1,4 +1,5 @@
 /// <reference types="./InstancedBufferGeometry.d.ts" />
+/// <reference lib="dom" />
 import { BufferGeometry } from "./BufferGeometry.js";
 
 function InstancedBufferGeometry() {

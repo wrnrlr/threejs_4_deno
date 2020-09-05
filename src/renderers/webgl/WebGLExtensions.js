@@ -1,4 +1,5 @@
 /// <reference types="./WebGLExtensions.d.ts" />
+/// <reference lib="dom" />
 function WebGLExtensions(gl) {
   const extensions = {};
 

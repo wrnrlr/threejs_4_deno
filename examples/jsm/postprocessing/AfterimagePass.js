@@ -1,4 +1,5 @@
 /// <reference types="./AfterimagePass.d.ts" />
+/// <reference lib="dom" />
 import {
   LinearFilter,
   MeshBasicMaterial,

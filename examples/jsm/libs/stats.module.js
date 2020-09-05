@@ -1,4 +1,5 @@
 /// <reference types="./stats.module.d.ts" />
+/// <reference lib="dom" />
 var Stats = function () {
   var mode = 0;
 

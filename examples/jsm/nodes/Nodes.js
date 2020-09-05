@@ -1,4 +1,5 @@
 /// <reference types="./Nodes.d.ts" />
+/// <reference lib="dom" />
 // TODO: all nodes
 
 // core

@@ -1,4 +1,5 @@
 /// <reference types="./Vector3Node.d.ts" />
+/// <reference lib="dom" />
 import { Vector3 } from "../../../../src/Three.js";
 
 import { InputNode } from "../core/InputNode.js";

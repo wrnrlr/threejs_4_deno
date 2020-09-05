@@ -1,4 +1,5 @@
 /// <reference types="./TechnicolorShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Technicolor Shader

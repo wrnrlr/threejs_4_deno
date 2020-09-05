@@ -1,4 +1,5 @@
 /// <reference types="./LightningStrike.d.ts" />
+/// <reference lib="dom" />
 import {
   BufferGeometry,
   DynamicDrawUsage,

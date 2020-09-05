@@ -1,4 +1,5 @@
 /// <reference types="./Matrix4.d.ts" />
+/// <reference lib="dom" />
 import { Vector3 } from "./Vector3.js";
 
 class Matrix4 {

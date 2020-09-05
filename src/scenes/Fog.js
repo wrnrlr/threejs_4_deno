@@ -1,4 +1,5 @@
 /// <reference types="./Fog.d.ts" />
+/// <reference lib="dom" />
 import { Color } from "../math/Color.js";
 
 class Fog {

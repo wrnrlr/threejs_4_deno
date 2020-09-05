@@ -1,4 +1,5 @@
 /// <reference types="./BokehPass.d.ts" />
+/// <reference lib="dom" />
 import {
   Color,
   MeshDepthMaterial,

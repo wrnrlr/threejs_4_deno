@@ -1,4 +1,5 @@
 /// <reference types="./Texture.d.ts" />
+/// <reference lib="dom" />
 import { EventDispatcher } from "../core/EventDispatcher.js";
 import {
   MirroredRepeatWrapping,

@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 function LWO2Parser( IFFParser ) {
 
 	this.IFF = IFFParser;

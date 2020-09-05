@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import { TempNode } from '../core/TempNode.js';
 
 function SubSlotNode( slots ) {

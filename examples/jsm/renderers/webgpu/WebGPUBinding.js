@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 class WebGPUBinding {
 
 	constructor() {

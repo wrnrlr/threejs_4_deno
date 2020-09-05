@@ -1,4 +1,5 @@
 /// <reference types="./Reflector.d.ts" />
+/// <reference lib="dom" />
 import {
   Color,
   LinearFilter,

@@ -1,4 +1,5 @@
 /// <reference types="./PixelShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Pixelation shader

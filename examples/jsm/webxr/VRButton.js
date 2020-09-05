@@ -1,4 +1,5 @@
 /// <reference types="./VRButton.d.ts" />
+/// <reference lib="dom" />
 var VRButton = {
   createButton: function (renderer, options) {
     if (options) {

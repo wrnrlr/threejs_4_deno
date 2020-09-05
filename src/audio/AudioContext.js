@@ -1,4 +1,5 @@
 /// <reference types="./AudioContext.d.ts" />
+/// <reference lib="dom" />
 let _context;
 
 const AudioContext = {

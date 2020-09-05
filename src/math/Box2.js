@@ -1,4 +1,5 @@
 /// <reference types="./Box2.d.ts" />
+/// <reference lib="dom" />
 import { Vector2 } from "./Vector2.js";
 
 const _vector = /*@__PURE__*/ new Vector2();

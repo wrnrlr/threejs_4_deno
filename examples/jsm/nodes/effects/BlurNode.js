@@ -1,4 +1,5 @@
 /// <reference types="./BlurNode.d.ts" />
+/// <reference lib="dom" />
 import { Vector2 } from "../../../../src/Three.js";
 
 import { TempNode } from "../core/TempNode.js";

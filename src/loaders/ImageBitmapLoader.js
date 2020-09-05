@@ -1,4 +1,5 @@
 /// <reference types="./ImageBitmapLoader.d.ts" />
+/// <reference lib="dom" />
 import { Cache } from "./Cache.js";
 import { Loader } from "./Loader.js";
 

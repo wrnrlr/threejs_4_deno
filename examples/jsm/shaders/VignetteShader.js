@@ -1,4 +1,5 @@
 /// <reference types="./VignetteShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Vignette shader

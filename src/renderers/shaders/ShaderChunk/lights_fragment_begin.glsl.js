@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 export default /* glsl */`
 /**
  * This is a template that can be used to light a material, it uses pluggable

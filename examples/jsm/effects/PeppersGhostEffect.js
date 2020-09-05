@@ -1,4 +1,5 @@
 /// <reference types="./PeppersGhostEffect.d.ts" />
+/// <reference lib="dom" />
 import {
   PerspectiveCamera,
   Quaternion,

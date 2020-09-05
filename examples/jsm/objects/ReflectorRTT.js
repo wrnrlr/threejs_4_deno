@@ -1,4 +1,5 @@
 /// <reference types="./ReflectorRTT.d.ts" />
+/// <reference lib="dom" />
 
 import { Reflector } from "../objects/Reflector.js";
 

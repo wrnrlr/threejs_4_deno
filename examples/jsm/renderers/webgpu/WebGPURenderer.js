@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import { GPUIndexFormat, GPUTextureFormat, GPUStoreOp } from './constants.js';
 import WebGPUObjects from './WebGPUObjects.js';
 import WebGPUAttributes from './WebGPUAttributes.js';

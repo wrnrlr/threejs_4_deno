@@ -1,4 +1,5 @@
 /// <reference types="./VRMLLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   BackSide,
   BoxBufferGeometry,

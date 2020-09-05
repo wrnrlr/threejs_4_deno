@@ -1,4 +1,5 @@
 /// <reference types="./MirrorShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Mirror Shader

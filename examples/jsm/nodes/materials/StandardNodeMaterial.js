@@ -1,4 +1,5 @@
 /// <reference types="./StandardNodeMaterial.d.ts" />
+/// <reference lib="dom" />
 import { StandardNode } from "./nodes/StandardNode.js";
 import { NodeMaterial } from "./NodeMaterial.js";
 import { NodeUtils } from "../core/NodeUtils.js";

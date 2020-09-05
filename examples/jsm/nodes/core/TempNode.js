@@ -1,4 +1,5 @@
 /// <reference types="./TempNode.d.ts" />
+/// <reference lib="dom" />
 import { MathUtils } from "../../../../src/Three.js";
 import { Node } from "./Node.js";
 

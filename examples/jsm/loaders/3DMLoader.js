@@ -1,4 +1,5 @@
 /// <reference types="./3DMLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   BufferGeometryLoader,
   FileLoader,

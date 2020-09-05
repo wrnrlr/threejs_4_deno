@@ -1,4 +1,5 @@
 /// <reference types="./XRControllerModelFactory.d.ts" />
+/// <reference lib="dom" />
 import {
   Mesh,
   MeshBasicMaterial,

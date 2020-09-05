@@ -1,4 +1,5 @@
 /// <reference types="./TTFLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   FileLoader,
   Loader,

@@ -1,4 +1,5 @@
 /// <reference types="./WebGLProgram.d.ts" />
+/// <reference lib="dom" />
 import { WebGLUniforms } from "./WebGLUniforms.js";
 import { WebGLShader } from "./WebGLShader.js";
 import { ShaderChunk } from "../shaders/ShaderChunk.js";

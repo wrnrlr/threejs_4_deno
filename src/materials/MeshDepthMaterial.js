@@ -1,4 +1,5 @@
 /// <reference types="./MeshDepthMaterial.d.ts" />
+/// <reference lib="dom" />
 import { Material } from "./Material.js";
 import { BasicDepthPacking } from "../constants.js";
 

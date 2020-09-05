@@ -1,4 +1,5 @@
 /// <reference types="./AnimationObjectGroup.d.ts" />
+/// <reference lib="dom" />
 import { PropertyBinding } from "./PropertyBinding.js";
 import { MathUtils } from "../math/MathUtils.js";
 

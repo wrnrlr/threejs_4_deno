@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 export default /* glsl */`
 #ifdef ENVMAP_TYPE_CUBE_UV
 

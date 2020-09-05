@@ -1,4 +1,5 @@
 /// <reference types="./RawNode.d.ts" />
+/// <reference lib="dom" />
 import { Node } from "../../core/Node.js";
 
 function RawNode(value) {

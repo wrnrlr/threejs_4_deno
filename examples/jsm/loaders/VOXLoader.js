@@ -1,4 +1,5 @@
 /// <reference types="./VOXLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   FileLoader,
   Loader,

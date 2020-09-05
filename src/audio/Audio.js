@@ -1,4 +1,5 @@
 /// <reference types="./Audio.d.ts" />
+/// <reference lib="dom" />
 import { Object3D } from "../core/Object3D.js";
 
 class Audio extends Object3D {

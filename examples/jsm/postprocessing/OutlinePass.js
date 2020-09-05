@@ -1,4 +1,5 @@
 /// <reference types="./OutlinePass.d.ts" />
+/// <reference lib="dom" />
 import {
   AdditiveBlending,
   Color,

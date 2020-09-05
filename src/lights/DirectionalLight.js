@@ -1,4 +1,5 @@
 /// <reference types="./DirectionalLight.d.ts" />
+/// <reference lib="dom" />
 import { Light } from "./Light.js";
 import { DirectionalLightShadow } from "./DirectionalLightShadow.js";
 import { Object3D } from "../core/Object3D.js";

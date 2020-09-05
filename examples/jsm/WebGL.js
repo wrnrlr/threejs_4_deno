@@ -1,4 +1,5 @@
 /// <reference types="./WebGL.d.ts" />
+/// <reference lib="dom" />
 
 var WEBGL = {
   isWebGLAvailable: function () {

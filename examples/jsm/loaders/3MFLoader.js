@@ -1,4 +1,5 @@
 /// <reference types="./3MFLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   BufferAttribute,
   BufferGeometry,

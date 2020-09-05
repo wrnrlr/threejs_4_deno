@@ -1,4 +1,5 @@
 /// <reference types="./GLTFLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   AnimationClip,
   Bone,

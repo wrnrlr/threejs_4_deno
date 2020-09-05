@@ -1,4 +1,5 @@
 /// <reference types="./VideoTexture.d.ts" />
+/// <reference lib="dom" />
 import { RGBFormat, LinearFilter } from "../constants.js";
 import { Texture } from "./Texture.js";
 

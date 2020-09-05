@@ -1,4 +1,5 @@
 /// <reference types="./FunctionNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "./TempNode.js";
 import { NodeLib } from "./NodeLib.js";
 

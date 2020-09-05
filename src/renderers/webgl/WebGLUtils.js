@@ -1,4 +1,5 @@
 /// <reference types="./WebGLUtils.d.ts" />
+/// <reference lib="dom" />
 import {
   RGBA_ASTC_4x4_Format,
   RGBA_ASTC_5x4_Format,

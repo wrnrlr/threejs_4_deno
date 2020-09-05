@@ -1,4 +1,5 @@
 /// <reference types="./GlitchPass.d.ts" />
+/// <reference lib="dom" />
 import {
   DataTexture,
   FloatType,

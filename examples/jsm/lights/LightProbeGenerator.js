@@ -1,4 +1,5 @@
 /// <reference types="./LightProbeGenerator.d.ts" />
+/// <reference lib="dom" />
 import {
   Color,
   LightProbe,

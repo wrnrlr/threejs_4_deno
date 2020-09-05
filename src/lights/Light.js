@@ -1,4 +1,5 @@
 /// <reference types="./Light.d.ts" />
+/// <reference lib="dom" />
 import { Object3D } from "../core/Object3D.js";
 import { Color } from "../math/Color.js";
 

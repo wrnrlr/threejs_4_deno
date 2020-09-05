@@ -1,4 +1,5 @@
 /// <reference types="./MaterialLoader.d.ts" />
+/// <reference lib="dom" />
 import { Color } from "../math/Color.js";
 import { Vector2 } from "../math/Vector2.js";
 import { Vector3 } from "../math/Vector3.js";

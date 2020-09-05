@@ -1,4 +1,5 @@
 /// <reference types="./AudioListener.d.ts" />
+/// <reference lib="dom" />
 import { Vector3 } from "../math/Vector3.js";
 import { Quaternion } from "../math/Quaternion.js";
 import { Clock } from "../core/Clock.js";

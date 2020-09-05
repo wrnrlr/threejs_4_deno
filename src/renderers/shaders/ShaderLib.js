@@ -1,4 +1,5 @@
 /// <reference types="./ShaderLib.d.ts" />
+/// <reference lib="dom" />
 import { ShaderChunk } from "./ShaderChunk.js";
 import { mergeUniforms } from "./UniformsUtils.js";
 import { Vector2 } from "../../math/Vector2.js";

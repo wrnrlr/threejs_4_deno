@@ -1,4 +1,5 @@
 /// <reference types="./DRACOExporter.d.ts" />
+/// <reference lib="dom" />
 import {
   BufferGeometry,
 } from "../../../src/Three.js";

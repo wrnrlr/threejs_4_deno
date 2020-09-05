@@ -1,4 +1,5 @@
 /// <reference types="./Curves.d.ts" />
+/// <reference lib="dom" />
 export { ArcCurve } from "./ArcCurve.js";
 export { CatmullRomCurve3 } from "./CatmullRomCurve3.js";
 export { CubicBezierCurve } from "./CubicBezierCurve.js";

@@ -1,4 +1,5 @@
 /// <reference types="./PointLight.d.ts" />
+/// <reference lib="dom" />
 import { Light } from "./Light.js";
 import { PointLightShadow } from "./PointLightShadow.js";
 

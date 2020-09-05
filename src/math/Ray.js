@@ -1,4 +1,5 @@
 /// <reference types="./Ray.d.ts" />
+/// <reference lib="dom" />
 import { Vector3 } from "./Vector3.js";
 
 const _vector = /*@__PURE__*/ new Vector3();

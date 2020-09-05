@@ -1,4 +1,5 @@
 /// <reference types="./LightningStorm.d.ts" />
+/// <reference lib="dom" />
 import {
   MathUtils,
   Mesh,

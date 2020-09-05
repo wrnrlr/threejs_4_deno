@@ -1,4 +1,5 @@
 /// <reference types="./Loader.d.ts" />
+/// <reference lib="dom" />
 import { DefaultLoadingManager } from "./LoadingManager.js";
 
 function Loader(manager) {

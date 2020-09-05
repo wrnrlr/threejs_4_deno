@@ -1,4 +1,5 @@
 /// <reference types="./PVRLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   CompressedTextureLoader,
   RGBA_PVRTC_2BPPV1_Format,

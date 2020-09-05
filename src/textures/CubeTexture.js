@@ -1,4 +1,5 @@
 /// <reference types="./CubeTexture.d.ts" />
+/// <reference lib="dom" />
 import { Texture } from "./Texture.js";
 import { CubeReflectionMapping, RGBFormat } from "../constants.js";
 

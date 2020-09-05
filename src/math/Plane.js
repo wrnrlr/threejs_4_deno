@@ -1,4 +1,5 @@
 /// <reference types="./Plane.d.ts" />
+/// <reference lib="dom" />
 import { Matrix3 } from "./Matrix3.js";
 import { Vector3 } from "./Vector3.js";
 

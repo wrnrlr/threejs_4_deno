@@ -1,4 +1,5 @@
 /// <reference types="./AsciiEffect.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Ascii generation is based on http://www.nihilogic.dk/labs/jsascii/

@@ -1,4 +1,5 @@
 /// <reference types="./ShapeUtils.d.ts" />
+/// <reference lib="dom" />
 import { Earcut } from "./Earcut.js";
 
 const ShapeUtils = {

@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 export default /* glsl */`
 uniform bool receiveShadow;
 uniform vec3 ambientLightColor;

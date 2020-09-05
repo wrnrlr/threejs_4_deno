@@ -1,4 +1,5 @@
 /// <reference types="./OctahedronGeometry.d.ts" />
+/// <reference lib="dom" />
 import { Geometry } from "../core/Geometry.js";
 import { PolyhedronBufferGeometry } from "./PolyhedronGeometry.js";
 

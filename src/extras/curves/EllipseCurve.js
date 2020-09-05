@@ -1,4 +1,5 @@
 /// <reference types="./EllipseCurve.d.ts" />
+/// <reference lib="dom" />
 import { Curve } from "../core/Curve.js";
 import { Vector2 } from "../../math/Vector2.js";
 

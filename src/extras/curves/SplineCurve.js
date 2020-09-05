@@ -1,4 +1,5 @@
 /// <reference types="./SplineCurve.d.ts" />
+/// <reference lib="dom" />
 import { Curve } from "../core/Curve.js";
 import { CatmullRom } from "../core/Interpolations.js";
 import { Vector2 } from "../../math/Vector2.js";

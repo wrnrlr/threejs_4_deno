@@ -1,4 +1,5 @@
 /// <reference types="./ObjectLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   UVMapping,
   CubeReflectionMapping,

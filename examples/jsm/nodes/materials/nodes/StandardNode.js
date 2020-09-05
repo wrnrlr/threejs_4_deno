@@ -1,4 +1,5 @@
 /// <reference types="./StandardNode.d.ts" />
+/// <reference lib="dom" />
 import {
   UniformsLib,
   UniformsUtils,

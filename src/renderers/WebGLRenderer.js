@@ -1,4 +1,5 @@
 /// <reference types="./WebGLRenderer.d.ts" />
+/// <reference lib="dom" />
 import {
   RGBAFormat,
   HalfFloatType,

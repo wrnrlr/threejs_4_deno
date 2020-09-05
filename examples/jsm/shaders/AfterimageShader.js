@@ -1,4 +1,5 @@
 /// <reference types="./AfterimageShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Afterimage shader

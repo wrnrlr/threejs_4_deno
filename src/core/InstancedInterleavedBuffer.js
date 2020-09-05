@@ -1,4 +1,5 @@
 /// <reference types="./InstancedInterleavedBuffer.d.ts" />
+/// <reference lib="dom" />
 import { InterleavedBuffer } from "./InterleavedBuffer.js";
 
 function InstancedInterleavedBuffer(array, stride, meshPerAttribute) {

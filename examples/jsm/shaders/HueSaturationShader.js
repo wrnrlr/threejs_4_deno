@@ -1,4 +1,5 @@
 /// <reference types="./HueSaturationShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Hue and saturation adjustment

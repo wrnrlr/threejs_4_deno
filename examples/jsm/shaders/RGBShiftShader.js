@@ -1,4 +1,5 @@
 /// <reference types="./RGBShiftShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * RGB Shift Shader

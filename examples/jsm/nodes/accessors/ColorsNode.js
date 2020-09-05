@@ -1,4 +1,5 @@
 /// <reference types="./ColorsNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.js";
 
 var vertexDict = ["color", "color2"],

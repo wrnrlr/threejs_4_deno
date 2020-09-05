@@ -1,4 +1,5 @@
 /// <reference types="./SwitchNode.d.ts" />
+/// <reference lib="dom" />
 import { Node } from "../core/Node.js";
 
 function SwitchNode(node, components) {

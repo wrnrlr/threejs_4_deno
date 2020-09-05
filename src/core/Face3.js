@@ -1,4 +1,5 @@
 /// <reference types="./Face3.d.ts" />
+/// <reference lib="dom" />
 import { Color } from "../math/Color.js";
 import { Vector3 } from "../math/Vector3.js";
 

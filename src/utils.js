@@ -1,4 +1,5 @@
 /// <reference types="./utils.d.ts" />
+/// <reference lib="dom" />
 function arrayMin(array) {
   if (array.length === 0) return Infinity;
 

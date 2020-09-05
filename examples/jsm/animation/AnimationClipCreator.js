@@ -1,4 +1,5 @@
 /// <reference types="./AnimationClipCreator.d.ts" />
+/// <reference lib="dom" />
 import {
   AnimationClip,
   BooleanKeyframeTrack,

@@ -1,4 +1,5 @@
 /// <reference types="./BokehShader2.d.ts" />
+/// <reference lib="dom" />
 import {
   Vector2,
 } from "../../../src/Three.js";

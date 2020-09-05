@@ -1,4 +1,5 @@
 /// <reference types="./Materials.d.ts" />
+/// <reference lib="dom" />
 export { ShadowMaterial } from "./ShadowMaterial.js";
 export { SpriteMaterial } from "./SpriteMaterial.js";
 export { RawShaderMaterial } from "./RawShaderMaterial.js";

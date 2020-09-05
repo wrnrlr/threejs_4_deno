@@ -1,4 +1,5 @@
 /// <reference types="./MMDAnimationHelper.d.ts" />
+/// <reference lib="dom" />
 import {
   AnimationMixer,
   Object3D,

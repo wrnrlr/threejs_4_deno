@@ -1,4 +1,5 @@
 /// <reference types="./DataTextureLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   LinearFilter,
   LinearMipmapLinearFilter,

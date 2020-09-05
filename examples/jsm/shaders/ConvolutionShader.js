@@ -1,4 +1,5 @@
 /// <reference types="./ConvolutionShader.d.ts" />
+/// <reference lib="dom" />
 import {
   Vector2,
 } from "../../../src/Three.js";

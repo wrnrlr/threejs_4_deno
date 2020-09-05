@@ -1,4 +1,5 @@
 /// <reference types="./polyfills.d.ts" />
+/// <reference lib="dom" />
 // Polyfills
 
 if (Number.EPSILON === undefined) {

@@ -1,4 +1,5 @@
 /// <reference types="./Pass.d.ts" />
+/// <reference lib="dom" />
 import {
   OrthographicCamera,
   PlaneBufferGeometry,

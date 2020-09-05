@@ -1,4 +1,5 @@
 /// <reference types="./Color.d.ts" />
+/// <reference lib="dom" />
 import { MathUtils } from "./MathUtils.js";
 
 const _colorKeywords = {

@@ -1,4 +1,5 @@
 /// <reference types="./LineSegments2.d.ts" />
+/// <reference lib="dom" />
 import {
   InstancedInterleavedBuffer,
   InterleavedBufferAttribute,

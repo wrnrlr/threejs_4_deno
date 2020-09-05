@@ -1,4 +1,5 @@
 /// <reference types="./DOFMipMapShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Depth-of-field shader using mipmaps

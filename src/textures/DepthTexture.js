@@ -1,4 +1,5 @@
 /// <reference types="./DepthTexture.d.ts" />
+/// <reference lib="dom" />
 import { Texture } from "./Texture.js";
 import {
   NearestFilter,

@@ -1,4 +1,5 @@
 /// <reference types="./XLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   AnimationClip,
   AnimationMixer,

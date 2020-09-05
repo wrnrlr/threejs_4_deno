@@ -1,4 +1,5 @@
 /// <reference types="./FBXLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   AmbientLight,
   AnimationClip,

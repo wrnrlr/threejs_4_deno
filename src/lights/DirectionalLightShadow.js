@@ -1,4 +1,5 @@
 /// <reference types="./DirectionalLightShadow.d.ts" />
+/// <reference lib="dom" />
 import { LightShadow } from "./LightShadow.js";
 import { OrthographicCamera } from "../cameras/OrthographicCamera.js";
 

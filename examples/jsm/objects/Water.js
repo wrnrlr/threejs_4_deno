@@ -1,4 +1,5 @@
 /// <reference types="./Water.d.ts" />
+/// <reference lib="dom" />
 import {
   Color,
   FrontSide,

@@ -1,4 +1,5 @@
 /// <reference types="./Node.d.ts" />
+/// <reference lib="dom" />
 import { MathUtils } from "../../../../src/Three.js";
 
 function Node(type) {

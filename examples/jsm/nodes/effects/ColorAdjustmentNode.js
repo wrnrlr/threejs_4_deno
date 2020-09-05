@@ -1,4 +1,5 @@
 /// <reference types="./ColorAdjustmentNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.js";
 import { FunctionNode } from "../core/FunctionNode.js";
 import { LuminanceNode } from "./LuminanceNode.js";

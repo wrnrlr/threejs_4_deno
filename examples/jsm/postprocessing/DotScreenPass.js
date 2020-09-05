@@ -1,4 +1,5 @@
 /// <reference types="./DotScreenPass.d.ts" />
+/// <reference lib="dom" />
 import {
   ShaderMaterial,
   UniformsUtils,

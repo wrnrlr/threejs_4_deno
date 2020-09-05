@@ -1,4 +1,5 @@
 /// <reference types="./FontLoader.d.ts" />
+/// <reference lib="dom" />
 import { Font } from "../extras/core/Font.js";
 import { FileLoader } from "./FileLoader.js";
 import { Loader } from "./Loader.js";

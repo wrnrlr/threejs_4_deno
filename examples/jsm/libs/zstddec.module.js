@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 /**
  * @author Don McCurdy / https://www.donmccurdy.com
  */

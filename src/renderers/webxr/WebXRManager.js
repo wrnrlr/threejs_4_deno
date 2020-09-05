@@ -1,4 +1,5 @@
 /// <reference types="./WebXRManager.d.ts" />
+/// <reference lib="dom" />
 import { ArrayCamera } from "../../cameras/ArrayCamera.js";
 import { EventDispatcher } from "../../core/EventDispatcher.js";
 import { PerspectiveCamera } from "../../cameras/PerspectiveCamera.js";

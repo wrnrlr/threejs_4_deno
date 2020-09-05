@@ -1,4 +1,5 @@
 /// <reference types="./Shape.d.ts" />
+/// <reference lib="dom" />
 import { Path } from "./Path.js";
 import { MathUtils } from "../../math/MathUtils.js";
 

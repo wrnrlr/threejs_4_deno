@@ -1,4 +1,5 @@
 /// <reference types="./CameraNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.js";
 import { FunctionNode } from "../core/FunctionNode.js";
 import { FloatNode } from "../inputs/FloatNode.js";

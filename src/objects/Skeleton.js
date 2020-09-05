@@ -1,4 +1,5 @@
 /// <reference types="./Skeleton.d.ts" />
+/// <reference lib="dom" />
 import { Matrix4 } from "../math/Matrix4.js";
 
 const _offsetMatrix = new Matrix4();

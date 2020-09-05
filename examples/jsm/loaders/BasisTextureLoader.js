@@ -1,4 +1,5 @@
 /// <reference types="./BasisTextureLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   CompressedTexture,
   FileLoader,

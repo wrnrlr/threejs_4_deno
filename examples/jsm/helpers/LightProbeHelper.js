@@ -1,4 +1,5 @@
 /// <reference types="./LightProbeHelper.d.ts" />
+/// <reference lib="dom" />
 import {
   Mesh,
   ShaderMaterial,

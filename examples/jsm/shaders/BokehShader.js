@@ -1,4 +1,5 @@
 /// <reference types="./BokehShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Depth-of-field shader with bokeh

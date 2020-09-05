@@ -1,4 +1,5 @@
 /// <reference types="./ConstNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "./TempNode.js";
 
 var declarationRegexp = /^([a-z_0-9]+)\s([a-z_0-9]+)\s?\=?\s?(.*?)(\;|$)/i;

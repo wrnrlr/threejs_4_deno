@@ -1,4 +1,5 @@
 /// <reference types="./DragControls.d.ts" />
+/// <reference lib="dom" />
 import {
   EventDispatcher,
   Matrix4,

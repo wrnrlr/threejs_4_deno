@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import * as THREE from '../../../src/Three.js';
 
 var camera, scene, renderer, group;

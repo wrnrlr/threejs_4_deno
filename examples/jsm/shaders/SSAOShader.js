@@ -1,4 +1,5 @@
 /// <reference types="./SSAOShader.d.ts" />
+/// <reference lib="dom" />
 import {
   Matrix4,
   Vector2,

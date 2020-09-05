@@ -1,4 +1,5 @@
 /// <reference types="./Vector4.d.ts" />
+/// <reference lib="dom" />
 class Vector4 {
   constructor(x = 0, y = 0, z = 0, w = 1) {
     Object.defineProperty(this, "isVector4", { value: true });

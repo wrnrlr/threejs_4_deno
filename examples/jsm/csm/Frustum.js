@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import { Vector3, Matrix4 } from '../../../src/Three.js';
 
 const inverseProjectionMatrix = new Matrix4();

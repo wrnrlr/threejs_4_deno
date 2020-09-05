@@ -1,4 +1,5 @@
 /// <reference types="./RawShaderMaterial.d.ts" />
+/// <reference lib="dom" />
 import { ShaderMaterial } from "./ShaderMaterial.js";
 
 function RawShaderMaterial(parameters) {

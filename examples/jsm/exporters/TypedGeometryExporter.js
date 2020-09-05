@@ -1,4 +1,5 @@
 /// <reference types="./TypedGeometryExporter.d.ts" />
+/// <reference lib="dom" />
 
 var TypedGeometryExporter = function () {};
 

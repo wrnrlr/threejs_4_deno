@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import WebGPUUniformsGroup from './WebGPUUniformsGroup.js';
 import WebGPUSampler from './WebGPUSampler.js';
 import WebGPUSampledTexture from './WebGPUSampledTexture.js';

@@ -1,4 +1,5 @@
 /// <reference types="./Lut.d.ts" />
+/// <reference lib="dom" />
 import {
   Color,
 } from "../../../src/Three.js";

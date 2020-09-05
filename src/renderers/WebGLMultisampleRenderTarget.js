@@ -1,4 +1,5 @@
 /// <reference types="./WebGLMultisampleRenderTarget.d.ts" />
+/// <reference lib="dom" />
 import { WebGLRenderTarget } from "./WebGLRenderTarget.js";
 
 function WebGLMultisampleRenderTarget(width, height, options) {

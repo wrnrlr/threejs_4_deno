@@ -1,4 +1,5 @@
 /// <reference types="./WebGLAttributes.d.ts" />
+/// <reference lib="dom" />
 function WebGLAttributes(gl, capabilities) {
   const isWebGL2 = capabilities.isWebGL2;
 

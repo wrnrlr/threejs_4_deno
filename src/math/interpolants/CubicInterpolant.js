@@ -1,4 +1,5 @@
 /// <reference types="./CubicInterpolant.d.ts" />
+/// <reference lib="dom" />
 import { ZeroCurvatureEnding } from "../../constants.js";
 import { Interpolant } from "../Interpolant.js";
 import { WrapAroundEnding, ZeroSlopeEnding } from "../../constants.js";

@@ -1,4 +1,5 @@
 /// <reference types="./ColorConverter.d.ts" />
+/// <reference lib="dom" />
 import {
   MathUtils,
 } from "../../../src/Three.js";

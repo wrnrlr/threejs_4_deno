@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 
 /**
  * ACES Filmic Tone Mapping Shader by Stephen Hill

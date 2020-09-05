@@ -1,4 +1,5 @@
 /// <reference types="./Frustum.d.ts" />
+/// <reference lib="dom" />
 import { Vector3 } from "./Vector3.js";
 import { Sphere } from "./Sphere.js";
 import { Plane } from "./Plane.js";

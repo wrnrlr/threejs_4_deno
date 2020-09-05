@@ -1,4 +1,5 @@
 /// <reference types="./BrightnessContrastShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Brightness and contrast adjustment

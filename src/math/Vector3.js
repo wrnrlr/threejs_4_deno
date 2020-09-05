@@ -1,4 +1,5 @@
 /// <reference types="./Vector3.d.ts" />
+/// <reference lib="dom" />
 import { MathUtils } from "./MathUtils.js";
 import { Quaternion } from "./Quaternion.js";
 

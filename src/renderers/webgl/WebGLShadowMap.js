@@ -1,4 +1,5 @@
 /// <reference types="./WebGLShadowMap.d.ts" />
+/// <reference lib="dom" />
 import {
   FrontSide,
   BackSide,

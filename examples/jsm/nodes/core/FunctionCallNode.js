@@ -1,4 +1,5 @@
 /// <reference types="./FunctionCallNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "./TempNode.js";
 
 function FunctionCallNode(func, inputs) {

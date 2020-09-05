@@ -1,4 +1,5 @@
 /// <reference types="./HemisphereLightProbe.d.ts" />
+/// <reference lib="dom" />
 import { Color } from "../math/Color.js";
 import { Vector3 } from "../math/Vector3.js";
 import { LightProbe } from "./LightProbe.js";

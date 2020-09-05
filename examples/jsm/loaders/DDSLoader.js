@@ -1,4 +1,5 @@
 /// <reference types="./DDSLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   CompressedTextureLoader,
   RGBAFormat,

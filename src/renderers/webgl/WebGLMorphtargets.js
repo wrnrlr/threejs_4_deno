@@ -1,4 +1,5 @@
 /// <reference types="./WebGLMorphtargets.d.ts" />
+/// <reference lib="dom" />
 function numericalSort(a, b) {
   return a[0] - b[0];
 }

@@ -1,4 +1,5 @@
 /// <reference types="./NodeUtils.d.ts" />
+/// <reference lib="dom" />
 var NodeUtils = {
   elements: ["x", "y", "z", "w"],
 

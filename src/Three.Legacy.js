@@ -1,4 +1,5 @@
 /// <reference types="./Three.Legacy.d.ts" />
+/// <reference lib="dom" />
 import { Audio } from "./audio/Audio.js";
 import { AudioAnalyser } from "./audio/AudioAnalyser.js";
 import { PerspectiveCamera } from "./cameras/PerspectiveCamera.js";

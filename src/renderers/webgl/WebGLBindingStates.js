@@ -1,4 +1,5 @@
 /// <reference types="./WebGLBindingStates.d.ts" />
+/// <reference lib="dom" />
 function WebGLBindingStates(gl, extensions, attributes, capabilities) {
   const maxVertexAttributes = gl.getParameter(gl.MAX_VERTEX_ATTRIBS);
 

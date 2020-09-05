@@ -1,4 +1,5 @@
 /// <reference types="./LoaderUtils.d.ts" />
+/// <reference lib="dom" />
 const LoaderUtils = {
   decodeText: function (array) {
     if (typeof TextDecoder !== "undefined") {

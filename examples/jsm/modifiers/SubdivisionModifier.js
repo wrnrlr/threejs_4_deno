@@ -1,4 +1,5 @@
 /// <reference types="./SubdivisionModifier.d.ts" />
+/// <reference lib="dom" />
 import {
   Face3,
   Geometry,

@@ -1,4 +1,5 @@
 /// <reference types="./SceneUtils.d.ts" />
+/// <reference lib="dom" />
 import {
   Group,
   Mesh,

@@ -1,4 +1,5 @@
 /// <reference types="./GPUComputationRenderer.d.ts" />
+/// <reference lib="dom" />
 import {
   Camera,
   ClampToEdgeWrapping,

@@ -1,4 +1,5 @@
 /// <reference types="./QuaternionLinearInterpolant.d.ts" />
+/// <reference lib="dom" />
 import { Interpolant } from "../Interpolant.js";
 import { Quaternion } from "../Quaternion.js";
 

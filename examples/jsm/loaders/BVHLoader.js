@@ -1,4 +1,5 @@
 /// <reference types="./BVHLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   AnimationClip,
   Bone,

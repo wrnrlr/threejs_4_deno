@@ -1,4 +1,5 @@
 /// <reference types="./ParallaxShader.d.ts" />
+/// <reference lib="dom" />
 
 // Parallax Occlusion shaders from
 //    http://sunandblackcat.com/tipFullView.php?topicid=28

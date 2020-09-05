@@ -1,4 +1,5 @@
 /// <reference types="./VolumeShader.d.ts" />
+/// <reference lib="dom" />
 import {
   Vector2,
   Vector3,

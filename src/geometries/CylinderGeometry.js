@@ -1,4 +1,5 @@
 /// <reference types="./CylinderGeometry.d.ts" />
+/// <reference lib="dom" />
 import { Geometry } from "../core/Geometry.js";
 import { BufferGeometry } from "../core/BufferGeometry.js";
 import { Float32BufferAttribute } from "../core/BufferAttribute.js";

@@ -1,4 +1,5 @@
 /// <reference types="./ArcCurve.d.ts" />
+/// <reference lib="dom" />
 import { EllipseCurve } from "./EllipseCurve.js";
 
 function ArcCurve(aX, aY, aRadius, aStartAngle, aEndAngle, aClockwise) {

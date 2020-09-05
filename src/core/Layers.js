@@ -1,4 +1,5 @@
 /// <reference types="./Layers.d.ts" />
+/// <reference lib="dom" />
 class Layers {
   constructor() {
     this.mask = 1 | 0;

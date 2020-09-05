@@ -1,4 +1,5 @@
 /// <reference types="./WebGLAnimation.d.ts" />
+/// <reference lib="dom" />
 function WebGLAnimation() {
   let context = null;
   let isAnimating = false;

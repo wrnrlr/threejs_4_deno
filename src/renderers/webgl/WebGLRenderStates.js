@@ -1,4 +1,5 @@
 /// <reference types="./WebGLRenderStates.d.ts" />
+/// <reference lib="dom" />
 import { WebGLLights } from "./WebGLLights.js";
 
 function WebGLRenderState() {

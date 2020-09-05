@@ -1,4 +1,5 @@
 /// <reference types="./CopyShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Full-screen textured quad shader

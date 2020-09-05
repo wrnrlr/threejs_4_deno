@@ -1,4 +1,5 @@
 /// <reference types="./UVNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.js";
 import { NodeLib } from "../core/NodeLib.js";
 

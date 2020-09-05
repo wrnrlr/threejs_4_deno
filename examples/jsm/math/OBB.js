@@ -1,4 +1,5 @@
 /// <reference types="./OBB.d.ts" />
+/// <reference lib="dom" />
 import {
   Box3,
   MathUtils,

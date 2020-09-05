@@ -1,4 +1,5 @@
 /// <reference types="./SkeletonHelper.d.ts" />
+/// <reference lib="dom" />
 import { LineSegments } from "../objects/LineSegments.js";
 import { Matrix4 } from "../math/Matrix4.js";
 import { LineBasicMaterial } from "../materials/LineBasicMaterial.js";

@@ -1,4 +1,5 @@
 /// <reference types="./AnimationUtils.d.ts" />
+/// <reference lib="dom" />
 import { Quaternion } from "../math/Quaternion.js";
 import { AdditiveAnimationBlendMode } from "../constants.js";
 

@@ -1,4 +1,5 @@
 /// <reference types="./ShaderMaterial.d.ts" />
+/// <reference lib="dom" />
 import { Material } from "./Material.js";
 import { cloneUniforms } from "../renderers/shaders/UniformsUtils.js";
 

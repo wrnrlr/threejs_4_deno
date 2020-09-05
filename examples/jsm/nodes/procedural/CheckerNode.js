@@ -1,4 +1,5 @@
 /// <reference types="./CheckerNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.js";
 import { FunctionNode } from "../core/FunctionNode.js";
 import { UVNode } from "../accessors/UVNode.js";

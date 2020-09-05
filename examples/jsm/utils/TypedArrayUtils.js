@@ -1,4 +1,5 @@
 /// <reference types="./TypedArrayUtils.d.ts" />
+/// <reference lib="dom" />
 
 var TypedArrayUtils = {};
 

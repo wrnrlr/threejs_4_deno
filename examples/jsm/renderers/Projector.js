@@ -1,4 +1,5 @@
 /// <reference types="./Projector.d.ts" />
+/// <reference lib="dom" />
 import {
   BackSide,
   Box3,

@@ -1,4 +1,5 @@
 /// <reference types="./CubeTextureLoader.d.ts" />
+/// <reference lib="dom" />
 import { ImageLoader } from "./ImageLoader.js";
 import { CubeTexture } from "../textures/CubeTexture.js";
 import { Loader } from "./Loader.js";

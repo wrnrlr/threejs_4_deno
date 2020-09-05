@@ -1,4 +1,5 @@
 /// <reference types="./Triangle.d.ts" />
+/// <reference lib="dom" />
 import { Vector3 } from "./Vector3.js";
 import { Plane } from "./Plane.js";
 

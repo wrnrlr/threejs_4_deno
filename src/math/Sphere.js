@@ -1,4 +1,5 @@
 /// <reference types="./Sphere.d.ts" />
+/// <reference lib="dom" />
 import { Box3 } from "./Box3.js";
 import { Vector3 } from "./Vector3.js";
 

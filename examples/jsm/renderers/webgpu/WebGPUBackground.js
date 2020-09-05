@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import { GPULoadOp } from './constants.js';
 import { Color } from '../../../../src/Three.js';
 

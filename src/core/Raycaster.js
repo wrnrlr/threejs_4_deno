@@ -1,4 +1,5 @@
 /// <reference types="./Raycaster.d.ts" />
+/// <reference lib="dom" />
 import { Ray } from "../math/Ray.js";
 import { Layers } from "./Layers.js";
 

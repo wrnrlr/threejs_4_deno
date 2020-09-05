@@ -1,4 +1,5 @@
 /// <reference types="./NURBSUtils.d.ts" />
+/// <reference lib="dom" />
 import {
   Vector3,
   Vector4,

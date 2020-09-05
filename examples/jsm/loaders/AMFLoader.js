@@ -1,4 +1,5 @@
 /// <reference types="./AMFLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   BufferGeometry,
   Color,

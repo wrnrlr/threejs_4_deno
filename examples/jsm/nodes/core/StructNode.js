@@ -1,4 +1,5 @@
 /// <reference types="./StructNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "./TempNode.js";
 
 var declarationRegexp = /^struct\s*([a-z_0-9]+)\s*{\s*((.|\n)*?)}/img,

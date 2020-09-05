@@ -1,4 +1,5 @@
 /// <reference types="./ShadowMesh.d.ts" />
+/// <reference lib="dom" />
 import {
   Matrix4,
   Mesh,

@@ -1,4 +1,5 @@
 /// <reference types="./STLLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   BufferAttribute,
   BufferGeometry,

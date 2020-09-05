@@ -1,4 +1,5 @@
 /// <reference types="./TimelinerController.d.ts" />
+/// <reference lib="dom" />
 import {
   AnimationClip,
   AnimationMixer,

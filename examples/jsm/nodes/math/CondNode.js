@@ -1,4 +1,5 @@
 /// <reference types="./CondNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.js";
 
 function CondNode(a, b, op, ifNode, elseNode) {

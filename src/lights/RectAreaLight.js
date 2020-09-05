@@ -1,4 +1,5 @@
 /// <reference types="./RectAreaLight.d.ts" />
+/// <reference lib="dom" />
 import { Light } from "./Light.js";
 
 function RectAreaLight(color, intensity, width, height) {

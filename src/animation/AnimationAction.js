@@ -1,4 +1,5 @@
 /// <reference types="./AnimationAction.d.ts" />
+/// <reference lib="dom" />
 import {
   WrapAroundEnding,
   ZeroCurvatureEnding,

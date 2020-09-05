@@ -1,4 +1,5 @@
 /// <reference types="./MorphBlendMesh.d.ts" />
+/// <reference lib="dom" />
 import {
   MathUtils,
   Mesh,

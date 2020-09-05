@@ -1,4 +1,5 @@
 /// <reference types="./MeshPhysicalMaterial.d.ts" />
+/// <reference lib="dom" />
 import { Vector2 } from "../math/Vector2.js";
 import { MeshStandardMaterial } from "./MeshStandardMaterial.js";
 import { Color } from "../math/Color.js";

@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 /**
  * dat-gui JavaScript Controller Library
  * http://code.google.com/p/dat-gui

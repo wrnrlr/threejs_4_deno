@@ -1,4 +1,5 @@
 /// <reference types="./Curve.d.ts" />
+/// <reference lib="dom" />
 import { MathUtils } from "../../math/MathUtils.js";
 import { Vector2 } from "../../math/Vector2.js";
 import { Vector3 } from "../../math/Vector3.js";

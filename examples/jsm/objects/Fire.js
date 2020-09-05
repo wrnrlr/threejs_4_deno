@@ -1,4 +1,5 @@
 /// <reference types="./Fire.d.ts" />
+/// <reference lib="dom" />
 import {
   Clock,
   Color,

@@ -1,4 +1,5 @@
 /// <reference types="./Quaternion.d.ts" />
+/// <reference lib="dom" />
 import { MathUtils } from "./MathUtils.js";
 
 class Quaternion {

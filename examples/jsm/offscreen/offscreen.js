@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import init from './scene.js';
 
 self.onmessage = function ( message ) {

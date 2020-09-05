@@ -1,4 +1,5 @@
 /// <reference types="./SkeletonUtils.d.ts" />
+/// <reference lib="dom" />
 import {
   AnimationClip,
   AnimationMixer,

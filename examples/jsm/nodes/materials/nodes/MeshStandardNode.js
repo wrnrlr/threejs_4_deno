@@ -1,4 +1,5 @@
 /// <reference types="./MeshStandardNode.d.ts" />
+/// <reference lib="dom" />
 import {
   Color,
   Vector2,

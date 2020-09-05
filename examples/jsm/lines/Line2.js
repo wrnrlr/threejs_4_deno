@@ -1,4 +1,5 @@
 /// <reference types="./Line2.d.ts" />
+/// <reference lib="dom" />
 
 import { LineSegments2 } from "../lines/LineSegments2.js";
 import { LineGeometry } from "../lines/LineGeometry.js";

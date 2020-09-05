@@ -1,4 +1,5 @@
 /// <reference types="./ExpressionNode.d.ts" />
+/// <reference lib="dom" />
 import { FunctionNode } from "./FunctionNode.js";
 
 function ExpressionNode(src, type, keywords, extensions, includes) {

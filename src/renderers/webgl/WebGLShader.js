@@ -1,4 +1,5 @@
 /// <reference types="./WebGLShader.d.ts" />
+/// <reference lib="dom" />
 function WebGLShader(gl, type, string) {
   const shader = gl.createShader(type);
 

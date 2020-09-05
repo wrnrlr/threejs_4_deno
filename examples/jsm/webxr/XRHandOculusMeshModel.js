@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import { FBXLoader } from '../loaders/FBXLoader.js';
 
 class XRHandOculusMeshModel {

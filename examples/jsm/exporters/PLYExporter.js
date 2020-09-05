@@ -1,4 +1,5 @@
 /// <reference types="./PLYExporter.d.ts" />
+/// <reference lib="dom" />
 import {
   BufferGeometry,
   Matrix3,

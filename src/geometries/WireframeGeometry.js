@@ -1,4 +1,5 @@
 /// <reference types="./WireframeGeometry.d.ts" />
+/// <reference lib="dom" />
 import { BufferGeometry } from "../core/BufferGeometry.js";
 import { Float32BufferAttribute } from "../core/BufferAttribute.js";
 import { Vector3 } from "../math/Vector3.js";

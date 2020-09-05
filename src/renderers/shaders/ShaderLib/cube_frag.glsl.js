@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 export default /* glsl */`
 #include <envmap_common_pars_fragment>
 uniform float opacity;

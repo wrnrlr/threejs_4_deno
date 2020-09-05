@@ -1,4 +1,5 @@
 /// <reference types="./Sky.d.ts" />
+/// <reference lib="dom" />
 import {
   BackSide,
   BoxBufferGeometry,

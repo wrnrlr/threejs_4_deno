@@ -1,4 +1,5 @@
 /// <reference types="./Three.d.ts" />
+/// <reference lib="dom" />
 import "./polyfills.js";
 import { REVISION } from "./constants.js";
 

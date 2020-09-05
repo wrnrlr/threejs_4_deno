@@ -1,4 +1,5 @@
 /// <reference types="./IntNode.d.ts" />
+/// <reference lib="dom" />
 import { InputNode } from "../core/InputNode.js";
 
 function IntNode(value) {

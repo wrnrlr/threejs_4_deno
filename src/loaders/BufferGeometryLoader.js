@@ -1,4 +1,5 @@
 /// <reference types="./BufferGeometryLoader.d.ts" />
+/// <reference lib="dom" />
 import { Sphere } from "../math/Sphere.js";
 import { Vector3 } from "../math/Vector3.js";
 import { BufferAttribute } from "../core/BufferAttribute.js";

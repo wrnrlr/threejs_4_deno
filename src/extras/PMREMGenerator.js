@@ -1,4 +1,5 @@
 /// <reference types="./PMREMGenerator.d.ts" />
+/// <reference lib="dom" />
 import {
   CubeUVReflectionMapping,
   GammaEncoding,

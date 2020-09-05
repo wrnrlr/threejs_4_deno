@@ -1,4 +1,5 @@
 /// <reference types="./ConvexHull.d.ts" />
+/// <reference lib="dom" />
 import {
   Line3,
   Plane,

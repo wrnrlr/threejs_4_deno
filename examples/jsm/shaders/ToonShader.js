@@ -1,4 +1,5 @@
 /// <reference types="./ToonShader.d.ts" />
+/// <reference lib="dom" />
 import {
   Color,
   Vector3,

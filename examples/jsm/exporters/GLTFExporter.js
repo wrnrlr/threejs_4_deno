@@ -1,4 +1,5 @@
 /// <reference types="./GLTFExporter.d.ts" />
+/// <reference lib="dom" />
 import {
   BufferAttribute,
   BufferGeometry,

@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 /**
  * Port from https://github.com/mapbox/earcut (v2.2.2)
  */

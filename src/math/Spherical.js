@@ -1,4 +1,5 @@
 /// <reference types="./Spherical.d.ts" />
+/// <reference lib="dom" />
 /**
  * Ref: https://en.wikipedia.org/wiki/Spherical_coordinate_system
  *

@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 /**
  * === IFFParser ===
  * - Parses data from the IFF buffer.

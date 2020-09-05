@@ -1,4 +1,5 @@
 /// <reference types="./WebGLCapabilities.d.ts" />
+/// <reference lib="dom" />
 function WebGLCapabilities(gl, extensions, parameters) {
   let maxAnisotropy;
 

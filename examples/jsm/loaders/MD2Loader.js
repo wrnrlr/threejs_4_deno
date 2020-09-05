@@ -1,4 +1,5 @@
 /// <reference types="./MD2Loader.d.ts" />
+/// <reference lib="dom" />
 import {
   AnimationClip,
   BufferGeometry,

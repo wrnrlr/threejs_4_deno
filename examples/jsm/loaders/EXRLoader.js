@@ -1,4 +1,5 @@
 /// <reference types="./EXRLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   DataTextureLoader,
   FloatType,

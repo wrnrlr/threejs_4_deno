@@ -1,4 +1,5 @@
 /// <reference types="./UnpackDepthRGBAShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Unpack RGBA depth shader

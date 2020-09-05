@@ -1,4 +1,5 @@
 /// <reference types="./BufferGeometry.d.ts" />
+/// <reference lib="dom" />
 import { Vector3 } from "../math/Vector3.js";
 import { Box3 } from "../math/Box3.js";
 import { EventDispatcher } from "./EventDispatcher.js";

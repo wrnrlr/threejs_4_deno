@@ -1,4 +1,5 @@
 /// <reference types="./LOD.d.ts" />
+/// <reference lib="dom" />
 import { Vector3 } from "../math/Vector3.js";
 import { Object3D } from "../core/Object3D.js";
 

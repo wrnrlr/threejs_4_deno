@@ -1,4 +1,5 @@
 /// <reference types="./LineMaterial.d.ts" />
+/// <reference lib="dom" />
 import {
   ShaderLib,
   ShaderMaterial,

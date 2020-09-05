@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import {
 	Object3D
 } from '../../../src/Three.js';

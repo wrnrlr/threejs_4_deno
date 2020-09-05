@@ -1,4 +1,5 @@
 /// <reference types="./KaleidoShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Kaleidoscope Shader

@@ -1,4 +1,5 @@
 /// <reference types="./ImprovedNoise.d.ts" />
+/// <reference lib="dom" />
 
 // http://mrl.nyu.edu/~perlin/noise/
 

@@ -1,4 +1,5 @@
 /// <reference types="./ShadowMapViewer.d.ts" />
+/// <reference lib="dom" />
 import {
   DoubleSide,
   LinearFilter,

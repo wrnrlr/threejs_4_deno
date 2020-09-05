@@ -1,4 +1,5 @@
 /// <reference types="./OBJLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   BufferGeometry,
   FileLoader,

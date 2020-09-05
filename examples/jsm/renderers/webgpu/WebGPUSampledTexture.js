@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import WebGPUBinding from './WebGPUBinding.js';
 
 class WebGPUSampledTexture extends WebGPUBinding {

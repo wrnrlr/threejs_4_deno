@@ -1,4 +1,5 @@
 /// <reference types="./WebGLRenderLists.d.ts" />
+/// <reference lib="dom" />
 function painterSortStable(a, b) {
   if (a.groupOrder !== b.groupOrder) {
     return a.groupOrder - b.groupOrder;

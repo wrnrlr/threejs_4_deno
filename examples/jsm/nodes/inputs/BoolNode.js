@@ -1,4 +1,5 @@
 /// <reference types="./BoolNode.d.ts" />
+/// <reference lib="dom" />
 import { InputNode } from "../core/InputNode.js";
 
 function BoolNode(value) {

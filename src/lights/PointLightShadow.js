@@ -1,4 +1,5 @@
 /// <reference types="./PointLightShadow.d.ts" />
+/// <reference lib="dom" />
 import { LightShadow } from "./LightShadow.js";
 import { PerspectiveCamera } from "../cameras/PerspectiveCamera.js";
 import { Vector2 } from "../math/Vector2.js";

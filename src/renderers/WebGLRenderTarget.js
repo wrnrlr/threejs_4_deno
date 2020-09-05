@@ -1,4 +1,5 @@
 /// <reference types="./WebGLRenderTarget.d.ts" />
+/// <reference lib="dom" />
 import { EventDispatcher } from "../core/EventDispatcher.js";
 import { Texture } from "../textures/Texture.js";
 import { LinearFilter } from "../constants.js";

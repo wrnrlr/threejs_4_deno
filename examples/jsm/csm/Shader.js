@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 import { ShaderChunk } from '../../../src/Three.js';
 
 export default {

@@ -1,4 +1,5 @@
 /// <reference types="./RenderPass.d.ts" />
+/// <reference lib="dom" />
 
 import { Pass } from "../postprocessing/Pass.js";
 

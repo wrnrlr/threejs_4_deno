@@ -1,4 +1,5 @@
 /// <reference types="./InterleavedBuffer.d.ts" />
+/// <reference lib="dom" />
 import { MathUtils } from "../math/MathUtils.js";
 import { StaticDrawUsage } from "../constants.js";
 

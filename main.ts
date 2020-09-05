@@ -55,6 +55,12 @@ function updateScripts(fileName: string, path: string) {
     return m;
   });
 
+
+  // As a simple fix for type errors that would otherwise occur
+  // we'll add the following to all .js scripts:
+  // `/// <reference lib="dom" />`
+  data = data.replace(/^/, `/// <reference lib="dom" />\n`);
+  
   // make sure each file references its own types.
   if (!data.includes("<reference types=")) {
     const fn = fileName.replace(/\.js/g, ".d.ts")

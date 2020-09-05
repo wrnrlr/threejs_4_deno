@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 export const GPUPrimitiveTopology = {
 	PointList: 'point-list',
 	LineList: 'line-list',

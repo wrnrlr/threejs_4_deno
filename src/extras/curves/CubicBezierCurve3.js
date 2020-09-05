@@ -1,4 +1,5 @@
 /// <reference types="./CubicBezierCurve3.d.ts" />
+/// <reference lib="dom" />
 import { Curve } from "../core/Curve.js";
 import { CubicBezier } from "../core/Interpolations.js";
 import { Vector3 } from "../../math/Vector3.js";

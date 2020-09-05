@@ -1,4 +1,5 @@
 /// <reference types="./WebGLPrograms.d.ts" />
+/// <reference lib="dom" />
 import {
   BackSide,
   DoubleSide,

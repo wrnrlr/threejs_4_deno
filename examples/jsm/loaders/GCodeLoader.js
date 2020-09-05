@@ -1,4 +1,5 @@
 /// <reference types="./GCodeLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   BufferGeometry,
   Euler,

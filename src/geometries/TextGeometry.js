@@ -1,4 +1,5 @@
 /// <reference types="./TextGeometry.d.ts" />
+/// <reference lib="dom" />
 import { Geometry } from "../core/Geometry.js";
 import { ExtrudeBufferGeometry } from "./ExtrudeGeometry.js";
 

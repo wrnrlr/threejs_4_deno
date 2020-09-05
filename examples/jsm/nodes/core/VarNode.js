@@ -1,4 +1,5 @@
 /// <reference types="./VarNode.d.ts" />
+/// <reference lib="dom" />
 import { Node } from "./Node.js";
 
 function VarNode(type, value) {

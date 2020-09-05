@@ -1,4 +1,5 @@
 /// <reference types="./ConeGeometry.d.ts" />
+/// <reference lib="dom" />
 import { CylinderGeometry } from "./CylinderGeometry.js";
 import { CylinderBufferGeometry } from "./CylinderGeometry.js";
 

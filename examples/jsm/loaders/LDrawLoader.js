@@ -1,4 +1,5 @@
 /// <reference types="./LDrawLoader.d.ts" />
+/// <reference lib="dom" />
 import {
   BufferAttribute,
   BufferGeometry,

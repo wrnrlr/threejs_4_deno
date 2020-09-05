@@ -1,4 +1,5 @@
 /// <reference types="./MeshBasicMaterial.d.ts" />
+/// <reference lib="dom" />
 import { Material } from "./Material.js";
 import { MultiplyOperation } from "../constants.js";
 import { Color } from "../math/Color.js";

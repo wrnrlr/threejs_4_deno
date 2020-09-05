@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 export default /* glsl */`
 varying vec2 vUv;
 uniform mat3 uvTransform;

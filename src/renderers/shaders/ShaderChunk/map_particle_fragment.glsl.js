@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 export default /* glsl */`
 #if defined( USE_MAP ) || defined( USE_ALPHAMAP )
 

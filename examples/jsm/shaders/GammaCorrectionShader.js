@@ -1,4 +1,5 @@
 /// <reference types="./GammaCorrectionShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Gamma Correction Shader

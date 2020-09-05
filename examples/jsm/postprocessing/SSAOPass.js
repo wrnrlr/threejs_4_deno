@@ -1,4 +1,5 @@
 /// <reference types="./SSAOPass.d.ts" />
+/// <reference lib="dom" />
 import {
   AddEquation,
   Color,

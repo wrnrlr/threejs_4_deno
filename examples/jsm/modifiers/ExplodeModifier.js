@@ -1,4 +1,5 @@
 /// <reference types="./ExplodeModifier.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Make all faces use unique vertices

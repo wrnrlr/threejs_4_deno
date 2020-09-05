@@ -1,4 +1,5 @@
 /// <reference types="./LoadingManager.d.ts" />
+/// <reference lib="dom" />
 function LoadingManager(onLoad, onProgress, onError) {
   const scope = this;
 

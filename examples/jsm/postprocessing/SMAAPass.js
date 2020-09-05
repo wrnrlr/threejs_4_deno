@@ -1,4 +1,5 @@
 /// <reference types="./SMAAPass.d.ts" />
+/// <reference lib="dom" />
 import {
   LinearFilter,
   NearestFilter,

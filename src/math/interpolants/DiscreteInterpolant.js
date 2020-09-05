@@ -1,4 +1,5 @@
 /// <reference types="./DiscreteInterpolant.d.ts" />
+/// <reference lib="dom" />
 import { Interpolant } from "../Interpolant.js";
 
 /**

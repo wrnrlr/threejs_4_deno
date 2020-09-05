@@ -1,4 +1,5 @@
 /// <reference types="./ColorKeyframeTrack.d.ts" />
+/// <reference lib="dom" />
 import { KeyframeTrack } from "../KeyframeTrack.js";
 
 /**

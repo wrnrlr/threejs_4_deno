@@ -1,4 +1,5 @@
 /// <reference types="./WireframeGeometry2.d.ts" />
+/// <reference lib="dom" />
 import {
   WireframeGeometry,
 } from "../../../src/Three.js";

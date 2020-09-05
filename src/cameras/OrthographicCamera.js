@@ -1,4 +1,5 @@
 /// <reference types="./OrthographicCamera.d.ts" />
+/// <reference lib="dom" />
 import { Camera } from "./Camera.js";
 import { Object3D } from "../core/Object3D.js";
 

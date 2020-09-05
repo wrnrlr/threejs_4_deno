@@ -1,4 +1,5 @@
 /// <reference types="./SpriteNode.d.ts" />
+/// <reference lib="dom" />
 import {
   UniformsLib,
   UniformsUtils,

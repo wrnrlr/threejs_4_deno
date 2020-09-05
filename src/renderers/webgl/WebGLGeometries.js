@@ -1,4 +1,5 @@
 /// <reference types="./WebGLGeometries.d.ts" />
+/// <reference lib="dom" />
 import {
   Uint16BufferAttribute,
   Uint32BufferAttribute,

@@ -1,4 +1,5 @@
 /// <reference types="./GeometryCompressionUtils.d.ts" />
+/// <reference lib="dom" />
 /**
  * Octahedron and Quantization encodings based on work by:
  *

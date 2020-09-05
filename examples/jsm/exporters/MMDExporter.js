@@ -1,4 +1,5 @@
 /// <reference types="./MMDExporter.d.ts" />
+/// <reference lib="dom" />
 import {
   Matrix4,
   Quaternion,

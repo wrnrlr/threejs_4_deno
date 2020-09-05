@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 class FlakesTexture {
 
 	constructor( width = 512, height = 512 ) {

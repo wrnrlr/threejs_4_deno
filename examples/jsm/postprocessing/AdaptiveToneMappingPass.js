@@ -1,4 +1,5 @@
 /// <reference types="./AdaptiveToneMappingPass.d.ts" />
+/// <reference lib="dom" />
 import {
   LinearFilter,
   LinearMipmapLinearFilter,

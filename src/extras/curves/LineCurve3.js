@@ -1,4 +1,5 @@
 /// <reference types="./LineCurve3.d.ts" />
+/// <reference lib="dom" />
 import { Vector3 } from "../../math/Vector3.js";
 import { Curve } from "../core/Curve.js";
 

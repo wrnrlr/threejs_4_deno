@@ -1,4 +1,5 @@
 /// <reference types="./MMDPhysics.d.ts" />
+/// <reference lib="dom" />
 import {
   Bone,
   BoxBufferGeometry,

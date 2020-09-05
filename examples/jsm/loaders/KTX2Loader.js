@@ -1,4 +1,5 @@
 /// <reference types="./KTX2Loader.d.ts" />
+/// <reference lib="dom" />
 /**
  * References:
  * - KTX: http://github.khronos.org/KTX-Specification/

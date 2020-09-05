@@ -1,4 +1,5 @@
 /// <reference types="./Geometries.d.ts" />
+/// <reference lib="dom" />
 export { WireframeGeometry } from "./WireframeGeometry.js";
 export {
   ParametricGeometry,

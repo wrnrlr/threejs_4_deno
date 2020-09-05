@@ -1,4 +1,5 @@
 /// <reference types="./CanvasTexture.d.ts" />
+/// <reference lib="dom" />
 import { Texture } from "./Texture.js";
 
 function CanvasTexture(

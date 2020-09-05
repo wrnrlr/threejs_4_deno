@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 function painterSortStable( a, b ) {
 
 	if ( a.groupOrder !== b.groupOrder ) {

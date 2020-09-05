@@ -1,4 +1,5 @@
 /// <reference types="./Interpolant.d.ts" />
+/// <reference lib="dom" />
 /**
  * Abstract base class of interpolants over parametric samples.
  *

@@ -1,4 +1,5 @@
 /// <reference types="./SepiaShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Sepia tone shader

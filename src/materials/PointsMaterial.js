@@ -1,4 +1,5 @@
 /// <reference types="./PointsMaterial.d.ts" />
+/// <reference lib="dom" />
 import { Material } from "./Material.js";
 import { Color } from "../math/Color.js";
 

@@ -1,4 +1,5 @@
 /// <reference types="./HorizontalBlurShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Two pass Gaussian blur filter (horizontal and vertical blur shaders)

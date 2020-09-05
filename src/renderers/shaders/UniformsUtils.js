@@ -1,4 +1,5 @@
 /// <reference types="./UniformsUtils.d.ts" />
+/// <reference lib="dom" />
 /**
  * Uniform Utilities
  */

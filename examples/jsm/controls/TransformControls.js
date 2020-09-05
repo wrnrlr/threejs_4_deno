@@ -1,4 +1,5 @@
 /// <reference types="./TransformControls.d.ts" />
+/// <reference lib="dom" />
 import {
   BoxBufferGeometry,
   BufferGeometry,

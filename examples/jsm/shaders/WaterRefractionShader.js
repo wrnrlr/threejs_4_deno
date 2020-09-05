@@ -1,4 +1,5 @@
 /// <reference types="./WaterRefractionShader.d.ts" />
+/// <reference lib="dom" />
 
 var WaterRefractionShader = {
   uniforms: {

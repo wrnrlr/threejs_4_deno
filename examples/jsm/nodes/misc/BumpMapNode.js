@@ -1,4 +1,5 @@
 /// <reference types="./BumpMapNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.js";
 import { FloatNode } from "../inputs/FloatNode.js";
 import { FunctionNode } from "../core/FunctionNode.js";

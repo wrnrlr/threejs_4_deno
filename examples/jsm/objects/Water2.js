@@ -1,4 +1,5 @@
 /// <reference types="./Water2.d.ts" />
+/// <reference lib="dom" />
 import {
   Clock,
   Color,

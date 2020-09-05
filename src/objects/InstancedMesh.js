@@ -1,4 +1,5 @@
 /// <reference types="./InstancedMesh.d.ts" />
+/// <reference lib="dom" />
 import { BufferAttribute } from "../core/BufferAttribute.js";
 import { Mesh } from "./Mesh.js";
 import { Matrix4 } from "../math/Matrix4.js";

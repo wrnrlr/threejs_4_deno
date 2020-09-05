@@ -1,4 +1,5 @@
 /// <reference types="./InstancedBufferAttribute.d.ts" />
+/// <reference lib="dom" />
 import { BufferAttribute } from "./BufferAttribute.js";
 
 function InstancedBufferAttribute(

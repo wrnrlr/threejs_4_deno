@@ -1,4 +1,5 @@
 /// <reference types="./MeshReceiver.d.ts" />
+/// <reference lib="dom" />
 /**
  * Development repository: https://github.com/kaisalmen/WWOBJLoader
  */

@@ -1,4 +1,5 @@
 /// <reference types="./LuminosityShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Luminosity

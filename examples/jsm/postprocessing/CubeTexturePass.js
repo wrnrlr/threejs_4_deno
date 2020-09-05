@@ -1,4 +1,5 @@
 /// <reference types="./CubeTexturePass.d.ts" />
+/// <reference lib="dom" />
 import {
   BackSide,
   BoxBufferGeometry,

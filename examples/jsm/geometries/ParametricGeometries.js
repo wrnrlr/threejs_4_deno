@@ -1,4 +1,5 @@
 /// <reference types="./ParametricGeometries.d.ts" />
+/// <reference lib="dom" />
 import {
   Curve,
   Geometry,

@@ -1,4 +1,5 @@
 /// <reference types="./ScreenUVNode.d.ts" />
+/// <reference lib="dom" />
 import { TempNode } from "../core/TempNode.js";
 import { ResolutionNode } from "./ResolutionNode.js";
 

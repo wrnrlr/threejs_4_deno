@@ -1,4 +1,5 @@
 /// <reference types="./InterleavedBufferAttribute.d.ts" />
+/// <reference lib="dom" />
 import { Vector3 } from "../math/Vector3.js";
 import { BufferAttribute } from "./BufferAttribute.js";
 

@@ -1,4 +1,5 @@
 /// <reference types="./WebGLBufferRenderer.d.ts" />
+/// <reference lib="dom" />
 function WebGLBufferRenderer(gl, extensions, info, capabilities) {
   const isWebGL2 = capabilities.isWebGL2;
 

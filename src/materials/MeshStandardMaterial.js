@@ -1,4 +1,5 @@
 /// <reference types="./MeshStandardMaterial.d.ts" />
+/// <reference lib="dom" />
 import { TangentSpaceNormalMap } from "../constants.js";
 import { Material } from "./Material.js";
 import { Vector2 } from "../math/Vector2.js";

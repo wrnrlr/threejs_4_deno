@@ -1,4 +1,5 @@
 /// <reference types="./AnimationMixer.d.ts" />
+/// <reference lib="dom" />
 import { AnimationAction } from "./AnimationAction.js";
 import { EventDispatcher } from "../core/EventDispatcher.js";
 import { LinearInterpolant } from "../math/interpolants/LinearInterpolant.js";

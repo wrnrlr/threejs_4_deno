@@ -1,4 +1,5 @@
 /// <reference types="./NodeUniform.d.ts" />
+/// <reference lib="dom" />
 function NodeUniform(params) {
   params = params || {};
 

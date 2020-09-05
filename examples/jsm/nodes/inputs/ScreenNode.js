@@ -1,4 +1,5 @@
 /// <reference types="./ScreenNode.d.ts" />
+/// <reference lib="dom" />
 import { InputNode } from "../core/InputNode.js";
 import { TextureNode } from "./TextureNode.js";
 

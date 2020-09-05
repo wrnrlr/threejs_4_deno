@@ -1,4 +1,5 @@
 /// <reference types="./PropertyNode.d.ts" />
+/// <reference lib="dom" />
 import { InputNode } from "../core/InputNode.js";
 
 function PropertyNode(object, property, type) {

@@ -1,4 +1,5 @@
 /// <reference types="./VerticalTiltShiftShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Simple fake tilt-shift effect, modulating two pass Gaussian blur (see above) by vertical position

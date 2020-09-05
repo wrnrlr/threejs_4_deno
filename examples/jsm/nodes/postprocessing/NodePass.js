@@ -1,4 +1,5 @@
 /// <reference types="./NodePass.d.ts" />
+/// <reference lib="dom" />
 import { MathUtils } from "../../../../src/Three.js";
 
 import { ShaderPass } from "../../postprocessing/ShaderPass.js";

@@ -1,4 +1,5 @@
 /// <reference types="./RectAreaLightUniformsLib.d.ts" />
+/// <reference lib="dom" />
 import {
   ClampToEdgeWrapping,
   DataTexture,

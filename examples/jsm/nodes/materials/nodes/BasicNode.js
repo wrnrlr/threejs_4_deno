@@ -1,4 +1,5 @@
 /// <reference types="./BasicNode.d.ts" />
+/// <reference lib="dom" />
 import { Node } from "../../core/Node.js";
 import { ColorNode } from "../../inputs/ColorNode.js";
 

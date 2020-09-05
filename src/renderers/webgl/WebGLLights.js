@@ -1,4 +1,5 @@
 /// <reference types="./WebGLLights.d.ts" />
+/// <reference lib="dom" />
 import { Color } from "../../math/Color.js";
 import { Matrix4 } from "../../math/Matrix4.js";
 import { Vector2 } from "../../math/Vector2.js";

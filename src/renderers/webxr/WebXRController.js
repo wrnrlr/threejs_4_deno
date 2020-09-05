@@ -1,4 +1,5 @@
 /// <reference types="./WebXRController.d.ts" />
+/// <reference lib="dom" />
 import { Group } from "../../objects/Group.js";
 
 function WebXRController() {

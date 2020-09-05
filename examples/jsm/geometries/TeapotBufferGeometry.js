@@ -1,4 +1,5 @@
 /// <reference types="./TeapotBufferGeometry.d.ts" />
+/// <reference lib="dom" />
 import {
   BufferAttribute,
   BufferGeometry,

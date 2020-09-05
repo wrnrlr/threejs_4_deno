@@ -1,4 +1,5 @@
 /// <reference types="./AmbientLight.d.ts" />
+/// <reference lib="dom" />
 import { Light } from "./Light.js";
 
 function AmbientLight(color, intensity) {

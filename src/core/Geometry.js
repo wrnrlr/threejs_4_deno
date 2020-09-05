@@ -1,4 +1,5 @@
 /// <reference types="./Geometry.d.ts" />
+/// <reference lib="dom" />
 import { EventDispatcher } from "./EventDispatcher.js";
 import { Face3 } from "./Face3.js";
 import { Matrix3 } from "../math/Matrix3.js";

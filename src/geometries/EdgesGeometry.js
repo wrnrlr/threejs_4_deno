@@ -1,4 +1,5 @@
 /// <reference types="./EdgesGeometry.d.ts" />
+/// <reference lib="dom" />
 import { BufferGeometry } from "../core/BufferGeometry.js";
 import { Float32BufferAttribute } from "../core/BufferAttribute.js";
 import { Geometry } from "../core/Geometry.js";

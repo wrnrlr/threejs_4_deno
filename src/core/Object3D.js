@@ -1,4 +1,5 @@
 /// <reference types="./Object3D.d.ts" />
+/// <reference lib="dom" />
 import { Quaternion } from "../math/Quaternion.js";
 import { Vector3 } from "../math/Vector3.js";
 import { Matrix4 } from "../math/Matrix4.js";

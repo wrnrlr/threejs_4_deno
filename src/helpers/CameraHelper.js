@@ -1,4 +1,5 @@
 /// <reference types="./CameraHelper.d.ts" />
+/// <reference lib="dom" />
 import { Camera } from "../cameras/Camera.js";
 import { Vector3 } from "../math/Vector3.js";
 import { LineSegments } from "../objects/LineSegments.js";

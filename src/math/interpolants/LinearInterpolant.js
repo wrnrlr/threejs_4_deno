@@ -1,4 +1,5 @@
 /// <reference types="./LinearInterpolant.d.ts" />
+/// <reference lib="dom" />
 import { Interpolant } from "../Interpolant.js";
 
 function LinearInterpolant(

@@ -1,4 +1,5 @@
 /// <reference types="./MDDLoader.d.ts" />
+/// <reference lib="dom" />
 /**
  * MDD is a special format that stores a position for every vertex in a model for every frame in an animation.
  * Similar to BVH, it can be used to transfer animation data between different 3D applications or engines.

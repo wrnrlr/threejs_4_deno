@@ -1,4 +1,5 @@
 /// <reference types="./FlyControls.d.ts" />
+/// <reference lib="dom" />
 import {
   EventDispatcher,
   Quaternion,

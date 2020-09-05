@@ -1,4 +1,5 @@
 /// <reference types="./CSS3DRenderer.d.ts" />
+/// <reference lib="dom" />
 import {
   Matrix4,
   Object3D,

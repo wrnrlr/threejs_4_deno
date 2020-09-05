@@ -1,4 +1,5 @@
 /// <reference types="./FocusShader.d.ts" />
+/// <reference lib="dom" />
 
 /**
  * Focus shader

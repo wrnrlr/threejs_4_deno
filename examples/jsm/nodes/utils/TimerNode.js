@@ -1,4 +1,5 @@
 /// <reference types="./TimerNode.d.ts" />
+/// <reference lib="dom" />
 import { FloatNode } from "../inputs/FloatNode.js";
 import { NodeLib } from "../core/NodeLib.js";
 

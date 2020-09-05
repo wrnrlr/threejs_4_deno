@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 /**
  * Development repository: https://github.com/kaisalmen/WWOBJLoader
  */

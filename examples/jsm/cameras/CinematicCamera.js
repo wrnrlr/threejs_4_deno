@@ -1,4 +1,5 @@
 /// <reference types="./CinematicCamera.d.ts" />
+/// <reference lib="dom" />
 import {
   LinearFilter,
   Mesh,

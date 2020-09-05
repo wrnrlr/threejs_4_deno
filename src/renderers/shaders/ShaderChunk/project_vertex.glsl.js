@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+/// <reference lib="dom" />
 export default /* glsl */`
 vec4 mvPosition = vec4( transformed, 1.0 );
 
