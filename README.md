@@ -1,8 +1,5 @@
 # three.js 4 deno
 
-Not Ready Yet.
-One day...
-
 ```typescript
 // main.ts
 import { WebGLRenderer } from "https://deno.land/x/threejs_4_deno@v120/src/Three.js"
