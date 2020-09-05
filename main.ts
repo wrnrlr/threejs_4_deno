@@ -2,8 +2,36 @@
 // possibly create a mod.ts file within examples for easy import/exporting of `examples/jsm` scripts
 
 const filesToDelete: string[] = [];
+const filesForExampleModts: string[] = [];
+const UnusedFilesAndFolders = [
+  "./three.js/.github",
+  "./three.js/build",
+  "./three.js/docs",
+  "./three.js/editor",
+  "./three.js/examples/files",
+  "./three.js/examples/fonts",
+  "./three.js/examples/js",
+  "./three.js/examples/models",
+  "./three.js/examples/screenshots",
+  "./three.js/examples/sounds",
+  "./three.js/examples/textures",
+  "./three.js/examples/files.js",
+  "./three.js/examples/main.css",
+  "./three.js/files",
+  "./three.js/test",
+  "./three.js/utils",
+  "./three.js/.editorconfig",
+  "./three.js/.gitattributes",
+  "./three.js/.gitignore",
+  "./three.js/icon.png",
+  "./three.js/package.json",
+  "./three.js/package-lock.json",
+  "./three.js/README.md",
+];
+
 const examplesPath = "three.js/examples/";
 const srcPath = "three.js/src/";
+
 const pathToNewDir = "three.deno/";
 
 function loopDirAndMatch(path: string, pattern: RegExp, callBack: Function) {
@@ -85,33 +113,16 @@ function existsSync(path: string): boolean {
 }
 
 if (import.meta.main) {
-  // Delete the folders/files we're not using
-  const UnusedFilesAndFolders = [
-    "./three.js/.github",
-    "./three.js/build",
-    "./three.js/docs",
-    "./three.js/editor",
-    "./three.js/examples/files",
-    "./three.js/examples/fonts",
-    "./three.js/examples/js",
-    "./three.js/examples/models",
-    "./three.js/examples/screenshots",
-    "./three.js/examples/sounds",
-    "./three.js/examples/textures",
-    "./three.js/examples/files.js",
-    "./three.js/examples/main.css",
-    "./three.js/files",
-    "./three.js/test",
-    "./three.js/utils",
-    "./three.js/.editorconfig",
-    "./three.js/.gitattributes",
-    "./three.js/.gitignore",
-    "./three.js/icon.png",
-    "./three.js/package.json",
-    "./three.js/package-lock.json",
-    "./three.js/README.md",
-  ];
+  // ensure that the three.js directory is there
+  // existsSync(examplesPath)
+  // existsSync(srcPath)
 
+  // otherwise run git clone --depth=1 
+
+  // ensure that the three.deno directory is empty
+  // https://deno.land/std@0.68.0/fs/empty_dir.ts
+
+  // Delete the folders/files we're not using
   UnusedFilesAndFolders.forEach((path) => {
     if (existsSync(path)) {
       //Deno.removeSync(path, { recursive: true });
