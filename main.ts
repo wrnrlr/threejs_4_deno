@@ -102,6 +102,12 @@ function updateTypescripts(fileName: string, path: string) {
     return m;
   });
 
+  // As a simple fix for type errors that would otherwise occur
+  // we'll add the following to all .d.ts scripts: 
+  // `/// <reference lib="dom" />`
+  data = data.replace(/^/, `/// <reference lib="dom" />\n`);
+  
+
   // write the new text into the new Dir
   const newPath = createNewPath(path)
   
