@@ -1,8 +1,5 @@
-// Next steps:
-// possibly create a mod.ts file within examples for easy import/exporting of `examples/jsm` scripts
-
 const filesToDelete: string[] = [];
-const filesForExampleModts: string[] = [];
+// const filesForExampleModts: string[] = [];
 const UnusedFilesAndFolders = [
   "./three.js/.github",
   "./three.js/build",
@@ -71,9 +68,9 @@ function updateScripts(fileName: string, path: string) {
   }
 
   // if from the examples folder add to list for examples/mod.ts file
-  if (path.includes("examples/jsm")) {
-    filesForExampleModts.push(`"\.${path.split("three.js/examples/jsm")[1]}${fileName}"`);
-  }
+  // if (path.includes("examples/jsm")) {
+  //   filesForExampleModts.push(`"\.${path.split("three.js/examples/jsm")[1]}${fileName}"`);
+  // }
 
   // write the new text to the new path
   const newPath = createNewPath(path)
@@ -158,11 +155,11 @@ if (import.meta.main) {
   loopDirAndMatch(srcPath, /\.js(?!on)/g, updateScripts);
 
   // Create the three.deno/examples/jsm/mod.js file
-  let modFile = ""
-  filesForExampleModts.forEach(path => {
-    modFile += `export * from ${path}\n`
-  });
-  Deno.writeTextFileSync(`${pathToNewDir}examples/jsm/mod.ts`, modFile)
+  // let modFile = ""
+  // filesForExampleModts.forEach(path => {
+  //   modFile += `export * from ${path}\n`
+  // });
+  // Deno.writeTextFileSync(`${pathToNewDir}examples/jsm/mod.ts`, modFile)
 
   // run deno fmt over the three.deno folder
   console.log("formatting the three.deno folder");
