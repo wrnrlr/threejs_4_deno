@@ -33,3 +33,6 @@ The following tsconfig.json may come in handy:
   }
 }
 ```
+
+Your more than welcome to use the `main.ts` script to create your own version or tweek the way I've done it.
+Let me know if you run into any issues or open a PR if you see some possible improvements :)
