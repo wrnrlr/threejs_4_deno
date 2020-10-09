@@ -4,18 +4,15 @@ import { EventDispatcher } from "./../core/EventDispatcher.d.ts";
 import { WebGLRenderer } from "./../renderers/WebGLRenderer.d.ts";
 import { Shader } from "./../renderers/shaders/ShaderLib.d.ts";
 import {
+  Blending,
   BlendingDstFactor,
   BlendingEquation,
-  Blending,
   BlendingSrcFactor,
   DepthModes,
   Side,
   StencilFunc,
   StencilOp,
 } from "../constants.d.ts";
-
-// Materials //////////////////////////////////////////////////////////////////////////////////
-export let MaterialIdCount: number;
 
 export interface MaterialParameters {
   alphaTest?: number;
@@ -142,7 +139,7 @@ export class Material extends EventDispatcher {
 	 * The pairs are defined in both vertex and fragment shaders. Default is undefined.
 	 * @default undefined
 	 */
-  defines: { [key: string]: any };
+  defines: undefined | { [key: string]: any };
 
   /**
 	 * Which depth function to use. Default is {@link LessEqualDepth}. See the depth mode constants for all possible values.

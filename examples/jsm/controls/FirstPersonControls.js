@@ -1,10 +1,6 @@
 /// <reference types="./FirstPersonControls.d.ts" />
 /// <reference lib="dom" />
-import {
-  MathUtils,
-  Spherical,
-  Vector3,
-} from "../../../src/Three.js";
+import { MathUtils, Spherical, Vector3 } from "../../../src/Three.js";
 
 var FirstPersonControls = function (object, domElement) {
   if (domElement === undefined) {

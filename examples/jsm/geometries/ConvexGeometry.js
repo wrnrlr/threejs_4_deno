@@ -66,4 +66,4 @@ var ConvexBufferGeometry = function (points) {
 ConvexBufferGeometry.prototype = Object.create(BufferGeometry.prototype);
 ConvexBufferGeometry.prototype.constructor = ConvexBufferGeometry;
 
-export { ConvexGeometry, ConvexBufferGeometry };
+export { ConvexBufferGeometry, ConvexGeometry };

@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Object3D,
-  Mesh,
-  Texture,
-} from "../../../src/Three.d.ts";
+import { Mesh, Object3D, Texture } from "../../../src/Three.d.ts";
 
 export class MD2CharacterComplex {
   constructor();

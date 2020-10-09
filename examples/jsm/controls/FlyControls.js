@@ -1,10 +1,6 @@
 /// <reference types="./FlyControls.d.ts" />
 /// <reference lib="dom" />
-import {
-  EventDispatcher,
-  Quaternion,
-  Vector3,
-} from "../../../src/Three.js";
+import { EventDispatcher, Quaternion, Vector3 } from "../../../src/Three.js";
 
 var FlyControls = function (object, domElement) {
   if (domElement === undefined) {

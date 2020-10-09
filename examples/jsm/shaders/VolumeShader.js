@@ -1,9 +1,6 @@
 /// <reference types="./VolumeShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector2,
-  Vector3,
-} from "../../../src/Three.js";
+import { Vector2, Vector3 } from "../../../src/Three.js";
 /**
  * Shaders to render 3D volumes using raycasting.
  * The applied techniques are based on similar implementations in the Visvis and Vispy projects.

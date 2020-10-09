@@ -24,4 +24,4 @@ function arrayMax(array) {
   return max;
 }
 
-export { arrayMin, arrayMax };
+export { arrayMax, arrayMin };

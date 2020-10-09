@@ -1,8 +1,8 @@
 /// <reference lib="dom" />
 import {
   BufferGeometry,
-  Material,
   ImmediateRenderObject,
+  Material,
 } from "../../../src/Three.d.ts";
 
 export class MarchingCubes extends ImmediateRenderObject {

@@ -1,17 +1,7 @@
 /// <reference lib="dom" />
 import { IUniform } from "../renderers/shaders/UniformsLib.d.ts";
-import { MaterialParameters, Material } from "./Material.d.ts";
+import { Material, MaterialParameters } from "./Material.d.ts";
 import { GLSLVersion } from "../constants.d.ts";
-
-/**
- * @deprecated Use {@link PointsMaterial THREE.PointsMaterial} instead
- */
-/**
- * @deprecated Use {@link PointsMaterial THREE.PointsMaterial} instead
- */
-/**
- * @deprecated Use {@link PointsMaterial THREE.PointsMaterial} instead
- */
 
 export interface ShaderMaterialParameters extends MaterialParameters {
   uniforms?: { [uniform: string]: IUniform };

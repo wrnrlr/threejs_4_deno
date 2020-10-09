@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Scene,
-  Loader,
-  LoadingManager,
-} from "../../../src/Three.d.ts";
+import { Loader, LoadingManager, Scene } from "../../../src/Three.d.ts";
 
 export class VRMLLoader extends Loader {
   constructor(manager?: LoadingManager);

@@ -1,9 +1,9 @@
 /// <reference lib="dom" />
 import {
-  LoadingManager,
-  CompressedTextureLoader,
-  PixelFormat,
   CompressedPixelFormat,
+  CompressedTextureLoader,
+  LoadingManager,
+  PixelFormat,
 } from "../../../src/Three.d.ts";
 
 export interface DDS {

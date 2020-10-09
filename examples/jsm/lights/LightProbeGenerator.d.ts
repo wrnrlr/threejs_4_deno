@@ -2,8 +2,8 @@
 import {
   CubeTexture,
   LightProbe,
-  WebGLRenderer,
   WebGLCubeRenderTarget,
+  WebGLRenderer,
 } from "../../../src/Three.d.ts";
 
 export namespace LightProbeGenerator {

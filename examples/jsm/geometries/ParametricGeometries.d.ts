@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Curve,
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { Curve, Vector3 } from "../../../src/Three.d.ts";
 
 export namespace ParametricGeometries {
   export function klein(v: number, u: number, target: Vector3): Vector3;

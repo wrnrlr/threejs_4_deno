@@ -1,8 +1,6 @@
 /// <reference types="./DRACOExporter.d.ts" />
 /// <reference lib="dom" />
-import {
-  BufferGeometry,
-} from "../../../src/Three.js";
+import { BufferGeometry } from "../../../src/Three.js";
 /**
  * Export draco compressed files from threejs geometry objects.
  *

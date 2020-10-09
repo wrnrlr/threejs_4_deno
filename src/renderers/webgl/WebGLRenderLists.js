@@ -174,4 +174,4 @@ function WebGLRenderLists(properties) {
   };
 }
 
-export { WebGLRenderLists, WebGLRenderList };
+export { WebGLRenderList, WebGLRenderLists };

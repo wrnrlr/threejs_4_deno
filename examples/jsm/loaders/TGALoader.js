@@ -1,10 +1,6 @@
 /// <reference types="./TGALoader.d.ts" />
 /// <reference lib="dom" />
-import {
-  FileLoader,
-  Loader,
-  Texture,
-} from "../../../src/Three.js";
+import { FileLoader, Loader, Texture } from "../../../src/Three.js";
 
 var TGALoader = function (manager) {
   Loader.call(this, manager);
@@ -21,6 +17,7 @@ TGALoader.prototype = Object.assign(Object.create(Loader.prototype), {
     var loader = new FileLoader(this.manager);
     loader.setResponseType("arraybuffer");
     loader.setPath(this.path);
+    loader.setWithCredentials(this.withCredentials);
 
     loader.load(
       url,

@@ -1,11 +1,6 @@
 /// <reference types="./ConvexHull.d.ts" />
 /// <reference lib="dom" />
-import {
-  Line3,
-  Plane,
-  Triangle,
-  Vector3,
-} from "../../../src/Three.js";
+import { Line3, Plane, Triangle, Vector3 } from "../../../src/Three.js";
 /**
  * Ported from: https://github.com/maurizzzio/quickhull3d/ by Mauricio Poppe (https://github.com/maurizzzio)
  */

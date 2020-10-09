@@ -32,6 +32,7 @@ CompressedTextureLoader.prototype = Object.assign(
       loader.setPath(this.path);
       loader.setResponseType("arraybuffer");
       loader.setRequestHeader(this.requestHeader);
+      loader.setWithCredentials(scope.withCredentials);
 
       let loaded = 0;
 

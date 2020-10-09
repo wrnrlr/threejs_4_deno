@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  BufferGeometry,
-} from "../../../src/Three.d.ts";
+import { BufferGeometry } from "../../../src/Three.d.ts";
 
 export class BoxLineGeometry extends BufferGeometry {
   constructor(

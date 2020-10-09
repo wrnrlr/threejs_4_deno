@@ -1,12 +1,6 @@
 /// <reference lib="dom" />
-import {
-  Loader,
-  LoadingManager,
-  Group,
-} from "../../../src/Three.d.ts";
-import {
-  MTLLoader,
-} from "./MTLLoader.d.ts";
+import { Group, Loader, LoadingManager } from "../../../src/Three.d.ts";
+import { MTLLoader } from "./MTLLoader.d.ts";
 
 export class OBJLoader extends Loader {
   constructor(manager?: LoadingManager);

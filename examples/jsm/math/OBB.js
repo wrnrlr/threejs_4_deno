@@ -3,8 +3,8 @@
 import {
   Box3,
   MathUtils,
-  Matrix4,
   Matrix3,
+  Matrix4,
   Ray,
   Vector3,
 } from "../../../src/Three.js";

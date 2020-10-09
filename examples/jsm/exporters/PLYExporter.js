@@ -1,10 +1,6 @@
 /// <reference types="./PLYExporter.d.ts" />
 /// <reference lib="dom" />
-import {
-  BufferGeometry,
-  Matrix3,
-  Vector3,
-} from "../../../src/Three.js";
+import { BufferGeometry, Matrix3, Vector3 } from "../../../src/Three.js";
 /**
  * https://github.com/gkjohnson/ply-exporter-js
  *

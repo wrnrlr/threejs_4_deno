@@ -6,11 +6,11 @@ import {
   LinearFilter,
   LinearMipmapLinearFilter,
   Loader,
+  RGB_ETC1_Format,
+  RGB_PVRTC_4BPPV1_Format,
   RGBA_ASTC_4x4_Format,
   RGBA_BPTC_Format,
   RGBA_PVRTC_4BPPV1_Format,
-  RGB_ETC1_Format,
-  RGB_PVRTC_4BPPV1_Format,
   UnsignedByteType,
 } from "../../../src/Three.js";
 
@@ -106,6 +106,7 @@ BasisTextureLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     var loader = new FileLoader(this.manager);
 
     loader.setResponseType("arraybuffer");
+    loader.setWithCredentials(this.withCredentials);
 
     loader.load(
       url,
@@ -250,6 +251,7 @@ BasisTextureLoader.prototype = Object.assign(Object.create(Loader.prototype), {
       // Load transcoder wrapper.
       var jsLoader = new FileLoader(this.manager);
       jsLoader.setPath(this.transcoderPath);
+      jsLoader.setWithCredentials(this.withCredentials);
       var jsContent = new Promise((resolve, reject) => {
         jsLoader.load("basis_transcoder.js", resolve, undefined, reject);
       });
@@ -258,6 +260,7 @@ BasisTextureLoader.prototype = Object.assign(Object.create(Loader.prototype), {
       var binaryLoader = new FileLoader(this.manager);
       binaryLoader.setPath(this.transcoderPath);
       binaryLoader.setResponseType("arraybuffer");
+      binaryLoader.setWithCredentials(this.withCredentials);
       var binaryContent = new Promise((resolve, reject) => {
         binaryLoader.load("basis_transcoder.wasm", resolve, undefined, reject);
       });

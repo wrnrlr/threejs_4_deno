@@ -69,6 +69,8 @@ BufferGeometry.prototype = Object.assign(
       } else {
         this.index = index;
       }
+
+      return this;
     },
 
     getAttribute: function (name) {

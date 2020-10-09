@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Material,
-} from "../../../../../src/Three.d.ts";
+import { Material } from "../../../../../src/Three.d.ts";
 
 export class MaterialHandler {
   constructor();

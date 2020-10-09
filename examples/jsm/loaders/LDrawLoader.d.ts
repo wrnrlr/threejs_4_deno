@@ -1,8 +1,8 @@
 /// <reference lib="dom" />
 import {
+  Group,
   Loader,
   LoadingManager,
-  Group,
   Material,
 } from "../../../src/Three.d.ts";
 

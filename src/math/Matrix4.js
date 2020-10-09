@@ -976,9 +976,7 @@ class Matrix4 {
     return true;
   }
 
-  fromArray(array, offset) {
-    if (offset === undefined) offset = 0;
-
+  fromArray(array, offset = 0) {
     for (let i = 0; i < 16; i++) {
       this.elements[i] = array[i + offset];
     }
@@ -986,10 +984,7 @@ class Matrix4 {
     return this;
   }
 
-  toArray(array, offset) {
-    if (array === undefined) array = [];
-    if (offset === undefined) offset = 0;
-
+  toArray(array = [], offset = 0) {
     const te = this.elements;
 
     array[offset] = te[0];

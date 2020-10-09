@@ -1,8 +1,8 @@
 /// <reference lib="dom" />
 import {
-  LoadingManager,
-  CompressedTextureLoader,
   CompressedTexture,
+  CompressedTextureLoader,
+  LoadingManager,
   WebGLRenderer,
 } from "../../../src/Three.d.ts";
 
@@ -11,13 +11,6 @@ export class KTX2Loader extends CompressedTextureLoader {
 
   detectSupport(renderer: WebGLRenderer): KTX2Loader;
   initModule(): void;
-
-  load(
-    url: string,
-    onLoad: (texture: CompressedTexture) => void,
-    onProgress?: (event: ProgressEvent) => void,
-    onError?: (event: ErrorEvent) => void,
-  ): CompressedTexture;
 
   parse(
     buffer: ArrayBuffer,

@@ -402,14 +402,14 @@ Float64BufferAttribute.prototype.constructor = Float64BufferAttribute;
 //
 
 export {
-  Float64BufferAttribute,
-  Float32BufferAttribute,
-  Uint32BufferAttribute,
-  Int32BufferAttribute,
-  Uint16BufferAttribute,
-  Int16BufferAttribute,
-  Uint8ClampedBufferAttribute,
-  Uint8BufferAttribute,
-  Int8BufferAttribute,
   BufferAttribute,
+  Float32BufferAttribute,
+  Float64BufferAttribute,
+  Int16BufferAttribute,
+  Int32BufferAttribute,
+  Int8BufferAttribute,
+  Uint16BufferAttribute,
+  Uint32BufferAttribute,
+  Uint8BufferAttribute,
+  Uint8ClampedBufferAttribute,
 };

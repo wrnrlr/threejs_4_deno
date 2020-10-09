@@ -1,8 +1,6 @@
 /// <reference types="./NURBSSurface.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector4,
-} from "../../../src/Three.js";
+import { Vector4 } from "../../../src/Three.js";
 import { NURBSUtils } from "../curves/NURBSUtils.js";
 /**
  * NURBS surface object

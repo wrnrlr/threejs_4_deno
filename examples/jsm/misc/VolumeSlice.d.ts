@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Matrix3,
-  Mesh,
-} from "../../../src/Three.d.ts";
+import { Matrix3, Mesh } from "../../../src/Three.d.ts";
 
 import { Volume } from "./Volume.d.ts";
 

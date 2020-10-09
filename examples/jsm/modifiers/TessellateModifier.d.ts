@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Geometry,
-} from "../../../src/Three.d.ts";
+import { Geometry } from "../../../src/Three.d.ts";
 
 export class TessellateModifier {
   constructor(maxEdgeLength: number);

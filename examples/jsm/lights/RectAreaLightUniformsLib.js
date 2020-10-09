@@ -7,8 +7,8 @@ import {
   LinearFilter,
   NearestFilter,
   RGBAFormat,
-  UVMapping,
   UniformsLib,
+  UVMapping,
 } from "../../../src/Three.js";
 /**
  * Uniforms library for RectAreaLight shared webgl shaders

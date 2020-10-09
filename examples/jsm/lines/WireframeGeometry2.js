@@ -1,8 +1,6 @@
 /// <reference types="./WireframeGeometry2.d.ts" />
 /// <reference lib="dom" />
-import {
-  WireframeGeometry,
-} from "../../../src/Three.js";
+import { WireframeGeometry } from "../../../src/Three.js";
 import { LineSegmentsGeometry } from "../lines/LineSegmentsGeometry.js";
 
 var WireframeGeometry2 = function (geometry) {

@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Group,
-  Loader,
-  LoadingManager,
-} from "../../../src/Three.d.ts";
+import { Group, Loader, LoadingManager } from "../../../src/Three.d.ts";
 
 export class FBXLoader extends Loader {
   constructor(manager?: LoadingManager);

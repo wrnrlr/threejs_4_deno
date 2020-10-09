@@ -1,8 +1,8 @@
 /// <reference lib="dom" />
 import {
   PerspectiveCamera,
-  ShaderMaterial,
   Scene,
+  ShaderMaterial,
   WebGLRenderer,
 } from "../../../src/Three.d.ts";
 

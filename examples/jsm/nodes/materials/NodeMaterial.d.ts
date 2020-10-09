@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  ShaderMaterial,
-  WebGLRenderer,
-} from "../../../../src/Three.d.ts";
+import { ShaderMaterial, WebGLRenderer } from "../../../../src/Three.d.ts";
 
 import { Node } from "../core/Node.js.d.ts";
 import { NodeBuilder } from "../core/NodeBuilder.d.ts";

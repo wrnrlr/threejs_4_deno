@@ -1,9 +1,9 @@
 /// <reference types="./KeyframeTrack.d.ts" />
 /// <reference lib="dom" />
 import {
+  InterpolateDiscrete,
   InterpolateLinear,
   InterpolateSmooth,
-  InterpolateDiscrete,
 } from "../constants.js";
 import { CubicInterpolant } from "../math/interpolants/CubicInterpolant.js";
 import { LinearInterpolant } from "../math/interpolants/LinearInterpolant.js";

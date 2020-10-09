@@ -691,6 +691,7 @@ var OrbitControls = function (object, domElement) {
 
     switch (event.pointerType) {
       case "mouse":
+      case "pen":
         onMouseDown(event);
         break;
 
@@ -703,6 +704,7 @@ var OrbitControls = function (object, domElement) {
 
     switch (event.pointerType) {
       case "mouse":
+      case "pen":
         onMouseMove(event);
         break;
 
@@ -715,6 +717,7 @@ var OrbitControls = function (object, domElement) {
 
     switch (event.pointerType) {
       case "mouse":
+      case "pen":
         onMouseUp(event);
         break;
 
@@ -1078,4 +1081,4 @@ var MapControls = function (object, domElement) {
 MapControls.prototype = Object.create(EventDispatcher.prototype);
 MapControls.prototype.constructor = MapControls;
 
-export { OrbitControls, MapControls };
+export { MapControls, OrbitControls };

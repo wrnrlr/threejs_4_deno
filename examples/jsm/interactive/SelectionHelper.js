@@ -1,8 +1,6 @@
 /// <reference types="./SelectionHelper.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector2,
-} from "../../../src/Three.js";
+import { Vector2 } from "../../../src/Three.js";
 
 var SelectionHelper = (function () {
   function SelectionHelper(selectionBox, renderer, cssClassName) {

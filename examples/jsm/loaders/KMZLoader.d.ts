@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Loader,
-  LoadingManager,
-} from "../../../src/Three.d.ts";
+import { Loader, LoadingManager } from "../../../src/Three.d.ts";
 
 import { Collada } from "./ColladaLoader.d.ts";
 

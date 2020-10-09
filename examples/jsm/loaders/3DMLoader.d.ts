@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Loader,
-  LoadingManager,
-  Object3D,
-} from "../../../src/Three.d.ts";
+import { Loader, LoadingManager, Object3D } from "../../../src/Three.d.ts";
 
 export class Rhino3dmLoader extends Loader {
   constructor(manager?: LoadingManager);
@@ -12,6 +8,11 @@ export class Rhino3dmLoader extends Loader {
     url: string,
     onLoad: (object: Object3D) => void,
     onProgress?: (event: ProgressEvent) => void,
+    onError?: (event: ErrorEvent) => void,
+  ): void;
+  parse(
+    data: ArrayBufferLike,
+    onLoad: (object: Object3D) => void,
     onError?: (event: ErrorEvent) => void,
   ): void;
   setLibraryPath(path: string): Rhino3dmLoader;

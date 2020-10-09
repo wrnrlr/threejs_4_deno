@@ -1,8 +1,6 @@
 /// <reference types="./DepthLimitedBlurShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector2,
-} from "../../../src/Three.js";
+import { Vector2 } from "../../../src/Three.js";
 /**
  * TODO
  */
@@ -151,4 +149,4 @@ var BlurShaderUtils = {
   },
 };
 
-export { DepthLimitedBlurShader, BlurShaderUtils };
+export { BlurShaderUtils, DepthLimitedBlurShader };

@@ -5,8 +5,8 @@ import {
   Group,
   Loader,
   LoadingManager,
-  Object3D,
   Material,
+  Object3D,
   Texture,
 } from "../../../src/Three.d.ts";
 

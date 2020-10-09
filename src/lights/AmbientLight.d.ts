@@ -20,9 +20,5 @@ export class AmbientLight extends Light {
 	 */
   type: string;
 
-  /**
-	 * @default undefined
-	 */
-  castShadow: boolean;
   readonly isAmbientLight: true;
 }

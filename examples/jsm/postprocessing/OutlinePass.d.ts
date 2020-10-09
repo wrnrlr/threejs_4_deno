@@ -1,16 +1,16 @@
 /// <reference lib="dom" />
 import {
-  Vector2,
-  Scene,
   Camera,
-  Object3D,
   Color,
   Matrix4,
   MeshBasicMaterial,
   MeshDepthMaterial,
+  Object3D,
+  Scene,
   ShaderMaterial,
-  WebGLRenderTarget,
   Texture,
+  Vector2,
+  WebGLRenderTarget,
 } from "../../../src/Three.d.ts";
 
 import { Pass } from "./Pass.d.ts";

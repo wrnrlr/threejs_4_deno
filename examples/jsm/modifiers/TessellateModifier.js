@@ -1,8 +1,6 @@
 /// <reference types="./TessellateModifier.d.ts" />
 /// <reference lib="dom" />
-import {
-  Face3,
-} from "../../../src/Three.js";
+import { Face3 } from "../../../src/Three.js";
 /**
  * Break faces with edges longer than maxEdgeLength
  * - not recursive

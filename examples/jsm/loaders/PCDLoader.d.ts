@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Points,
-  Loader,
-  LoadingManager,
-} from "../../../src/Three.d.ts";
+import { Loader, LoadingManager, Points } from "../../../src/Three.d.ts";
 
 export class PCDLoader extends Loader {
   constructor(manager?: LoadingManager);

@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Matrix3,
-} from "../../../src/Three.d.ts";
+import { Matrix3 } from "../../../src/Three.d.ts";
 
 import { VolumeSlice } from "./VolumeSlice.js.d.ts";
 

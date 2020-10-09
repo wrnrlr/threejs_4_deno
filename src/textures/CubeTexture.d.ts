@@ -2,11 +2,11 @@
 import { Texture } from "./Texture.d.ts";
 import {
   Mapping,
-  Wrapping,
-  TextureFilter,
   PixelFormat,
   TextureDataType,
   TextureEncoding,
+  TextureFilter,
+  Wrapping,
 } from "../constants.d.ts";
 
 export class CubeTexture extends Texture {
@@ -41,4 +41,6 @@ export class CubeTexture extends Texture {
 	 * @default false
 	 */
   flipY: boolean;
+
+  readonly isCubeTexture: true;
 }

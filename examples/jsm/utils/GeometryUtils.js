@@ -1,8 +1,6 @@
 /// <reference types="./GeometryUtils.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector3,
-} from "../../../src/Three.js";
+import { Vector3 } from "../../../src/Three.js";
 
 var GeometryUtils = {
   /**

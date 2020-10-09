@@ -144,9 +144,7 @@ class SphericalHarmonics3 {
     return new this.constructor().copy(this);
   }
 
-  fromArray(array, offset) {
-    if (offset === undefined) offset = 0;
-
+  fromArray(array, offset = 0) {
     const coefficients = this.coefficients;
 
     for (let i = 0; i < 9; i++) {
@@ -156,10 +154,7 @@ class SphericalHarmonics3 {
     return this;
   }
 
-  toArray(array, offset) {
-    if (array === undefined) array = [];
-    if (offset === undefined) offset = 0;
-
+  toArray(array = [], offset = 0) {
     const coefficients = this.coefficients;
 
     for (let i = 0; i < 9; i++) {

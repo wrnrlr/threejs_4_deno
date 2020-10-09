@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Color,
-} from "../../../src/Three.d.ts";
+import { Color } from "../../../src/Three.d.ts";
 
 export class Lut {
   constructor(colormap?: string, numberofcolors?: number);

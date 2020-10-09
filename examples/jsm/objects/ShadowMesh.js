@@ -1,10 +1,6 @@
 /// <reference types="./ShadowMesh.d.ts" />
 /// <reference lib="dom" />
-import {
-  Matrix4,
-  Mesh,
-  MeshBasicMaterial,
-} from "../../../src/Three.js";
+import { Matrix4, Mesh, MeshBasicMaterial } from "../../../src/Three.js";
 /**
  * A shadow Mesh that follows a shadow-casting Mesh in the scene, but is confined to a single plane.
  */

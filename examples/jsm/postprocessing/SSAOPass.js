@@ -14,8 +14,8 @@ import {
   MeshNormalMaterial,
   NearestFilter,
   NoBlending,
-  RGBAFormat,
   RepeatWrapping,
+  RGBAFormat,
   ShaderMaterial,
   UniformsUtils,
   UnsignedShortType,
@@ -50,12 +50,14 @@ var SSAOPass = function (scene, camera, width, height) {
   this.minDistance = 0.005;
   this.maxDistance = 0.1;
 
+  this._visibilityCache = new Map();
+
   //
 
   this.generateSampleKernel();
   this.generateRandomKernelRotations();
 
-  // beauty render target with depth buffer
+  // beauty render target
 
   var depthTexture = new DepthTexture();
   depthTexture.type = UnsignedShortType;
@@ -66,16 +68,15 @@ var SSAOPass = function (scene, camera, width, height) {
     minFilter: LinearFilter,
     magFilter: LinearFilter,
     format: RGBAFormat,
-    depthTexture: depthTexture,
-    depthBuffer: true,
   });
 
-  // normal render target
+  // normal render target with depth buffer
 
   this.normalRenderTarget = new WebGLRenderTarget(this.width, this.height, {
     minFilter: NearestFilter,
     magFilter: NearestFilter,
     format: RGBAFormat,
+    depthTexture: depthTexture,
   });
 
   // ssao render target
@@ -106,7 +107,7 @@ var SSAOPass = function (scene, camera, width, height) {
     this.beautyRenderTarget.texture;
   this.ssaoMaterial.uniforms["tNormal"].value = this.normalRenderTarget.texture;
   this.ssaoMaterial.uniforms["tDepth"].value =
-    this.beautyRenderTarget.depthTexture;
+    this.normalRenderTarget.depthTexture;
   this.ssaoMaterial.uniforms["tNoise"].value = this.noiseTexture;
   this.ssaoMaterial.uniforms["kernel"].value = this.kernel;
   this.ssaoMaterial.uniforms["cameraNear"].value = this.camera.near;
@@ -145,7 +146,7 @@ var SSAOPass = function (scene, camera, width, height) {
     blending: NoBlending,
   });
   this.depthRenderMaterial.uniforms["tDepth"].value =
-    this.beautyRenderTarget.depthTexture;
+    this.normalRenderTarget.depthTexture;
   this.depthRenderMaterial.uniforms["cameraNear"].value = this.camera.near;
   this.depthRenderMaterial.uniforms["cameraFar"].value = this.camera.far;
 
@@ -198,14 +199,15 @@ SSAOPass.prototype = Object.assign(Object.create(Pass.prototype), {
     renderer,
     writeBuffer, /*, readBuffer, deltaTime, maskActive */
   ) {
-    // render beauty and depth
+    // render beauty
 
     renderer.setRenderTarget(this.beautyRenderTarget);
     renderer.clear();
     renderer.render(this.scene, this.camera);
 
-    // render normals
+    // render normals and depth (honor only meshes, points and lines do not contribute to SSAO)
 
+    this.overrideVisibility();
     this.renderOverride(
       renderer,
       this.normalMaterial,
@@ -213,6 +215,7 @@ SSAOPass.prototype = Object.assign(Object.create(Pass.prototype), {
       0x7777ff,
       1.0,
     );
+    this.restoreVisibility();
 
     // render SSAO
 
@@ -451,6 +454,29 @@ SSAOPass.prototype = Object.assign(Object.create(Pass.prototype), {
     );
     this.noiseTexture.wrapS = RepeatWrapping;
     this.noiseTexture.wrapT = RepeatWrapping;
+  },
+
+  overrideVisibility: function () {
+    var scene = this.scene;
+    var cache = this._visibilityCache;
+
+    scene.traverse(function (object) {
+      cache.set(object, object.visible);
+
+      if (object.isPoints || object.isLine) object.visible = false;
+    });
+  },
+
+  restoreVisibility: function () {
+    var scene = this.scene;
+    var cache = this._visibilityCache;
+
+    scene.traverse(function (object) {
+      var visible = cache.get(object);
+      object.visible = visible;
+    });
+
+    cache.clear();
   },
 });
 

@@ -1,23 +1,7 @@
 /// <reference lib="dom" />
-import {
-  PolyhedronGeometry,
-  PolyhedronBufferGeometry,
-} from "./PolyhedronGeometry.d.ts";
+import { Geometry } from "./../core/Geometry.d.ts";
 
-export class IcosahedronBufferGeometry extends PolyhedronBufferGeometry {
-  /**
-	 * @param [radius=1]
-	 * @param [detail=0]
-	 */
-  constructor(radius?: number, detail?: number);
-
-  /**
-	 * @default 'IcosahedronBufferGeometry'
-	 */
-  type: string;
-}
-
-export class IcosahedronGeometry extends PolyhedronGeometry {
+export class IcosahedronGeometry extends Geometry {
   /**
 	 * @param [radius=1]
 	 * @param [detail=0]

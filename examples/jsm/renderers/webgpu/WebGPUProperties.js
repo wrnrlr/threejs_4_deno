@@ -21,8 +21,6 @@ class WebGPUProperties {
 
 		return map;
 
-
-
 	}
 
 	remove( object ) {

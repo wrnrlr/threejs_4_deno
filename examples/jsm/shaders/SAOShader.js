@@ -1,9 +1,6 @@
 /// <reference types="./SAOShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Matrix4,
-  Vector2,
-} from "../../../src/Three.js";
+import { Matrix4, Vector2 } from "../../../src/Three.js";
 /**
  * TODO
  */

@@ -133,8 +133,4 @@ WorkerRunner.prototype = {
   },
 };
 
-export {
-  WorkerRunner,
-  DefaultWorkerPayloadHandler,
-  ObjectManipulator,
-};
+export { DefaultWorkerPayloadHandler, ObjectManipulator, WorkerRunner };

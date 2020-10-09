@@ -2,8 +2,8 @@
 import { Texture } from "./../textures/Texture.d.ts";
 import { Vector2 } from "./../math/Vector2.d.ts";
 import {
-  MeshStandardMaterialParameters,
   MeshStandardMaterial,
+  MeshStandardMaterialParameters,
 } from "./MeshStandardMaterial.d.ts";
 import { Color } from "./../math/Color.d.ts";
 
@@ -17,6 +17,7 @@ export interface MeshPhysicalMaterialParameters
   clearcoatNormalMap?: Texture | null;
 
   reflectivity?: number;
+  ior?: number;
 
   sheen?: Color;
 
@@ -71,6 +72,11 @@ export class MeshPhysicalMaterial extends MeshStandardMaterial {
 	 * @default 0.5
 	 */
   reflectivity: number;
+
+  /**
+	 * @default 1.5
+	 */
+  ior: number;
 
   /**
 	 * @default null

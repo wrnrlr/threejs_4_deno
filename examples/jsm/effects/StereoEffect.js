@@ -1,9 +1,6 @@
 /// <reference types="./StereoEffect.d.ts" />
 /// <reference lib="dom" />
-import {
-  StereoCamera,
-  Vector2,
-} from "../../../src/Three.js";
+import { StereoCamera, Vector2 } from "../../../src/Three.js";
 
 var StereoEffect = function (renderer) {
   var _stereo = new StereoCamera();

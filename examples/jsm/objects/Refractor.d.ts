@@ -1,8 +1,8 @@
 /// <reference lib="dom" />
 import {
-  Mesh,
   BufferGeometry,
   Color,
+  Mesh,
   TextureEncoding,
   WebGLRenderTarget,
 } from "../../../src/Three.d.ts";

@@ -1,8 +1,6 @@
 /// <reference types="./OceanShaders.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector2,
-} from "../../../src/Three.js";
+import { Vector2 } from "../../../src/Three.js";
 
 // Description: A deep water ocean shader set
 // based on an implementation of a Tessendorf Waves

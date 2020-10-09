@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Camera,
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { Camera, Vector3 } from "../../../src/Three.d.ts";
 
 export class FirstPersonControls {
   constructor(object: Camera, domElement?: HTMLElement);

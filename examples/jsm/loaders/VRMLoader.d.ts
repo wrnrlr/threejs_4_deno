@@ -1,10 +1,7 @@
 /// <reference lib="dom" />
-import {
-  Loader,
-  LoadingManager,
-} from "../../../src/Three.d.ts";
+import { Loader, LoadingManager } from "../../../src/Three.d.ts";
 
-import { GLTFLoader, GLTF } from "./GLTFLoader.d.ts";
+import { GLTF, GLTFLoader } from "./GLTFLoader.d.ts";
 import { DRACOLoader } from "./DRACOLoader.d.ts";
 
 export class VRMLoader extends Loader {

@@ -1,10 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Scene,
-  Camera,
-  Material,
-  Color,
-} from "../../../src/Three.d.ts";
+import { Camera, Color, Material, Scene } from "../../../src/Three.d.ts";
 
 import { Pass } from "./Pass.d.ts";
 

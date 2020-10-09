@@ -1,7 +1,7 @@
 /// <reference lib="dom" />
 import {
-  OrthographicCamera,
   Mesh,
+  OrthographicCamera,
   Scene,
   ShaderMaterial,
   Vector3,

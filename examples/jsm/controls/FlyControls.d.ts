@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Camera,
-  EventDispatcher,
-} from "../../../src/Three.d.ts";
+import { Camera, EventDispatcher } from "../../../src/Three.d.ts";
 
 export class FlyControls extends EventDispatcher {
   constructor(object: Camera, domElement?: HTMLElement);

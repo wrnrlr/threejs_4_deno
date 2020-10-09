@@ -1,9 +1,6 @@
 /// <reference types="./TTFLoader.d.ts" />
 /// <reference lib="dom" />
-import {
-  FileLoader,
-  Loader,
-} from "../../../src/Three.js";
+import { FileLoader, Loader } from "../../../src/Three.js";
 import { opentype } from "../libs/opentype.module.min.js";
 /**
  * Requires opentype.js to be included in the project.
@@ -27,6 +24,7 @@ TTFLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     loader.setPath(this.path);
     loader.setResponseType("arraybuffer");
     loader.setRequestHeader(this.requestHeader);
+    loader.setWithCredentials(this.withCredentials);
     loader.load(
       url,
       function (buffer) {

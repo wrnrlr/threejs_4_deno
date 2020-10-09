@@ -87,7 +87,7 @@ function WebXRManager(renderer, gl) {
     const controller = inputSourcesMap.get(event.inputSource);
 
     if (controller) {
-      controller.dispatchEvent({ type: event.type });
+      controller.dispatchEvent({ type: event.type, data: event.inputSource });
     }
   }
 

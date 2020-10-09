@@ -1,11 +1,6 @@
 /// <reference types="./ConvexObjectBreaker.d.ts" />
 /// <reference lib="dom" />
-import {
-  Line3,
-  Mesh,
-  Plane,
-  Vector3,
-} from "../../../src/Three.js";
+import { Line3, Mesh, Plane, Vector3 } from "../../../src/Three.js";
 import { ConvexBufferGeometry } from "../geometries/ConvexGeometry.js";
 /**
  * @fileoverview This class can be used to subdivide a convex Geometry object into pieces.

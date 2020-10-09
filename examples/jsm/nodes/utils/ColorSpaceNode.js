@@ -3,10 +3,10 @@
 import {
   GammaEncoding,
   LinearEncoding,
-  RGBEEncoding,
-  RGBM7Encoding,
-  RGBM16Encoding,
   RGBDEncoding,
+  RGBEEncoding,
+  RGBM16Encoding,
+  RGBM7Encoding,
   sRGBEncoding,
 } from "../../../../src/Three.js";
 

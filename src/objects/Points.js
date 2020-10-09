@@ -65,7 +65,7 @@ Points.prototype = Object.assign(Object.create(Object3D.prototype), {
     if (geometry.isBufferGeometry) {
       const index = geometry.index;
       const attributes = geometry.attributes;
-      const positions = attributes.position.array;
+      const positionAttribute = attributes.position;
 
       if (index !== null) {
         const indices = index.array;
@@ -73,7 +73,7 @@ Points.prototype = Object.assign(Object.create(Object3D.prototype), {
         for (let i = 0, il = indices.length; i < il; i++) {
           const a = indices[i];
 
-          _position.fromArray(positions, a * 3);
+          _position.fromBufferAttribute(positionAttribute, a);
 
           testPoint(
             _position,
@@ -86,8 +86,8 @@ Points.prototype = Object.assign(Object.create(Object3D.prototype), {
           );
         }
       } else {
-        for (let i = 0, l = positions.length / 3; i < l; i++) {
-          _position.fromArray(positions, i * 3);
+        for (let i = 0, l = positionAttribute.count; i < l; i++) {
+          _position.fromBufferAttribute(positionAttribute, i);
 
           testPoint(
             _position,

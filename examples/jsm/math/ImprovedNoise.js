@@ -316,7 +316,7 @@ var ImprovedNoise = function () {
           lerp(
             u,
             grad(p[AA + 1], x, y, zMinus1),
-            grad(p[BA + 1], xMinus1, y, z - 1),
+            grad(p[BA + 1], xMinus1, y, zMinus1),
           ),
           lerp(
             u,

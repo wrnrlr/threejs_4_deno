@@ -520,7 +520,4 @@ WorkerExecutionSupport.prototype = {
   },
 };
 
-export {
-  CodeBuilderInstructions,
-  WorkerExecutionSupport,
-};
+export { CodeBuilderInstructions, WorkerExecutionSupport };

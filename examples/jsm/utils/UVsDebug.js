@@ -1,8 +1,6 @@
 /// <reference types="./UVsDebug.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector2,
-} from "../../../src/Three.js";
+import { Vector2 } from "../../../src/Three.js";
 /**
  * tool for "unwrapping" and debugging three.js geometries UV mapping
  *

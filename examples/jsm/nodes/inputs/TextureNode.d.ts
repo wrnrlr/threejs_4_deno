@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Texture,
-} from "../../../../src/Three.d.ts";
+import { Texture } from "../../../../src/Three.d.ts";
 
 import { InputNode } from "../core/InputNode.d.ts";
 import { NodeBuilder } from "../core/NodeBuilder.d.ts";

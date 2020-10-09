@@ -1,9 +1,6 @@
 /// <reference types="./BoxLineGeometry.d.ts" />
 /// <reference lib="dom" />
-import {
-  BufferGeometry,
-  Float32BufferAttribute,
-} from "../../../src/Three.js";
+import { BufferGeometry, Float32BufferAttribute } from "../../../src/Three.js";
 
 var BoxLineGeometry = function (
   width,

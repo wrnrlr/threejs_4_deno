@@ -1,8 +1,6 @@
 /// <reference types="./DotScreenShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector2,
-} from "../../../src/Three.js";
+import { Vector2 } from "../../../src/Three.js";
 /**
  * Dot screen shader
  * based on glfx.js sepia shader

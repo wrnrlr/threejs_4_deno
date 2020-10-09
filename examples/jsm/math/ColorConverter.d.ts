@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Color,
-} from "../../../src/Three.d.ts";
+import { Color } from "../../../src/Three.d.ts";
 
 export interface HSL {
   h: number;

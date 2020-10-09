@@ -1,10 +1,6 @@
 /// <reference types="./MMDExporter.d.ts" />
 /// <reference lib="dom" />
-import {
-  Matrix4,
-  Quaternion,
-  Vector3,
-} from "../../../src/Three.js";
+import { Matrix4, Quaternion, Vector3 } from "../../../src/Three.js";
 import { MMDParser } from "../libs/mmdparser.module.js";
 /**
  * Dependencies

@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Object3D,
-  Ray,
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { Object3D, Ray, Vector3 } from "../../../src/Three.d.ts";
 
 declare class Face {
   constructor();

@@ -1,9 +1,6 @@
 /// <reference types="./ToonShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Color,
-  Vector3,
-} from "../../../src/Three.js";
+import { Color, Vector3 } from "../../../src/Three.js";
 /**
  * Currently contains:
  *
@@ -300,4 +297,4 @@ var ToonShaderDotted = {
   ].join("\n"),
 };
 
-export { ToonShader1, ToonShader2, ToonShaderHatching, ToonShaderDotted };
+export { ToonShader1, ToonShader2, ToonShaderDotted, ToonShaderHatching };

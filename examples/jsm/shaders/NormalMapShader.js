@@ -1,8 +1,6 @@
 /// <reference types="./NormalMapShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector2,
-} from "../../../src/Three.js";
+import { Vector2 } from "../../../src/Three.js";
 /**
  * Normal map shader
  * - compute normals from heightmap

@@ -1,8 +1,6 @@
 /// <reference types="./SMAAShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector2,
-} from "../../../src/Three.js";
+import { Vector2 } from "../../../src/Three.js";
 /**
  * WebGL port of Subpixel Morphological Antialiasing (SMAA) v2.8
  * Preset: SMAA 1x Medium (with color edge detection)
@@ -442,4 +440,4 @@ var SMAABlendShader = {
   ].join("\n"),
 };
 
-export { SMAAEdgesShader, SMAAWeightsShader, SMAABlendShader };
+export { SMAABlendShader, SMAAEdgesShader, SMAAWeightsShader };

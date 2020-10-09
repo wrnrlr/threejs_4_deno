@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  WebGLRenderer,
-  Vector2,
-} from "../../../src/Three.d.ts";
+import { Vector2, WebGLRenderer } from "../../../src/Three.d.ts";
 
 import { SelectionBox } from "./SelectionBox.d.ts";
 

@@ -2,10 +2,10 @@
 import { Texture } from "./Texture.d.ts";
 import {
   Mapping,
-  Wrapping,
-  TextureFilter,
   PixelFormat,
   TextureDataType,
+  TextureFilter,
+  Wrapping,
 } from "../constants.d.ts";
 
 export class CanvasTexture extends Texture {
@@ -32,4 +32,6 @@ export class CanvasTexture extends Texture {
     type?: TextureDataType,
     anisotropy?: number,
   );
+
+  readonly isCanvasTexture: true;
 }

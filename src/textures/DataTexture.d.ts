@@ -2,11 +2,11 @@
 import { Texture } from "./Texture.d.ts";
 import {
   Mapping,
-  Wrapping,
-  TextureFilter,
   PixelFormat,
   TextureDataType,
   TextureEncoding,
+  TextureFilter,
+  Wrapping,
 } from "../constants.d.ts";
 import { TypedArray } from "../polyfills.d.ts";
 
@@ -61,4 +61,6 @@ export class DataTexture extends Texture {
 	 * @default THREE.DepthFormat
 	 */
   format: PixelFormat;
+
+  readonly isDataTexture: true;
 }

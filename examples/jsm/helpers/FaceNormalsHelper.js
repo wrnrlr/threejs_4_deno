@@ -3,8 +3,8 @@
 import {
   BufferGeometry,
   Float32BufferAttribute,
-  LineSegments,
   LineBasicMaterial,
+  LineSegments,
   Matrix3,
   Vector3,
 } from "../../../src/Three.js";

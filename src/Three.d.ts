@@ -173,6 +173,9 @@ export * from "./renderers/webgl/WebGLShadowMap.d.ts";
 export * from "./renderers/webgl/WebGLState.d.ts";
 export * from "./renderers/webgl/WebGLTextures.d.ts";
 export * from "./renderers/webgl/WebGLUniforms.d.ts";
+export * from "./renderers/webxr/WebXR.d.ts";
+export * from "./renderers/webxr/WebXRController.d.ts";
+export * from "./renderers/webxr/WebXRManager.d.ts";
 export * from "./constants.d.ts";
 export * from "./Three.Legacy.d.ts";
 

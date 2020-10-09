@@ -1,8 +1,6 @@
 /// <reference types="./LuminosityHighPassShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Color,
-} from "../../../src/Three.js";
+import { Color } from "../../../src/Three.js";
 /**
  * Luminosity
  * http://en.wikipedia.org/wiki/Luminosity

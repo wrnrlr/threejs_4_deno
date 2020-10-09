@@ -16,8 +16,8 @@ import {
   NearestMipmapLinearFilter,
   NearestMipmapNearestFilter,
   PropertyBinding,
-  RGBAFormat,
   RepeatWrapping,
+  RGBAFormat,
   Scene,
   Vector3,
 } from "../../../src/Three.js";
@@ -52,6 +52,8 @@ var WEBGL_CONSTANTS = {
   MIRRORED_REPEAT: 33648,
   REPEAT: 10497,
 };
+
+var identityArray = [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1];
 
 var THREE_TO_WEBGL = {};
 
@@ -160,6 +162,16 @@ GLTFExporter.prototype = {
         array1.every(function (element, index) {
           return element === array2[index];
         });
+    }
+
+    /**
+		 * Is identity matrix
+		 *
+		 * @param {THREE.Matrix4} matrix
+		 * @returns {Boolean} Returns true, if parameter is identity matrix
+		 */
+    function isIdentityMatrix(matrix) {
+      return equalArray(matrix.elements, identityArray);
     }
 
     /**
@@ -1503,12 +1515,7 @@ GLTFExporter.prototype = {
           object.updateMatrix();
         }
 
-        if (
-          !equalArray(
-            object.matrix.elements,
-            [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
-          )
-        ) {
+        if (isIdentityMatrix(object.matrix) === false) {
           gltfNode.matrix = object.matrix.elements;
         }
       }

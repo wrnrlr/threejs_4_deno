@@ -2,10 +2,10 @@
 /// <reference lib="dom" />
 import {
   CompressedTextureLoader,
-  RGBA_PVRTC_2BPPV1_Format,
-  RGBA_PVRTC_4BPPV1_Format,
   RGB_PVRTC_2BPPV1_Format,
   RGB_PVRTC_4BPPV1_Format,
+  RGBA_PVRTC_2BPPV1_Format,
+  RGBA_PVRTC_4BPPV1_Format,
 } from "../../../src/Three.js";
 /*
  *	 PVR v2 (legacy) parser

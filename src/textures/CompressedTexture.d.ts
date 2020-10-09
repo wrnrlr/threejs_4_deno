@@ -1,12 +1,12 @@
 /// <reference lib="dom" />
 import { Texture } from "./Texture.d.ts";
 import {
-  Mapping,
-  Wrapping,
-  TextureFilter,
   CompressedPixelFormat,
+  Mapping,
   TextureDataType,
   TextureEncoding,
+  TextureFilter,
+  Wrapping,
 } from "../constants.d.ts";
 
 export class CompressedTexture extends Texture {
@@ -52,4 +52,6 @@ export class CompressedTexture extends Texture {
 	 * @default false
 	 */
   generateMipmaps: boolean;
+
+  readonly isCompressedTexture: true;
 }

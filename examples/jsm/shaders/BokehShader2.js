@@ -1,8 +1,6 @@
 /// <reference types="./BokehShader2.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector2,
-} from "../../../src/Three.js";
+import { Vector2 } from "../../../src/Three.js";
 /**
  * Depth-of-field shader with bokeh
  * ported from GLSL shader by Martins Upitis
@@ -378,4 +376,4 @@ var BokehDepthShader = {
   ].join("\n"),
 };
 
-export { BokehShader, BokehDepthShader };
+export { BokehDepthShader, BokehShader };

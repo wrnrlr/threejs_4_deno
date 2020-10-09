@@ -1,9 +1,6 @@
 /// <reference types="./GodRaysShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Color,
-  Vector3,
-} from "../../../src/Three.js";
+import { Color, Vector3 } from "../../../src/Three.js";
 /**
  * God-rays (crepuscular rays)
  *
@@ -294,8 +291,8 @@ var GodRaysFakeSunShader = {
 };
 
 export {
-  GodRaysDepthMaskShader,
-  GodRaysGenerateShader,
   GodRaysCombineShader,
+  GodRaysDepthMaskShader,
   GodRaysFakeSunShader,
+  GodRaysGenerateShader,
 };

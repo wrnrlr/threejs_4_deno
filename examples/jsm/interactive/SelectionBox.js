@@ -1,9 +1,6 @@
 /// <reference types="./SelectionBox.d.ts" />
 /// <reference lib="dom" />
-import {
-  Frustum,
-  Vector3,
-} from "../../../src/Three.js";
+import { Frustum, Vector3 } from "../../../src/Three.js";
 /**
  * This is a class to check whether objects are in a selection area in 3D space
  */

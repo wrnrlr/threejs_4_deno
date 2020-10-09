@@ -22,7 +22,7 @@ class WebGPUBackground {
 
 	}
 
-	render( scene ) {
+	update( scene ) {
 
 		const renderer = this.renderer;
 		const background = ( scene.isScene === true ) ? scene.background : null;
@@ -45,7 +45,7 @@ class WebGPUBackground {
 
 		} else {
 
-			console.error( 'WebGPURenderer: Unsupported background configuration.', background );
+			console.error( 'THREE.WebGPURenderer: Unsupported background configuration.', background );
 
 		}
 

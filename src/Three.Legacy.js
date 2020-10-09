@@ -4,24 +4,24 @@ import { Audio } from "./audio/Audio.js";
 import { AudioAnalyser } from "./audio/AudioAnalyser.js";
 import { PerspectiveCamera } from "./cameras/PerspectiveCamera.js";
 import {
-  FlatShading,
-  sRGBEncoding,
-  LinearEncoding,
-  StaticDrawUsage,
   DynamicDrawUsage,
+  FlatShading,
+  LinearEncoding,
+  sRGBEncoding,
+  StaticDrawUsage,
   TrianglesDrawMode,
 } from "./constants.js";
 import {
-  Float64BufferAttribute,
-  Float32BufferAttribute,
-  Uint32BufferAttribute,
-  Int32BufferAttribute,
-  Uint16BufferAttribute,
-  Int16BufferAttribute,
-  Uint8ClampedBufferAttribute,
-  Uint8BufferAttribute,
-  Int8BufferAttribute,
   BufferAttribute,
+  Float32BufferAttribute,
+  Float64BufferAttribute,
+  Int16BufferAttribute,
+  Int32BufferAttribute,
+  Int8BufferAttribute,
+  Uint16BufferAttribute,
+  Uint32BufferAttribute,
+  Uint8BufferAttribute,
+  Uint8ClampedBufferAttribute,
 } from "./core/BufferAttribute.js";
 import { BufferGeometry } from "./core/BufferGeometry.js";
 import { InstancedBufferGeometry } from "./core/InstancedBufferGeometry.js";
@@ -42,7 +42,7 @@ import { SkeletonHelper } from "./helpers/SkeletonHelper.js";
 import { BoxGeometry } from "./geometries/BoxGeometry.js";
 import { EdgesGeometry } from "./geometries/EdgesGeometry.js";
 import { ExtrudeGeometry } from "./geometries/ExtrudeGeometry.js";
-import { ExtrudeBufferGeometry } from "./geometries/ExtrudeGeometry.js";
+import { ExtrudeBufferGeometry } from "./geometries/ExtrudeBufferGeometry.js";
 import { ShapeGeometry } from "./geometries/ShapeGeometry.js";
 import { WireframeGeometry } from "./geometries/WireframeGeometry.js";
 import { Light } from "./lights/Light.js";

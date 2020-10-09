@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Matrix4,
-  Mesh,
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { Matrix4, Mesh, Vector3 } from "../../../src/Three.d.ts";
 
 export class TubePainter {
   constructor();

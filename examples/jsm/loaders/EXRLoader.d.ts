@@ -1,9 +1,9 @@
 /// <reference lib="dom" />
 import {
-  LoadingManager,
   DataTextureLoader,
-  TextureDataType,
+  LoadingManager,
   PixelFormat,
+  TextureDataType,
 } from "../../../src/Three.d.ts";
 
 export interface EXR {

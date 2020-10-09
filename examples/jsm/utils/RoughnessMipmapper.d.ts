@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  WebGLRenderer,
-  MeshStandardMaterial,
-} from "../../../src/Three.d.ts";
+import { MeshStandardMaterial, WebGLRenderer } from "../../../src/Three.d.ts";
 
 export class RoughnessMipmapper {
   constructor(renderer: WebGLRenderer);

@@ -1,8 +1,6 @@
 /// <reference types="./FXAAShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector2,
-} from "../../../src/Three.js";
+import { Vector2 } from "../../../src/Three.js";
 /**
  * NVIDIA FXAA by Timothy Lottes
  * http://timothylottes.blogspot.com/2011/06/fxaa3-source-released.html

@@ -1,9 +1,9 @@
 /// <reference lib="dom" />
 import {
+  BufferGeometry,
   Loader,
   LoadingManager,
   ShapePath,
-  BufferGeometry,
   Vector3,
 } from "../../../src/Three.d.ts";
 

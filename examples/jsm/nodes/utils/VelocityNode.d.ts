@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Object3D,
-  Vector3,
-} from "../../../../src/Three.d.ts";
+import { Object3D, Vector3 } from "../../../../src/Three.d.ts";
 
 import { NodeFrame } from "../core/NodeFrame.d.ts";
 import { Vector3Node } from "../inputs/Vector3Node.d.ts";

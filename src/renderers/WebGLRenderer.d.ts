@@ -16,16 +16,17 @@ import { WebGLRenderTarget } from "./WebGLRenderTarget.d.ts";
 import { Object3D } from "./../core/Object3D.d.ts";
 import { Material } from "./../materials/Material.d.ts";
 import {
-  ToneMapping,
-  ShadowMapType,
   CullFace,
+  ShadowMapType,
   TextureEncoding,
+  ToneMapping,
 } from "../constants.d.ts";
 import { WebXRManager } from "../renderers/webxr/WebXRManager.d.ts";
 import { RenderTarget } from "./webgl/WebGLRenderLists.d.ts";
 import { Geometry } from "./../core/Geometry.d.ts";
 import { BufferGeometry } from "./../core/BufferGeometry.d.ts";
 import { Texture } from "../textures/Texture.d.ts";
+import { XRAnimationLoopCallback } from "./webxr/WebXR.d.ts";
 
 export interface Renderer {
   domElement: HTMLCanvasElement;
@@ -361,7 +362,7 @@ export class WebGLRenderer implements Renderer {
 	 * A build in function that can be used instead of requestAnimationFrame. For WebXR projects this function must be used.
 	 * @param callback The function will be called every available frame. If `null` is passed it will stop any already ongoing animation.
 	 */
-  setAnimationLoop(callback: Function | null): void;
+  setAnimationLoop(callback: XRAnimationLoopCallback | null): void;
 
   /**
 	 * @deprecated Use {@link WebGLRenderer#setAnimationLoop .setAnimationLoop()} instead.

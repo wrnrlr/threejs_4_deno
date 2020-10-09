@@ -1,8 +1,6 @@
 /// <reference types="./KTXLoader.d.ts" />
 /// <reference lib="dom" />
-import {
-  CompressedTextureLoader,
-} from "../../../src/Three.js";
+import { CompressedTextureLoader } from "../../../src/Three.js";
 /**
  * for description see https://www.khronos.org/opengles/sdk/tools/KTX/
  * for file layout see https://www.khronos.org/opengles/sdk/tools/KTX/file_format_spec/

@@ -19,8 +19,8 @@ import {
   MirroredRepeatWrapping,
   NearestFilter,
   RepeatWrapping,
-  TextureLoader,
   sRGBEncoding,
+  TextureLoader,
 } from "../../../src/Three.js";
 import { JSZip } from "../libs/jszip.module.min.js";
 /**
@@ -56,6 +56,7 @@ ThreeMFLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     loader.setPath(scope.path);
     loader.setResponseType("arraybuffer");
     loader.setRequestHeader(scope.requestHeader);
+    loader.setWithCredentials(scope.withCredentials);
     loader.load(
       url,
       function (buffer) {
@@ -345,10 +346,9 @@ ThreeMFLoader.prototype = Object.assign(Object.create(Loader.prototype), {
 
         metallicData.push({
           name: metallicNode.getAttribute("name"), // required
-          metallicness: parseFloat(metallicNode.getAttribute("metallicness")),
+          metallicness: parseFloat(metallicNode.getAttribute("metallicness")), // required
           roughness: parseFloat(metallicNode.getAttribute("roughness")), // required
-        } // required
-        );
+        });
       }
 
       metallicDisplaypropertiesData.data = metallicData;

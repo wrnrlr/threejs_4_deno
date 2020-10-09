@@ -1,9 +1,6 @@
 /// <reference types="./SSAOShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Matrix4,
-  Vector2,
-} from "../../../src/Three.js";
+import { Matrix4, Vector2 } from "../../../src/Three.js";
 /**
  * References:
  * http://john-chapman-graphics.blogspot.com/2013/01/ssao-tutorial.html
@@ -84,7 +81,7 @@ var SSAOShader = {
 
     "	#else",
 
-    "		return texture2D( depthSampler, coord ).x;",
+    "		return texture2D( tDepth, screenPosition ).x;",
 
     "	#endif",
 
@@ -213,7 +210,7 @@ var SSAODepthShader = {
 
     "	#else",
 
-    "		return texture2D( depthSampler, coord ).x;",
+    "		return texture2D( tDepth, screenPosition ).x;",
 
     "	#endif",
 
@@ -274,4 +271,4 @@ var SSAOBlurShader = {
   ].join("\n"),
 };
 
-export { SSAOShader, SSAODepthShader, SSAOBlurShader };
+export { SSAOBlurShader, SSAODepthShader, SSAOShader };

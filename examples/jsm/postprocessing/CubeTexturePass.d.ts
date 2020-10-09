@@ -1,8 +1,8 @@
 /// <reference lib="dom" />
 import {
-  PerspectiveCamera,
   CubeTexture,
   Mesh,
+  PerspectiveCamera,
   Scene,
 } from "../../../src/Three.d.ts";
 

@@ -34,7 +34,7 @@ function WebGLGeometries(gl, attributes, info, bindingStates) {
       wireframeAttributes.delete(buffergeometry);
     }
 
-    bindingStates.releaseStatesOfGeometry(geometry);
+    bindingStates.releaseStatesOfGeometry(buffergeometry);
 
     if (geometry.isInstancedBufferGeometry === true) {
       delete geometry._maxInstanceCount;

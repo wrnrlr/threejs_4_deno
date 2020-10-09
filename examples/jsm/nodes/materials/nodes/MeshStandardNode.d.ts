@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Color,
-  Vector2,
-} from "../../../../../src/Three.d.ts";
+import { Color, Vector2 } from "../../../../../src/Three.d.ts";
 
 import { NodeBuilder } from "../../core/NodeBuilder.d.ts";
 import { StandardNode } from "./StandardNode.d.ts";

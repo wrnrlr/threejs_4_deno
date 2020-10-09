@@ -373,9 +373,10 @@ var OBJLoader = (function () {
     load: function (url, onLoad, onProgress, onError) {
       var scope = this;
 
-      var loader = new FileLoader(scope.manager);
+      var loader = new FileLoader(this.manager);
       loader.setPath(this.path);
       loader.setRequestHeader(this.requestHeader);
+      loader.setWithCredentials(this.withCredentials);
       loader.load(
         url,
         function (text) {

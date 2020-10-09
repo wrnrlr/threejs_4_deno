@@ -4,16 +4,16 @@ import {
   CubeUVReflectionMapping,
   GammaEncoding,
   LinearEncoding,
-  NoToneMapping,
   NearestFilter,
   NoBlending,
+  NoToneMapping,
   RGBDEncoding,
   RGBEEncoding,
   RGBEFormat,
   RGBM16Encoding,
   RGBM7Encoding,
-  UnsignedByteType,
   sRGBEncoding,
+  UnsignedByteType,
 } from "../constants.js";
 
 import { BufferAttribute } from "../core/BufferAttribute.js";

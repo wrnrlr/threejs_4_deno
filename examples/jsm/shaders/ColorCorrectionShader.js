@@ -1,8 +1,6 @@
 /// <reference types="./ColorCorrectionShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector3,
-} from "../../../src/Three.js";
+import { Vector3 } from "../../../src/Three.js";
 /**
  * Color correction
  */

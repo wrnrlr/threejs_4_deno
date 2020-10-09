@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Color,
-  Line,
-  RectAreaLight,
-} from "../../../src/Three.d.ts";
+import { Color, Line, RectAreaLight } from "../../../src/Three.d.ts";
 
 export class RectAreaLightHelper extends Line {
   constructor(light: RectAreaLight, color?: Color | string | number);

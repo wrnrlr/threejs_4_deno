@@ -1,11 +1,6 @@
 /// <reference types="./NRRDLoader.d.ts" />
 /// <reference lib="dom" />
-import {
-  FileLoader,
-  Loader,
-  Matrix4,
-  Vector3,
-} from "../../../src/Three.js";
+import { FileLoader, Loader, Matrix4, Vector3 } from "../../../src/Three.js";
 import { Zlib } from "../libs/gunzip.module.min.js";
 import { Volume } from "../misc/Volume.js";
 
@@ -23,6 +18,7 @@ NRRDLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     loader.setPath(scope.path);
     loader.setResponseType("arraybuffer");
     loader.setRequestHeader(scope.requestHeader);
+    loader.setWithCredentials(scope.withCredentials);
     loader.load(
       url,
       function (data) {

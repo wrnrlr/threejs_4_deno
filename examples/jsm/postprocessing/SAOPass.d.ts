@@ -1,12 +1,12 @@
 /// <reference lib="dom" />
 import {
-  Scene,
   Camera,
+  Color,
   Material,
   MeshDepthMaterial,
   MeshNormalMaterial,
+  Scene,
   ShaderMaterial,
-  Color,
   Vector2,
   WebGLRenderer,
   WebGLRenderTarget,

@@ -1,8 +1,8 @@
 /// <reference lib="dom" />
 import {
+  BufferGeometry,
   Loader,
   LoadingManager,
-  BufferGeometry,
 } from "../../../src/Three.d.ts";
 
 export class DRACOLoader extends Loader {

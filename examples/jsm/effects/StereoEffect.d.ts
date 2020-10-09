@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Camera,
-  Scene,
-  WebGLRenderer,
-} from "../../../src/Three.d.ts";
+import { Camera, Scene, WebGLRenderer } from "../../../src/Three.d.ts";
 
 export class StereoEffect {
   constructor(renderer: WebGLRenderer);

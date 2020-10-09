@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Material,
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { Material, Vector3 } from "../../../src/Three.d.ts";
 
 import {
   LightningStrike,

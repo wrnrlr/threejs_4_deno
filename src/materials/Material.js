@@ -2,15 +2,15 @@
 /// <reference lib="dom" />
 import { EventDispatcher } from "../core/EventDispatcher.js";
 import {
-  FrontSide,
-  FlatShading,
-  NormalBlending,
-  LessEqualDepth,
   AddEquation,
+  AlwaysStencilFunc,
+  FlatShading,
+  FrontSide,
+  KeepStencilOp,
+  LessEqualDepth,
+  NormalBlending,
   OneMinusSrcAlphaFactor,
   SrcAlphaFactor,
-  AlwaysStencilFunc,
-  KeepStencilOp,
 } from "../constants.js";
 import { MathUtils } from "../math/MathUtils.js";
 

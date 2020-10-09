@@ -1,8 +1,8 @@
 /// <reference lib="dom" />
 import {
   BufferGeometry,
-  Color,
   Clock,
+  Color,
   DataTexture,
   Mesh,
   OrthographicCamera,

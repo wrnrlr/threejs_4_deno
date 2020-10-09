@@ -36,13 +36,13 @@ import {
   Skeleton,
   SkinnedMesh,
   SpotLight,
+  sRGBEncoding,
   Texture,
   TextureLoader,
   Uint16BufferAttribute,
   Vector3,
   Vector4,
   VectorKeyframeTrack,
-  sRGBEncoding,
 } from "../../../src/Three.js";
 import { Inflate } from "../libs/inflate.module.min.js";
 import { NURBSCurve } from "../curves/NURBSCurve.js";
@@ -85,6 +85,7 @@ var FBXLoader = (function () {
       loader.setPath(scope.path);
       loader.setResponseType("arraybuffer");
       loader.setRequestHeader(scope.requestHeader);
+      loader.setWithCredentials(scope.withCredentials);
 
       loader.load(
         url,

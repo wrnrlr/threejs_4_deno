@@ -5,8 +5,8 @@ import {
   CubeRefractionMapping,
   CubeUVReflectionMapping,
   CubeUVRefractionMapping,
-  LinearEncoding,
   GammaEncoding,
+  LinearEncoding,
 } from "../../../../src/Three.js";
 
 import { NodeUniform } from "./NodeUniform.js";

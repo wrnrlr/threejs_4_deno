@@ -6,9 +6,9 @@ import {
   Mesh,
   MeshLambertMaterial,
   Object3D,
+  sRGBEncoding,
   TextureLoader,
   UVMapping,
-  sRGBEncoding,
 } from "../../../src/Three.js";
 import { MD2Loader } from "../loaders/MD2Loader.js";
 

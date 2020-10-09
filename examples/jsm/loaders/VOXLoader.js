@@ -1,9 +1,6 @@
 /// <reference types="./VOXLoader.d.ts" />
 /// <reference lib="dom" />
-import {
-  FileLoader,
-  Loader,
-} from "../../../src/Three.js";
+import { FileLoader, Loader } from "../../../src/Three.js";
 
 function VOXLoader(manager) {
   Loader.call(this, manager);

@@ -1,9 +1,6 @@
 /// <reference types="./MeshStandardNode.d.ts" />
 /// <reference lib="dom" />
-import {
-  Color,
-  Vector2,
-} from "../../../../../src/Three.js";
+import { Color, Vector2 } from "../../../../../src/Three.js";
 
 import { StandardNode } from "./StandardNode.js";
 import { PropertyNode } from "../../inputs/PropertyNode.js";

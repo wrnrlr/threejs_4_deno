@@ -1,8 +1,6 @@
 /// <reference types="./ColorConverter.d.ts" />
 /// <reference lib="dom" />
-import {
-  MathUtils,
-} from "../../../src/Three.js";
+import { MathUtils } from "../../../src/Three.js";
 
 var ColorConverter = {
   setHSV: function (color, h, s, v) {

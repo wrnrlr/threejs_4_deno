@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Object3D,
-  AnimationClip,
-} from "../../../src/Three.d.ts";
+import { AnimationClip, Object3D } from "../../../src/Three.d.ts";
 
 export interface GLTFExporterOptions {
   binary?: boolean;

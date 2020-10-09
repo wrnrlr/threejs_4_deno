@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { Vector3 } from "../../../src/Three.d.ts";
 
 export namespace GeometryUtils {
   export function hilbert2D(

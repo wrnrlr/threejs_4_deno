@@ -1,10 +1,10 @@
 /// <reference types="./PositionalAudioHelper.d.ts" />
 /// <reference lib="dom" />
 import {
-  BufferGeometry,
   BufferAttribute,
-  LineBasicMaterial,
+  BufferGeometry,
   Line,
+  LineBasicMaterial,
   MathUtils,
 } from "../../../src/Three.js";
 

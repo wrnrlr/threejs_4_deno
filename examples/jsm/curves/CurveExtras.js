@@ -1,9 +1,6 @@
 /// <reference types="./CurveExtras.d.ts" />
 /// <reference lib="dom" />
-import {
-  Curve,
-  Vector3,
-} from "../../../src/Three.js";
+import { Curve, Vector3 } from "../../../src/Three.js";
 /**
  * A bunch of parametric curves
  *

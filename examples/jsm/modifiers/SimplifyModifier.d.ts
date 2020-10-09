@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  BufferGeometry,
-  Geometry,
-} from "../../../src/Three.d.ts";
+import { BufferGeometry, Geometry } from "../../../src/Three.d.ts";
 
 export class SimplifyModifier {
   constructor();

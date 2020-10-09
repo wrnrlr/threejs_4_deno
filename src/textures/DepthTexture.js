@@ -2,11 +2,11 @@
 /// <reference lib="dom" />
 import { Texture } from "./Texture.js";
 import {
-  NearestFilter,
-  UnsignedShortType,
-  UnsignedInt248Type,
   DepthFormat,
   DepthStencilFormat,
+  NearestFilter,
+  UnsignedInt248Type,
+  UnsignedShortType,
 } from "../constants.js";
 
 function DepthTexture(

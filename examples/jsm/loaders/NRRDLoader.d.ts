@@ -1,11 +1,7 @@
 /// <reference lib="dom" />
-import {
-  LoadingManager,
-} from "../../../src/Three.d.ts";
+import { LoadingManager } from "../../../src/Three.d.ts";
 
-import {
-  Volume,
-} from "../misc/Volume.d.ts";
+import { Volume } from "../misc/Volume.d.ts";
 
 export class NRRDLoader {
   constructor(manager?: LoadingManager);

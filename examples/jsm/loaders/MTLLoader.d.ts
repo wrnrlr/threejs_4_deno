@@ -1,10 +1,10 @@
 /// <reference lib="dom" />
 import {
-  Material,
+  BufferGeometry,
+  Loader,
   LoadingManager,
   Mapping,
-  Loader,
-  BufferGeometry,
+  Material,
   Side,
   Texture,
   Vector2,

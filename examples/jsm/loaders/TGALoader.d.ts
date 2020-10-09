@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Texture,
-  Loader,
-  LoadingManager,
-} from "../../../src/Three.d.ts";
+import { Loader, LoadingManager, Texture } from "../../../src/Three.d.ts";
 
 export class TGALoader extends Loader {
   constructor(manager?: LoadingManager);

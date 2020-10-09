@@ -1,9 +1,6 @@
 /// <reference types="./HalftonePass.d.ts" />
 /// <reference lib="dom" />
-import {
-  ShaderMaterial,
-  UniformsUtils,
-} from "../../../src/Three.js";
+import { ShaderMaterial, UniformsUtils } from "../../../src/Three.js";
 import { Pass } from "../postprocessing/Pass.js";
 import { HalftoneShader } from "../shaders/HalftoneShader.js";
 /**

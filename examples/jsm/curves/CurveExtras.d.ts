@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Curve,
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { Curve, Vector3 } from "../../../src/Three.d.ts";
 
 export namespace Curves {
   export class GrannyKnot extends Curve<Vector3> {

@@ -277,7 +277,4 @@ LoadedMeshUserOverride.prototype = {
   },
 };
 
-export {
-  MeshReceiver,
-  LoadedMeshUserOverride,
-};
+export { LoadedMeshUserOverride, MeshReceiver };

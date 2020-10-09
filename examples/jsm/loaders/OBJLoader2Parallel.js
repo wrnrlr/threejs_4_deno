@@ -5,9 +5,7 @@
  */
 
 // Imports only related to wrapper
-import {
-  Object3D,
-} from "../../../src/Three.js";
+import { Object3D } from "../../../src/Three.js";
 import {
   CodeBuilderInstructions,
   WorkerExecutionSupport,
@@ -18,9 +16,9 @@ import { OBJLoader2 } from "./OBJLoader2.js";
 // Imports only related to worker (when standard workers (modules aren't supported) are used)
 import { OBJLoader2Parser } from "./obj2/OBJLoader2Parser.js";
 import {
-  WorkerRunner,
   DefaultWorkerPayloadHandler,
   ObjectManipulator,
+  WorkerRunner,
 } from "./obj2/worker/parallel/WorkerRunner.js";
 
 /**

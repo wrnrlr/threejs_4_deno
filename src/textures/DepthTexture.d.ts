@@ -2,9 +2,9 @@
 import { Texture } from "./Texture.d.ts";
 import {
   Mapping,
-  Wrapping,
-  TextureFilter,
   TextureDataType,
+  TextureFilter,
+  Wrapping,
 } from "../constants.d.ts";
 
 export class DepthTexture extends Texture {
@@ -42,4 +42,6 @@ export class DepthTexture extends Texture {
 	 * @default false
 	 */
   generateMipmaps: boolean;
+
+  readonly isDepthTexture: true;
 }

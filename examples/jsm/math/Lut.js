@@ -1,8 +1,6 @@
 /// <reference types="./Lut.d.ts" />
 /// <reference lib="dom" />
-import {
-  Color,
-} from "../../../src/Three.js";
+import { Color } from "../../../src/Three.js";
 
 var Lut = function (colormap, numberofcolors) {
   this.lut = [];
@@ -173,4 +171,4 @@ var ColorMapKeywords = {
   ],
 };
 
-export { Lut, ColorMapKeywords };
+export { ColorMapKeywords, Lut };

@@ -1,9 +1,6 @@
 /// <reference types="./DotScreenPass.d.ts" />
 /// <reference lib="dom" />
-import {
-  ShaderMaterial,
-  UniformsUtils,
-} from "../../../src/Three.js";
+import { ShaderMaterial, UniformsUtils } from "../../../src/Three.js";
 import { Pass } from "../postprocessing/Pass.js";
 import { DotScreenShader } from "../shaders/DotScreenShader.js";
 

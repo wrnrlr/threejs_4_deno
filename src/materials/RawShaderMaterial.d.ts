@@ -1,7 +1,7 @@
 /// <reference lib="dom" />
 import {
-  ShaderMaterialParameters,
   ShaderMaterial,
+  ShaderMaterialParameters,
 } from "./ShaderMaterial.d.ts";
 
 export class RawShaderMaterial extends ShaderMaterial {

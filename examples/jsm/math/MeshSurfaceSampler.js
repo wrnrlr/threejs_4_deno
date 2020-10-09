@@ -1,8 +1,6 @@
 /// <reference types="./MeshSurfaceSampler.d.ts" />
 /// <reference lib="dom" />
-import {
-  Triangle,
-} from "../../../src/Three.js";
+import { Triangle } from "../../../src/Three.js";
 
 /**
  * Utility class for sampling weighted random points on the surface of a mesh.

@@ -1,10 +1,10 @@
 /// <reference lib="dom" />
 import {
-  CullFace,
   Blending,
+  BlendingDstFactor,
   BlendingEquation,
   BlendingSrcFactor,
-  BlendingDstFactor,
+  CullFace,
   DepthModes,
 } from "../../constants.d.ts";
 import { WebGLCapabilities } from "./WebGLCapabilities.d.ts";

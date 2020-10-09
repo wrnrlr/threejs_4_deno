@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Object3D,
-  Camera,
-  MOUSE,
-} from "../../../src/Three.d.ts";
+import { Camera, MOUSE, Object3D } from "../../../src/Three.d.ts";
 
 export class TransformControls extends Object3D {
   constructor(object: Camera, domElement?: HTMLElement);
@@ -38,6 +34,7 @@ export class TransformControls extends Object3D {
   setMode(mode: string): void;
   setTranslationSnap(translationSnap: Number | null): void;
   setRotationSnap(rotationSnap: Number | null): void;
+  setScaleSnap(scaleSnap: Number | null): void;
   setSize(size: number): void;
   setSpace(space: string): void;
   dispose(): void;

@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Vector3,
-  Vector4,
-} from "../../../src/Three.d.ts";
+import { Vector3, Vector4 } from "../../../src/Three.d.ts";
 
 export namespace NURBSUtils {
   export function findSpan(p: number, u: number, U: number[]): number;

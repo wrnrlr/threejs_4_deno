@@ -35,4 +35,6 @@ export class DataTexture2DArray extends Texture {
 	 * @default false
 	 */
   generateMipmaps: boolean;
+
+  readonly isDataTexture2DArray: true;
 }

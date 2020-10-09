@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Mesh,
-  Loader,
-  LoadingManager,
-} from "../../../src/Three.d.ts";
+import { Loader, LoadingManager, Mesh } from "../../../src/Three.d.ts";
 
 export interface XResult {
   animations: object[];

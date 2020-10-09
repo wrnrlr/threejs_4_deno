@@ -1,10 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Camera,
-  Matrix3,
-  Scene,
-  WebGLRenderer,
-} from "../../../src/Three.d.ts";
+import { Camera, Matrix3, Scene, WebGLRenderer } from "../../../src/Three.d.ts";
 
 export class AnaglyphEffect {
   constructor(renderer: WebGLRenderer, width?: number, height?: number);

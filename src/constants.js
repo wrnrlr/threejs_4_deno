@@ -1,6 +1,6 @@
 /// <reference types="./constants.d.ts" />
 /// <reference lib="dom" />
-export const REVISION = "121dev";
+export const REVISION = "122dev";
 export const MOUSE = {
   LEFT: 0,
   MIDDLE: 1,

@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Uniform,
-  Vector2,
-  Material,
-} from "../../../src/Three.d.ts";
+import { Material, Uniform, Vector2 } from "../../../src/Three.d.ts";
 
 export const DepthLimitedBlurShader: {
   defines: {

@@ -5,8 +5,8 @@ import {
   LightProbe,
   LinearEncoding,
   SphericalHarmonics3,
-  Vector3,
   sRGBEncoding,
+  Vector3,
 } from "../../../src/Three.js";
 
 var LightProbeGenerator = {

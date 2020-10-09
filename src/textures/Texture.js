@@ -2,14 +2,14 @@
 /// <reference lib="dom" />
 import { EventDispatcher } from "../core/EventDispatcher.js";
 import {
-  MirroredRepeatWrapping,
   ClampToEdgeWrapping,
-  RepeatWrapping,
   LinearEncoding,
-  UnsignedByteType,
-  RGBAFormat,
-  LinearMipmapLinearFilter,
   LinearFilter,
+  LinearMipmapLinearFilter,
+  MirroredRepeatWrapping,
+  RepeatWrapping,
+  RGBAFormat,
+  UnsignedByteType,
   UVMapping,
 } from "../constants.js";
 import { MathUtils } from "../math/MathUtils.js";

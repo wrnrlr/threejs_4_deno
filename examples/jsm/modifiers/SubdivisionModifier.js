@@ -1,11 +1,6 @@
 /// <reference types="./SubdivisionModifier.d.ts" />
 /// <reference lib="dom" />
-import {
-  Face3,
-  Geometry,
-  Vector2,
-  Vector3,
-} from "../../../src/Three.js";
+import { Face3, Geometry, Vector2, Vector3 } from "../../../src/Three.js";
 /**
  *	Subdivision Geometry Modifier
  *		using Loop Subdivision Scheme

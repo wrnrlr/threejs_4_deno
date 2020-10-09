@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Object3D,
-  Loader,
-  LoadingManager,
-} from "../../../src/Three.d.ts";
+import { Loader, LoadingManager, Object3D } from "../../../src/Three.d.ts";
 
 export interface Assimp {
   animation: any;

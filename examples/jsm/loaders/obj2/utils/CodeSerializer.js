@@ -227,7 +227,4 @@ CodeSerializationInstruction.prototype = {
   },
 };
 
-export {
-  CodeSerializer,
-  CodeSerializationInstruction,
-};
+export { CodeSerializationInstruction, CodeSerializer };

@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Line,
-  PositionalAudio,
-} from "../../../src/Three.d.ts";
+import { Line, PositionalAudio } from "../../../src/Three.d.ts";
 
 export class PositionalAudioHelper extends Line {
   constructor(

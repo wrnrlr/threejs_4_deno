@@ -1,8 +1,6 @@
 /// <reference types="./NormalMapNode.d.ts" />
 /// <reference lib="dom" />
-import {
-  BackSide,
-} from "../../../../src/Three.js";
+import { BackSide } from "../../../../src/Three.js";
 
 import { TempNode } from "../core/TempNode.js";
 import { Vector2Node } from "../inputs/Vector2Node.js";

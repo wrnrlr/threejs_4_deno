@@ -33,6 +33,8 @@ var OutlinePass = function (resolution, scene, camera, selectedObjects) {
   this.downSampleRatio = 2;
   this.pulsePeriod = 0;
 
+  this._visibilityCache = new Map();
+
   Pass.call(this);
 
   this.resolution = (resolution !== undefined)
@@ -200,13 +202,14 @@ OutlinePass.prototype = Object.assign(Object.create(Pass.prototype), {
   },
 
   changeVisibilityOfSelectedObjects: function (bVisible) {
+    var cache = this._visibilityCache;
+
     function gatherSelectedMeshesCallBack(object) {
       if (object.isMesh) {
-        if (bVisible) {
-          object.visible = object.userData.oldVisible;
-          delete object.userData.oldVisible;
+        if (bVisible === true) {
+          object.visible = cache.get(object);
         } else {
-          object.userData.oldVisible = object.visible;
+          cache.set(object, object.visible);
           object.visible = bVisible;
         }
       }
@@ -219,6 +222,7 @@ OutlinePass.prototype = Object.assign(Object.create(Pass.prototype), {
   },
 
   changeVisibilityOfNonSelectedObjects: function (bVisible) {
+    var cache = this._visibilityCache;
     var selectedMeshes = [];
 
     function gatherSelectedMeshesCallBack(object) {
@@ -231,7 +235,9 @@ OutlinePass.prototype = Object.assign(Object.create(Pass.prototype), {
     }
 
     function VisibilityChangeCallBack(object) {
-      if (object.isMesh || object.isLine || object.isSprite) {
+      if (object.isMesh || object.isSprite) {
+        // only meshes and sprites are supported by OutlinePass
+
         var bFound = false;
 
         for (var i = 0; i < selectedMeshes.length; i++) {
@@ -243,12 +249,24 @@ OutlinePass.prototype = Object.assign(Object.create(Pass.prototype), {
           }
         }
 
-        if (!bFound) {
+        if (bFound === false) {
           var visibility = object.visible;
 
-          if (!bVisible || object.bVisible) object.visible = bVisible;
+          if (bVisible === false || cache.get(object) === true) {
+            object.visible = bVisible;
+          }
 
-          object.bVisible = visibility;
+          cache.set(object, visibility);
+        }
+      } else if (object.isPoints || object.isLine) {
+        // the visibilty of points and lines is always set to false in order to
+        // not affect the outline computation
+
+        if (bVisible === true) {
+          object.visible = cache.get(object); // restore
+        } else {
+          cache.set(object, object.visible);
+          object.visible = bVisible;
         }
       }
     }
@@ -305,6 +323,7 @@ OutlinePass.prototype = Object.assign(Object.create(Pass.prototype), {
 
       // Make selected objects visible
       this.changeVisibilityOfSelectedObjects(true);
+      this._visibilityCache.clear();
 
       // Update Texture Matrix for Depth compare
       this.updateTextureMatrix();
@@ -325,6 +344,7 @@ OutlinePass.prototype = Object.assign(Object.create(Pass.prototype), {
       renderer.render(this.renderScene, this.renderCamera);
       this.renderScene.overrideMaterial = null;
       this.changeVisibilityOfNonSelectedObjects(true);
+      this._visibilityCache.clear();
 
       this.renderScene.background = currentBackground;
 

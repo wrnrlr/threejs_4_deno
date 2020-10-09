@@ -1,10 +1,6 @@
 /// <reference types="./MorphAnimMesh.d.ts" />
 /// <reference lib="dom" />
-import {
-  AnimationClip,
-  AnimationMixer,
-  Mesh,
-} from "../../../src/Three.js";
+import { AnimationClip, AnimationMixer, Mesh } from "../../../src/Three.js";
 
 var MorphAnimMesh = function (geometry, material) {
   Mesh.call(this, geometry, material);

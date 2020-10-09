@@ -1,14 +1,14 @@
 /// <reference lib="dom" />
 import {
-  WebGLRenderer,
-  RenderTarget,
-  Texture,
   DataTexture,
   Material,
+  RenderTarget,
   ShaderMaterial,
-  Wrapping,
-  TextureFilter,
+  Texture,
   TextureDataType,
+  TextureFilter,
+  WebGLRenderer,
+  Wrapping,
 } from "../../../src/Three.d.ts";
 
 export interface Variable {

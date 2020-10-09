@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Vector2,
-  Vector3,
-  Vector4,
-} from "../../../src/Three.d.ts";
+import { Vector2, Vector3, Vector4 } from "../../../src/Three.d.ts";
 
 export class NURBSSurface {
   constructor(

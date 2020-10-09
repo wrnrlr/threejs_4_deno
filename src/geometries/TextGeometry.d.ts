@@ -1,41 +1,9 @@
 /// <reference lib="dom" />
 import { Font } from "./../extras/core/Font.d.ts";
-import { ExtrudeGeometry, ExtrudeBufferGeometry } from "./ExtrudeGeometry.d.ts";
+import { Geometry } from "./../core/Geometry.d.ts";
+import { TextGeometryParameters } from "./TextBufferGeometry.d.ts";
 
-export interface TextGeometryParameters {
-  font: Font;
-  size?: number;
-  height?: number;
-  curveSegments?: number;
-  bevelEnabled?: boolean;
-  bevelThickness?: number;
-  bevelSize?: number;
-  bevelOffset?: number;
-  bevelSegments?: number;
-}
-
-export class TextBufferGeometry extends ExtrudeBufferGeometry {
-  /**
-	 * @default 'TextBufferGeometry'
-	 */
-  type: string;
-
-  constructor(text: string, parameters: TextGeometryParameters);
-
-  parameters: {
-    font: Font;
-    size: number;
-    height: number;
-    curveSegments: number;
-    bevelEnabled: boolean;
-    bevelThickness: number;
-    bevelSize: number;
-    bevelOffset: number;
-    bevelSegments: number;
-  };
-}
-
-export class TextGeometry extends ExtrudeGeometry {
+export class TextGeometry extends Geometry {
   constructor(text: string, parameters: TextGeometryParameters);
 
   /**

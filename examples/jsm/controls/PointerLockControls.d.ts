@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Camera,
-  EventDispatcher,
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { Camera, EventDispatcher, Vector3 } from "../../../src/Three.d.ts";
 
 export class PointerLockControls extends EventDispatcher {
   constructor(camera: Camera, domElement?: HTMLElement);

@@ -99,4 +99,4 @@ Object.assign(ClearMaskPass.prototype, {
   },
 });
 
-export { MaskPass, ClearMaskPass };
+export { ClearMaskPass, MaskPass };

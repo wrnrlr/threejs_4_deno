@@ -1,9 +1,6 @@
 /// <reference types="./MorphBlendMesh.d.ts" />
 /// <reference lib="dom" />
-import {
-  MathUtils,
-  Mesh,
-} from "../../../src/Three.js";
+import { MathUtils, Mesh } from "../../../src/Three.js";
 
 var MorphBlendMesh = function (geometry, material) {
   Mesh.call(this, geometry, material);

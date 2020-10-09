@@ -1,9 +1,6 @@
 /// <reference types="./SceneUtils.d.ts" />
 /// <reference lib="dom" />
-import {
-  Group,
-  Mesh,
-} from "../../../src/Three.js";
+import { Group, Mesh } from "../../../src/Three.js";
 
 var SceneUtils = {
   createMeshesFromInstancedMesh: function (instancedMesh) {

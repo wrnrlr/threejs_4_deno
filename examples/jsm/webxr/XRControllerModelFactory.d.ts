@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Group,
-  Object3D,
-  Texture,
-} from "../../../src/Three.d.ts";
+import { Group, Object3D, Texture } from "../../../src/Three.d.ts";
 
 import { GLTFLoader } from "../loaders/GLTFLoader.d.ts";
 

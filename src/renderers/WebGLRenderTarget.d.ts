@@ -4,10 +4,10 @@ import { Texture } from "./../textures/Texture.d.ts";
 import { DepthTexture } from "./../textures/DepthTexture.d.ts";
 import { EventDispatcher } from "./../core/EventDispatcher.d.ts";
 import {
-  Wrapping,
-  TextureFilter,
   TextureDataType,
   TextureEncoding,
+  TextureFilter,
+  Wrapping,
 } from "../constants.d.ts";
 
 export interface WebGLRenderTargetOptions {

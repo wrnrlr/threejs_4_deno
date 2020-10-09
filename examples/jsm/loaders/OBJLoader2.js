@@ -4,11 +4,7 @@
  * Development repository: https://github.com/kaisalmen/WWOBJLoader
  */
 
-import {
-  FileLoader,
-  Object3D,
-  Loader,
-} from "../../../src/Three.js";
+import { FileLoader, Loader, Object3D } from "../../../src/Three.js";
 
 import { OBJLoader2Parser } from "./obj2/OBJLoader2Parser.js";
 import { MeshReceiver } from "./obj2/shared/MeshReceiver.js";

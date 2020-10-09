@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  LoadingManager,
-} from "../../../src/Three.d.ts";
+import { LoadingManager } from "../../../src/Three.d.ts";
 import { OBJLoader2 } from "./OBJLoader2.d.ts";
 
 import { WorkerExecutionSupport } from "./obj2/worker/main/WorkerExecutionSupport.d.ts";

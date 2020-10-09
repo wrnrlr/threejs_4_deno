@@ -5234,4 +5234,4 @@ var triTable = new Int32Array([
   -1,
 ]);
 
-export { MarchingCubes, edgeTable, triTable };
+export { edgeTable, MarchingCubes, triTable };

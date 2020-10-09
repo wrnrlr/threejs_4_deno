@@ -11,5 +11,5 @@ export class CompressedTextureLoader extends Loader {
     onLoad: (texture: CompressedTexture) => void,
     onProgress?: (event: ProgressEvent) => void,
     onError?: (event: ErrorEvent) => void,
-  ): void;
+  ): CompressedTexture;
 }

@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  AnimationClip,
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { AnimationClip, Vector3 } from "../../../src/Three.d.ts";
 
 export class AnimationClipCreator {
   constructor();

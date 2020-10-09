@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Texture,
-  ShaderMaterial,
-} from "../../../src/Three.d.ts";
+import { ShaderMaterial, Texture } from "../../../src/Three.d.ts";
 
 import { Pass } from "./Pass.d.ts";
 

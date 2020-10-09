@@ -1,9 +1,6 @@
 /// <reference types="./StandardNode.d.ts" />
 /// <reference lib="dom" />
-import {
-  UniformsLib,
-  UniformsUtils,
-} from "../../../../../src/Three.js";
+import { UniformsLib, UniformsUtils } from "../../../../../src/Three.js";
 
 import { Node } from "../../core/Node.js";
 import { ExpressionNode } from "../../core/ExpressionNode.js";

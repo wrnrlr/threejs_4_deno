@@ -1,24 +1,22 @@
 /// <reference types="./ObjectLoader.d.ts" />
 /// <reference lib="dom" />
 import {
-  UVMapping,
+  ClampToEdgeWrapping,
   CubeReflectionMapping,
   CubeRefractionMapping,
-  EquirectangularReflectionMapping,
-  EquirectangularRefractionMapping,
   CubeUVReflectionMapping,
   CubeUVRefractionMapping,
-
-  RepeatWrapping,
-  ClampToEdgeWrapping,
-  MirroredRepeatWrapping,
-
-  NearestFilter,
-  NearestMipmapNearestFilter,
-  NearestMipmapLinearFilter,
+  EquirectangularReflectionMapping,
+  EquirectangularRefractionMapping,
   LinearFilter,
-  LinearMipmapNearestFilter,
   LinearMipmapLinearFilter,
+  LinearMipmapNearestFilter,
+  MirroredRepeatWrapping,
+  NearestFilter,
+  NearestMipmapLinearFilter,
+  NearestMipmapNearestFilter,
+  RepeatWrapping,
+  UVMapping,
 } from "../constants.js";
 import { BufferAttribute } from "../core/BufferAttribute.js";
 import { Color } from "../math/Color.js";
@@ -71,9 +69,10 @@ class ObjectLoader extends Loader {
       : this.path;
     this.resourcePath = this.resourcePath || path;
 
-    const loader = new FileLoader(scope.manager);
+    const loader = new FileLoader(this.manager);
     loader.setPath(this.path);
     loader.setRequestHeader(this.requestHeader);
+    loader.setWithCredentials(this.withCredentials);
     loader.load(
       url,
       function (text) {

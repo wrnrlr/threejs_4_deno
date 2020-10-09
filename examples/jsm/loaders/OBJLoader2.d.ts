@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Loader,
-  LoadingManager,
-  Object3D,
-} from "../../../src/Three.d.ts";
+import { Loader, LoadingManager, Object3D } from "../../../src/Three.d.ts";
 
 import { OBJLoader2Parser } from "./obj2/OBJLoader2Parser.d.ts";
 import { MaterialHandler } from "./obj2/shared/MaterialHandler.d.ts";

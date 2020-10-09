@@ -1,9 +1,9 @@
 /// <reference types="./DataTextureLoader.d.ts" />
 /// <reference lib="dom" />
 import {
+  ClampToEdgeWrapping,
   LinearFilter,
   LinearMipmapLinearFilter,
-  ClampToEdgeWrapping,
 } from "../constants.js";
 import { FileLoader } from "./FileLoader.js";
 import { DataTexture } from "../textures/DataTexture.js";
@@ -31,6 +31,7 @@ DataTextureLoader.prototype = Object.assign(Object.create(Loader.prototype), {
     loader.setResponseType("arraybuffer");
     loader.setRequestHeader(this.requestHeader);
     loader.setPath(this.path);
+    loader.setWithCredentials(scope.withCredentials);
     loader.load(
       url,
       function (buffer) {

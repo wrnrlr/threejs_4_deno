@@ -1,10 +1,6 @@
 /// <reference types="./PointerLockControls.d.ts" />
 /// <reference lib="dom" />
-import {
-  Euler,
-  EventDispatcher,
-  Vector3,
-} from "../../../src/Three.js";
+import { Euler, EventDispatcher, Vector3 } from "../../../src/Three.js";
 
 var PointerLockControls = function (camera, domElement) {
   if (domElement === undefined) {

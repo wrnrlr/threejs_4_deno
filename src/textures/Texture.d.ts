@@ -4,16 +4,13 @@ import { Matrix3 } from "./../math/Matrix3.d.ts";
 import { EventDispatcher } from "./../core/EventDispatcher.d.ts";
 import {
   Mapping,
-  Wrapping,
-  TextureFilter,
   PixelFormat,
   PixelFormatGPU,
   TextureDataType,
   TextureEncoding,
+  TextureFilter,
+  Wrapping,
 } from "../constants.d.ts";
-
-// Textures /////////////////////////////////////////////////////////////////////
-export let TextureIdCount: number;
 
 export class Texture extends EventDispatcher {
   /**

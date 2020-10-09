@@ -1,10 +1,6 @@
 /// <reference types="./Gyroscope.d.ts" />
 /// <reference lib="dom" />
-import {
-  Object3D,
-  Quaternion,
-  Vector3,
-} from "../../../src/Three.js";
+import { Object3D, Quaternion, Vector3 } from "../../../src/Three.js";
 
 var Gyroscope = function () {
   Object3D.call(this);

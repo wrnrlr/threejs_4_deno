@@ -1,10 +1,6 @@
 /// <reference types="./STLExporter.d.ts" />
 /// <reference lib="dom" />
-import {
-  Geometry,
-  Matrix3,
-  Vector3,
-} from "../../../src/Three.js";
+import { Geometry, Matrix3, Vector3 } from "../../../src/Three.js";
 /**
  * Usage:
  *  var exporter = new STLExporter();

@@ -1,9 +1,6 @@
 /// <reference types="./NURBSUtils.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector3,
-  Vector4,
-} from "../../../src/Three.js";
+import { Vector3, Vector4 } from "../../../src/Three.js";
 /**
  * NURBS utils
  *

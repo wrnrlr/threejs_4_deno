@@ -2,11 +2,11 @@
 /// <reference lib="dom" />
 import {
   BackSide,
-  FrontSide,
   CubeUVReflectionMapping,
+  FrontSide,
 } from "../../constants.js";
-import { BoxBufferGeometry } from "../../geometries/BoxGeometry.js";
-import { PlaneBufferGeometry } from "../../geometries/PlaneGeometry.js";
+import { BoxBufferGeometry } from "../../geometries/BoxBufferGeometry.js";
+import { PlaneBufferGeometry } from "../../geometries/PlaneBufferGeometry.js";
 import { ShaderMaterial } from "../../materials/ShaderMaterial.js";
 import { Color } from "../../math/Color.js";
 import { Mesh } from "../../objects/Mesh.js";
@@ -65,7 +65,6 @@ function WebGLBackground(
     if (
       background &&
       (background.isCubeTexture || background.isWebGLCubeRenderTarget ||
-        background.isWebGLCubeRenderTargetTexture ||
         background.mapping === CubeUVReflectionMapping)
     ) {
       if (boxMesh === undefined) {
@@ -107,9 +106,8 @@ function WebGLBackground(
       }
 
       boxMesh.material.uniforms.envMap.value = background;
-      boxMesh.material.uniforms.flipEnvMap.value = background.isCubeTexture
-        ? -1
-        : 1;
+      boxMesh.material.uniforms.flipEnvMap.value =
+        (background.isCubeTexture && background._needsFlipEnvMap) ? -1 : 1;
 
       if (
         currentBackground !== background ||

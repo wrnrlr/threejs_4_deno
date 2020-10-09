@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Object3D,
-  Plane,
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { Object3D, Plane, Vector3 } from "../../../src/Three.d.ts";
 
 export interface CutByPlaneOutput {
   object1: Object3D;

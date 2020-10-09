@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Object3D,
-  LineSegments,
-} from "../../../src/Three.d.ts";
+import { LineSegments, Object3D } from "../../../src/Three.d.ts";
 
 export class VertexNormalsHelper extends LineSegments {
   constructor(

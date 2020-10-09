@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  BufferGeometry,
-  Mesh,
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { BufferGeometry, Mesh, Vector3 } from "../../../src/Three.d.ts";
 
 export class MeshSurfaceSampler {
   distribution: Float32Array | null;

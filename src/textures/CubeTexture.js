@@ -34,6 +34,8 @@ function CubeTexture(
   );
 
   this.flipY = false;
+
+  this._needsFlipEnvMap = true;
 }
 
 CubeTexture.prototype = Object.create(Texture.prototype);

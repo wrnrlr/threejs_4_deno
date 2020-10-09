@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Object3D,
-  Scene,
-  Camera,
-} from "../../../src/Three.d.ts";
+import { Camera, Object3D, Scene } from "../../../src/Three.d.ts";
 
 export class CSS3DObject extends Object3D {
   constructor(element: HTMLElement);

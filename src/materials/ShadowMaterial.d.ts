@@ -1,6 +1,6 @@
 /// <reference lib="dom" />
 import { Color } from "./../math/Color.d.ts";
-import { MaterialParameters, Material } from "./Material.d.ts";
+import { Material, MaterialParameters } from "./Material.d.ts";
 
 export interface ShadowMaterialParameters extends MaterialParameters {
   color?: Color | string | number;

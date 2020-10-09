@@ -1,10 +1,6 @@
 /// <reference types="./PeppersGhostEffect.d.ts" />
 /// <reference lib="dom" />
-import {
-  PerspectiveCamera,
-  Quaternion,
-  Vector3,
-} from "../../../src/Three.js";
+import { PerspectiveCamera, Quaternion, Vector3 } from "../../../src/Three.js";
 /**
  * peppers ghost effect based on http://www.instructables.com/id/Reflective-Prism/?ALLSTEPS
  */

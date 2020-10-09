@@ -1,9 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Scene,
-  Camera,
-  Color,
-} from "../../../src/Three.d.ts";
+import { Camera, Color, Scene } from "../../../src/Three.d.ts";
 
 import { SSAARenderPass } from "./SSAARenderPass.d.ts";
 

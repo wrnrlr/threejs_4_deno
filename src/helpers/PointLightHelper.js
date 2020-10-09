@@ -2,7 +2,7 @@
 /// <reference lib="dom" />
 import { Mesh } from "../objects/Mesh.js";
 import { MeshBasicMaterial } from "../materials/MeshBasicMaterial.js";
-import { SphereBufferGeometry } from "../geometries/SphereGeometry.js";
+import { SphereBufferGeometry } from "../geometries/SphereBufferGeometry.js";
 
 class PointLightHelper extends Mesh {
   constructor(light, sphereSize, color) {

@@ -1,9 +1,9 @@
 /// <reference types="./Pass.d.ts" />
 /// <reference lib="dom" />
 import {
+  Mesh,
   OrthographicCamera,
   PlaneBufferGeometry,
-  Mesh,
 } from "../../../src/Three.js";
 
 function Pass() {

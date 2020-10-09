@@ -1009,10 +1009,10 @@ var Projector = function () {
 };
 
 export {
-  RenderableObject,
-  RenderableFace,
-  RenderableVertex,
-  RenderableLine,
-  RenderableSprite,
   Projector,
+  RenderableFace,
+  RenderableLine,
+  RenderableObject,
+  RenderableSprite,
+  RenderableVertex,
 };

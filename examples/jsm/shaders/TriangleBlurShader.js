@@ -1,8 +1,6 @@
 /// <reference types="./TriangleBlurShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector2,
-} from "../../../src/Three.js";
+import { Vector2 } from "../../../src/Three.js";
 /**
  * Triangle blur shader
  * based on glfx.js triangle blur shader

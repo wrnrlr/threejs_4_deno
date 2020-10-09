@@ -1,24 +1,24 @@
 /// <reference types="./WebGLTextures.d.ts" />
 /// <reference lib="dom" />
 import {
+  ClampToEdgeWrapping,
+  DepthFormat,
+  DepthStencilFormat,
+  FloatType,
+  HalfFloatType,
   LinearFilter,
   LinearMipmapLinearFilter,
   LinearMipmapNearestFilter,
+  MirroredRepeatWrapping,
   NearestFilter,
   NearestMipmapLinearFilter,
   NearestMipmapNearestFilter,
-  RGBFormat,
-  RGBAFormat,
-  DepthFormat,
-  DepthStencilFormat,
-  UnsignedShortType,
-  UnsignedIntType,
-  UnsignedInt248Type,
-  FloatType,
-  HalfFloatType,
-  MirroredRepeatWrapping,
-  ClampToEdgeWrapping,
   RepeatWrapping,
+  RGBAFormat,
+  RGBFormat,
+  UnsignedInt248Type,
+  UnsignedIntType,
+  UnsignedShortType,
 } from "../../constants.js";
 import { MathUtils } from "../../math/MathUtils.js";
 
@@ -367,183 +367,17 @@ function WebGLTextures(
   }
 
   function setTextureCube(texture, slot) {
-    if (texture.image.length !== 6) return;
-
     const textureProperties = properties.get(texture);
 
     if (
       texture.version > 0 && textureProperties.__version !== texture.version
     ) {
-      initTexture(textureProperties, texture);
-
-      state.activeTexture(_gl.TEXTURE0 + slot);
-      state.bindTexture(_gl.TEXTURE_CUBE_MAP, textureProperties.__webglTexture);
-
-      _gl.pixelStorei(_gl.UNPACK_FLIP_Y_WEBGL, texture.flipY);
-
-      const isCompressed =
-        (texture &&
-          (texture.isCompressedTexture ||
-            texture.image[0].isCompressedTexture));
-      const isDataTexture =
-        (texture.image[0] && texture.image[0].isDataTexture);
-
-      const cubeImage = [];
-
-      for (let i = 0; i < 6; i++) {
-        if (!isCompressed && !isDataTexture) {
-          cubeImage[i] = resizeImage(
-            texture.image[i],
-            false,
-            true,
-            maxCubemapSize,
-          );
-        } else {
-          cubeImage[i] = isDataTexture ? texture.image[i].image
-          : texture.image[i];
-        }
-      }
-
-      const image = cubeImage[0],
-        supportsMips = isPowerOfTwo(image) || isWebGL2,
-        glFormat = utils.convert(texture.format),
-        glType = utils.convert(texture.type),
-        glInternalFormat = getInternalFormat(
-          texture.internalFormat,
-          glFormat,
-          glType,
-        );
-
-      setTextureParameters(_gl.TEXTURE_CUBE_MAP, texture, supportsMips);
-
-      let mipmaps;
-
-      if (isCompressed) {
-        for (let i = 0; i < 6; i++) {
-          mipmaps = cubeImage[i].mipmaps;
-
-          for (let j = 0; j < mipmaps.length; j++) {
-            const mipmap = mipmaps[j];
-
-            if (texture.format !== RGBAFormat && texture.format !== RGBFormat) {
-              if (glFormat !== null) {
-                state.compressedTexImage2D(
-                  _gl.TEXTURE_CUBE_MAP_POSITIVE_X + i,
-                  j,
-                  glInternalFormat,
-                  mipmap.width,
-                  mipmap.height,
-                  0,
-                  mipmap.data,
-                );
-              } else {
-                console.warn(
-                  "THREE.WebGLRenderer: Attempt to load unsupported compressed texture format in .setTextureCube()",
-                );
-              }
-            } else {
-              state.texImage2D(
-                _gl.TEXTURE_CUBE_MAP_POSITIVE_X + i,
-                j,
-                glInternalFormat,
-                mipmap.width,
-                mipmap.height,
-                0,
-                glFormat,
-                glType,
-                mipmap.data,
-              );
-            }
-          }
-        }
-
-        textureProperties.__maxMipLevel = mipmaps.length - 1;
-      } else {
-        mipmaps = texture.mipmaps;
-
-        for (let i = 0; i < 6; i++) {
-          if (isDataTexture) {
-            state.texImage2D(
-              _gl.TEXTURE_CUBE_MAP_POSITIVE_X + i,
-              0,
-              glInternalFormat,
-              cubeImage[i].width,
-              cubeImage[i].height,
-              0,
-              glFormat,
-              glType,
-              cubeImage[i].data,
-            );
-
-            for (let j = 0; j < mipmaps.length; j++) {
-              const mipmap = mipmaps[j];
-              const mipmapImage = mipmap.image[i].image;
-
-              state.texImage2D(
-                _gl.TEXTURE_CUBE_MAP_POSITIVE_X + i,
-                j + 1,
-                glInternalFormat,
-                mipmapImage.width,
-                mipmapImage.height,
-                0,
-                glFormat,
-                glType,
-                mipmapImage.data,
-              );
-            }
-          } else {
-            state.texImage2D(
-              _gl.TEXTURE_CUBE_MAP_POSITIVE_X + i,
-              0,
-              glInternalFormat,
-              glFormat,
-              glType,
-              cubeImage[i],
-            );
-
-            for (let j = 0; j < mipmaps.length; j++) {
-              const mipmap = mipmaps[j];
-
-              state.texImage2D(
-                _gl.TEXTURE_CUBE_MAP_POSITIVE_X + i,
-                j + 1,
-                glInternalFormat,
-                glFormat,
-                glType,
-                mipmap.image[i],
-              );
-            }
-          }
-        }
-
-        textureProperties.__maxMipLevel = mipmaps.length;
-      }
-
-      if (textureNeedsGenerateMipmaps(texture, supportsMips)) {
-        // We assume images for cube map have the same size.
-        generateMipmap(
-          _gl.TEXTURE_CUBE_MAP,
-          texture,
-          image.width,
-          image.height,
-        );
-      }
-
-      textureProperties.__version = texture.version;
-
-      if (texture.onUpdate) texture.onUpdate(texture);
-    } else {
-      state.activeTexture(_gl.TEXTURE0 + slot);
-      state.bindTexture(_gl.TEXTURE_CUBE_MAP, textureProperties.__webglTexture);
+      uploadCubeTexture(textureProperties, texture, slot);
+      return;
     }
-  }
 
-  function setTextureCubeDynamic(texture, slot) {
     state.activeTexture(_gl.TEXTURE0 + slot);
-    state.bindTexture(
-      _gl.TEXTURE_CUBE_MAP,
-      properties.get(texture).__webglTexture,
-    );
+    state.bindTexture(_gl.TEXTURE_CUBE_MAP, textureProperties.__webglTexture);
   }
 
   const wrappingToGL = {
@@ -934,6 +768,163 @@ function WebGLTextures(
 
     if (textureNeedsGenerateMipmaps(texture, supportsMips)) {
       generateMipmap(textureType, texture, image.width, image.height);
+    }
+
+    textureProperties.__version = texture.version;
+
+    if (texture.onUpdate) texture.onUpdate(texture);
+  }
+
+  function uploadCubeTexture(textureProperties, texture, slot) {
+    if (texture.image.length !== 6) return;
+
+    initTexture(textureProperties, texture);
+
+    state.activeTexture(_gl.TEXTURE0 + slot);
+    state.bindTexture(_gl.TEXTURE_CUBE_MAP, textureProperties.__webglTexture);
+
+    _gl.pixelStorei(_gl.UNPACK_FLIP_Y_WEBGL, texture.flipY);
+
+    const isCompressed =
+      (texture &&
+        (texture.isCompressedTexture || texture.image[0].isCompressedTexture));
+    const isDataTexture = (texture.image[0] && texture.image[0].isDataTexture);
+
+    const cubeImage = [];
+
+    for (let i = 0; i < 6; i++) {
+      if (!isCompressed && !isDataTexture) {
+        cubeImage[i] = resizeImage(
+          texture.image[i],
+          false,
+          true,
+          maxCubemapSize,
+        );
+      } else {
+        cubeImage[i] = isDataTexture
+          ? texture.image[i].image
+          : texture.image[i];
+      }
+    }
+
+    const image = cubeImage[0],
+      supportsMips = isPowerOfTwo(image) || isWebGL2,
+      glFormat = utils.convert(texture.format),
+      glType = utils.convert(texture.type),
+      glInternalFormat = getInternalFormat(
+        texture.internalFormat,
+        glFormat,
+        glType,
+      );
+
+    setTextureParameters(_gl.TEXTURE_CUBE_MAP, texture, supportsMips);
+
+    let mipmaps;
+
+    if (isCompressed) {
+      for (let i = 0; i < 6; i++) {
+        mipmaps = cubeImage[i].mipmaps;
+
+        for (let j = 0; j < mipmaps.length; j++) {
+          const mipmap = mipmaps[j];
+
+          if (texture.format !== RGBAFormat && texture.format !== RGBFormat) {
+            if (glFormat !== null) {
+              state.compressedTexImage2D(
+                _gl.TEXTURE_CUBE_MAP_POSITIVE_X + i,
+                j,
+                glInternalFormat,
+                mipmap.width,
+                mipmap.height,
+                0,
+                mipmap.data,
+              );
+            } else {
+              console.warn(
+                "THREE.WebGLRenderer: Attempt to load unsupported compressed texture format in .setTextureCube()",
+              );
+            }
+          } else {
+            state.texImage2D(
+              _gl.TEXTURE_CUBE_MAP_POSITIVE_X + i,
+              j,
+              glInternalFormat,
+              mipmap.width,
+              mipmap.height,
+              0,
+              glFormat,
+              glType,
+              mipmap.data,
+            );
+          }
+        }
+      }
+
+      textureProperties.__maxMipLevel = mipmaps.length - 1;
+    } else {
+      mipmaps = texture.mipmaps;
+
+      for (let i = 0; i < 6; i++) {
+        if (isDataTexture) {
+          state.texImage2D(
+            _gl.TEXTURE_CUBE_MAP_POSITIVE_X + i,
+            0,
+            glInternalFormat,
+            cubeImage[i].width,
+            cubeImage[i].height,
+            0,
+            glFormat,
+            glType,
+            cubeImage[i].data,
+          );
+
+          for (let j = 0; j < mipmaps.length; j++) {
+            const mipmap = mipmaps[j];
+            const mipmapImage = mipmap.image[i].image;
+
+            state.texImage2D(
+              _gl.TEXTURE_CUBE_MAP_POSITIVE_X + i,
+              j + 1,
+              glInternalFormat,
+              mipmapImage.width,
+              mipmapImage.height,
+              0,
+              glFormat,
+              glType,
+              mipmapImage.data,
+            );
+          }
+        } else {
+          state.texImage2D(
+            _gl.TEXTURE_CUBE_MAP_POSITIVE_X + i,
+            0,
+            glInternalFormat,
+            glFormat,
+            glType,
+            cubeImage[i],
+          );
+
+          for (let j = 0; j < mipmaps.length; j++) {
+            const mipmap = mipmaps[j];
+
+            state.texImage2D(
+              _gl.TEXTURE_CUBE_MAP_POSITIVE_X + i,
+              j + 1,
+              glInternalFormat,
+              glFormat,
+              glType,
+              mipmap.image[i],
+            );
+          }
+        }
+      }
+
+      textureProperties.__maxMipLevel = mipmaps.length;
+    }
+
+    if (textureNeedsGenerateMipmaps(texture, supportsMips)) {
+      // We assume images for cube map have the same size.
+      generateMipmap(_gl.TEXTURE_CUBE_MAP, texture, image.width, image.height);
     }
 
     textureProperties.__version = texture.version;
@@ -1455,20 +1446,7 @@ function WebGLTextures(
       texture = texture.texture;
     }
 
-    // currently relying on the fact that WebGLCubeRenderTarget.texture is a Texture and NOT a CubeTexture
-    // TODO: unify these code paths
-    if (
-      (texture && texture.isCubeTexture) ||
-      (Array.isArray(texture.image) && texture.image.length === 6)
-    ) {
-      // CompressedTexture can have Array in image :/
-
-      // this function alone should take care of cube textures
-      setTextureCube(texture, slot);
-    } else {
-      // assumed: texture property of THREE.WebGLCubeRenderTarget
-      setTextureCubeDynamic(texture, slot);
-    }
+    setTextureCube(texture, slot);
   }
 
   //
@@ -1480,7 +1458,6 @@ function WebGLTextures(
   this.setTexture2DArray = setTexture2DArray;
   this.setTexture3D = setTexture3D;
   this.setTextureCube = setTextureCube;
-  this.setTextureCubeDynamic = setTextureCubeDynamic;
   this.setupRenderTarget = setupRenderTarget;
   this.updateRenderTargetMipmap = updateRenderTargetMipmap;
   this.updateMultisampleRenderTarget = updateMultisampleRenderTarget;

@@ -2,13 +2,13 @@
 /// <reference lib="dom" />
 import {
   BackSide,
-  DoubleSide,
-  CubeUVRefractionMapping,
   CubeUVReflectionMapping,
+  CubeUVRefractionMapping,
+  DoubleSide,
   LinearEncoding,
+  NoToneMapping,
   ObjectSpaceNormalMap,
   TangentSpaceNormalMap,
-  NoToneMapping,
 } from "../../constants.js";
 import { WebGLProgram } from "./WebGLProgram.js";
 import { ShaderLib } from "../shaders/ShaderLib.js";

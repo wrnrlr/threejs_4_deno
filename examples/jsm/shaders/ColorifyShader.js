@@ -1,8 +1,6 @@
 /// <reference types="./ColorifyShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Color,
-} from "../../../src/Three.js";
+import { Color } from "../../../src/Three.js";
 /**
  * Colorify shader
  */

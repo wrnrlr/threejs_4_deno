@@ -51,7 +51,12 @@ ImageBitmapLoader.prototype = Object.assign(Object.create(Loader.prototype), {
       return cached;
     }
 
-    fetch(url).then(function (res) {
+    const fetchOptions = {};
+    fetchOptions.credentials = (this.crossOrigin === "anonymous")
+      ? "same-origin"
+      : "include";
+
+    fetch(url, fetchOptions).then(function (res) {
       return res.blob();
     }).then(function (blob) {
       return createImageBitmap(blob, scope.options);

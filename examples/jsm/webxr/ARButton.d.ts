@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  WebGLRenderer,
-} from "../../../src/Three.d.ts";
+import { WebGLRenderer } from "../../../src/Three.d.ts";
 
 export namespace ARButton {
   export function createButton(

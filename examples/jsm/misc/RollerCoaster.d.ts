@@ -1,10 +1,5 @@
 /// <reference lib="dom" />
-import {
-  BufferGeometry,
-  Curve,
-  Mesh,
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { BufferGeometry, Curve, Mesh, Vector3 } from "../../../src/Three.d.ts";
 
 export class RollerCoasterGeometry extends BufferGeometry {
   constructor(curve: Curve<Vector3>, divisions: number);

@@ -1,5 +1,5 @@
 /// <reference lib="dom" />
-import { MaterialParameters, Material } from "./Material.d.ts";
+import { Material, MaterialParameters } from "./Material.d.ts";
 import { Vector3 } from "./../math/Vector3.d.ts";
 import { Texture } from "./../textures/Texture.d.ts";
 

@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Color,
-} from "../../../src/Three.d.ts";
+import { Color } from "../../../src/Three.d.ts";
 
 import { Pass } from "./Pass.d.ts";
 

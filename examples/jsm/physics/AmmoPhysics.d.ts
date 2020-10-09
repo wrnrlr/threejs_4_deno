@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Mesh,
-  Vector3,
-} from "../../../src/Three.d.ts";
+import { Mesh, Vector3 } from "../../../src/Three.d.ts";
 
 export class AmmoPhysics {
   constructor();

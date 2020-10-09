@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Texture,
-  WebGLRenderer,
-} from "../../../../src/Three.d.ts";
+import { Texture, WebGLRenderer } from "../../../../src/Three.d.ts";
 
 import { Node } from "./Node.d.ts";
 

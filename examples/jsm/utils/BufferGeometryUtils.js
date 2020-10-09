@@ -6,8 +6,8 @@ import {
   InterleavedBuffer,
   InterleavedBufferAttribute,
   TriangleFanDrawMode,
-  TriangleStripDrawMode,
   TrianglesDrawMode,
+  TriangleStripDrawMode,
   Vector2,
   Vector3,
 } from "../../../src/Three.js";

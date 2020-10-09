@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Line,
-} from "../../../src/Three.d.ts";
+import { Line } from "../../../src/Three.d.ts";
 
 import { LineSegmentsGeometry } from "./LineSegmentsGeometry.d.ts";
 

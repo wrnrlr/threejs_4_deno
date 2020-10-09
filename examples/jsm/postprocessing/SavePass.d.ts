@@ -1,8 +1,5 @@
 /// <reference lib="dom" />
-import {
-  ShaderMaterial,
-  WebGLRenderTarget,
-} from "../../../src/Three.d.ts";
+import { ShaderMaterial, WebGLRenderTarget } from "../../../src/Three.d.ts";
 
 import { Pass } from "./Pass.d.ts";
 

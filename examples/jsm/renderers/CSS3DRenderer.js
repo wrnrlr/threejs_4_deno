@@ -1,10 +1,6 @@
 /// <reference types="./CSS3DRenderer.d.ts" />
 /// <reference lib="dom" />
-import {
-  Matrix4,
-  Object3D,
-  Vector3,
-} from "../../../src/Three.js";
+import { Matrix4, Object3D, Vector3 } from "../../../src/Three.js";
 /**
  * Based on http://www.emagix.net/academic/mscs-project/item/camera-sync-with-css3-and-webgl-threejs
  */
@@ -299,4 +295,4 @@ var CSS3DRenderer = function () {
   };
 };
 
-export { CSS3DObject, CSS3DSprite, CSS3DRenderer };
+export { CSS3DObject, CSS3DRenderer, CSS3DSprite };

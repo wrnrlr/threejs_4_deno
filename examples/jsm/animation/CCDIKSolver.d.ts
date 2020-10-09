@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  SkinnedMesh,
-} from "../../../src/Three.d.ts";
+import { SkinnedMesh } from "../../../src/Three.d.ts";
 
 export interface IKS {
   effector: number;

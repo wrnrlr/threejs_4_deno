@@ -1,8 +1,6 @@
 /// <reference types="./SobelOperatorShader.d.ts" />
 /// <reference lib="dom" />
-import {
-  Vector2,
-} from "../../../src/Three.js";
+import { Vector2 } from "../../../src/Three.js";
 /**
  * Sobel Edge Detection (see https://youtu.be/uihBwtPIBxM)
  *

@@ -1,13 +1,13 @@
 /// <reference lib="dom" />
 import {
+  Camera,
+  Color,
+  Material,
   Object3D,
   Scene,
-  Camera,
   Vector2,
   Vector3,
   Vector4,
-  Color,
-  Material,
 } from "../../../src/Three.d.ts";
 
 export class RenderableObject {

@@ -1,12 +1,12 @@
 /// <reference types="./WebGLRenderer.d.ts" />
 /// <reference lib="dom" />
 import {
-  RGBAFormat,
-  HalfFloatType,
   FloatType,
-  UnsignedByteType,
+  HalfFloatType,
   LinearEncoding,
   NoToneMapping,
+  RGBAFormat,
+  UnsignedByteType,
 } from "../constants.js";
 import { MathUtils } from "../math/MathUtils.js";
 import { DataTexture } from "../textures/DataTexture.js";
@@ -822,8 +822,8 @@ function WebGLRenderer(parameters) {
     currentRenderState = renderStates.get(scene, camera);
     currentRenderState.init();
 
-    scene.traverse(function (object) {
-      if (object.isLight) {
+    scene.traverseVisible(function (object) {
+      if (object.isLight && object.layers.test(camera.layers)) {
         currentRenderState.pushLight(object);
 
         if (object.castShadow) {

@@ -1,7 +1,5 @@
 /// <reference lib="dom" />
-import {
-  Uniform,
-} from "../../../src/Three.d.ts";
+import { Uniform } from "../../../src/Three.d.ts";
 
 export const ColorifyShader: {
   uniforms: {

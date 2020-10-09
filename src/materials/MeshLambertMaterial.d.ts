@@ -1,7 +1,7 @@
 /// <reference lib="dom" />
 import { Color } from "./../math/Color.d.ts";
 import { Texture } from "./../textures/Texture.d.ts";
-import { MaterialParameters, Material } from "./Material.d.ts";
+import { Material, MaterialParameters } from "./Material.d.ts";
 import { Combine } from "../constants.d.ts";
 
 export interface MeshLambertMaterialParameters extends MaterialParameters {

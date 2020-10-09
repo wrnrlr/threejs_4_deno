@@ -16,8 +16,6 @@ import { EventDispatcher } from "./EventDispatcher.d.ts";
 import { BufferGeometry } from "./BufferGeometry.d.ts";
 import { Intersection } from "./Raycaster.d.ts";
 
-export let Object3DIdCount: number;
-
 /**
  * Base class for scene graph objects
  */
@@ -317,6 +315,11 @@ export class Object3D extends EventDispatcher {
 	 * Removes object as child of this object.
 	 */
   remove(...object: Object3D[]): this;
+
+  /**
+	 * Removes all child objects.
+	 */
+  removeAll(): this;
 
   /**
 	 * Adds object as a child of this, while maintaining the object's world transform.
