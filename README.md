@@ -4,8 +4,8 @@
 
 ```typescript
 // deps.ts
-import { WebGLRenderer } from "https://deno.land/x/threejs_4_deno@v120/src/Three.js"
-import { OrbitalControls } from "https://deno.land/x/threejs_4_deno@v120/examples/jsm/controls/OrbitControls.js"
+import { WebGLRenderer } from "https://deno.land/x/threejs_4_deno@v121/src/Three.js"
+import { OrbitalControls } from "https://deno.land/x/threejs_4_deno@v121/examples/jsm/controls/OrbitControls.js"
 
 // main.ts
 import { WebGLRenderer } from "deps.ts"
