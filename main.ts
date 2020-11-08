@@ -1,3 +1,5 @@
+import { emptyDirSync } from 'https://deno.land/std@0.76.0/fs/mod.ts';
+
 const examplesPath = "three.js/examples/jsm/";
 const srcPath = "three.js/src/";
 const pathToNewDir = "three.deno/";
@@ -120,12 +122,7 @@ if (import.meta.main) {
   }
 
   // ensure that the three.deno directory is empty
-  if (existsSync(pathToNewDir)) {
-    Deno.removeSync(pathToNewDir, { recursive: true });
-    Deno.mkdirSync(pathToNewDir);
-  } else {
-    Deno.mkdirSync(pathToNewDir);
-  }
+  emptyDirSync(pathToNewDir)
 
   // Update .d.ts urls
   loopDirAndMatch(examplesPath, /\.d\.ts/g, updateTypescripts);
