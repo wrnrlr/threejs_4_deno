@@ -1,3 +1,6 @@
+# deprecated notice
+As of learning about skypack.dev via the [updated deno manual](https://deno.land/manual@v1.7.0/typescript/types#deno-friendly-cdns), I strongly discourage anyone from using this remix of the three.js library.
+
 # three.js 4 deno
 
 [Manage your external dependencies with care.](https://deno.land/manual/examples/manage_dependencies)
